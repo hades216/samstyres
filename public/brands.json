@@ -1,0 +1,31 @@
+{
+  "$schema": "Edit this file to add, remove, or reorder tyre brands. Logos are project-hosted for reliable loading.",
+  "brands": [
+    { "name": "Michelin",      "logo": "/__l5e/assets-v1/c3b3aac6-6784-4c76-8165-4ec2476e72d1/michelin.png" },
+    { "name": "Bridgestone",   "logo": "/__l5e/assets-v1/a6697974-4889-4cd6-9dde-332c328b50ce/bridgestone.png" },
+    { "name": "Goodyear",      "logo": "/__l5e/assets-v1/4a1d4ff6-490d-4aa8-9e62-6bf06ac74cea/goodyear.png" },
+    { "name": "Continental",   "logo": "/__l5e/assets-v1/7d9d2517-aee9-493b-b3a7-670cff4bb285/continental.png" },
+    { "name": "Pirelli",       "logo": "/__l5e/assets-v1/124b1d7d-9d1a-4dd6-81aa-a8cc18cad777/pirelli.png" },
+    { "name": "Dunlop",        "logo": "/__l5e/assets-v1/8195cd77-17cf-44d6-bac6-36bee9efb09d/dunlop.png" },
+    { "name": "Hankook",       "logo": "/__l5e/assets-v1/b0d8fe1e-b53c-4816-9409-3c4514de4276/hankook.png" },
+    { "name": "Yokohama",      "logo": "/__l5e/assets-v1/2a14af49-b92f-4bbe-8259-9618d4d28706/yokohama.png" },
+    { "name": "Kumho",         "logo": "/__l5e/assets-v1/865cb3d9-ba66-4297-8a8a-3816b875eeaa/kumho.png" },
+    { "name": "Falken",        "logo": "/__l5e/assets-v1/e6057f29-3e7c-4e4b-a3d0-c2fe11dde4f0/falken.png" },
+    { "name": "Toyo Tires",    "logo": "/__l5e/assets-v1/02a754c0-daa6-4f38-8955-09e51b0d5987/toyo.png" },
+    { "name": "BFGoodrich",    "logo": "/__l5e/assets-v1/36bc8722-00fd-4e42-a870-ad4154724b7f/bfgoodrich.png" },
+    { "name": "Nexen Tire",    "logo": "/__l5e/assets-v1/b0a3e062-f4b9-4415-898f-abbd5f523ad0/nexen.png" },
+    { "name": "Avon Tyres",    "logo": "/__l5e/assets-v1/b3b0999c-3b2d-4bc8-b822-d209cf3b42c9/avon-tyres.svg" },
+    { "name": "Uniroyal",      "logo": "/__l5e/assets-v1/6f9a5f51-e39f-43bc-8c69-950ea57d3e3d/uniroyal.png" },
+    { "name": "Maxxis",        "logo": "/__l5e/assets-v1/c8f2d21b-c5e0-41a3-a6bf-d4007af7be60/maxxis.png" },
+    { "name": "Vredestein",    "logo": "/__l5e/assets-v1/62b9b045-b491-4d49-921c-0a1600140210/vredestein.svg" },
+    { "name": "Cooper Tires",  "logo": "/__l5e/assets-v1/0e898435-41d4-4dc8-96fe-f569d3742480/cooper.png" },
+    { "name": "Firestone",     "logo": "/__l5e/assets-v1/73ab64ad-a559-4ab0-a6af-a7f0047156fa/firestone.png" },
+    { "name": "General Tire",  "logo": "/__l5e/assets-v1/ce711218-67f1-45af-bb24-a492c3ce34f5/general.png" },
+    { "name": "GT Radial",     "logo": "/__l5e/assets-v1/2be66ddf-29d8-468e-8c09-69481c75f825/gt-radial.png" },
+    { "name": "Laufenn",       "logo": "/__l5e/assets-v1/01fa49b3-2182-4609-accd-464010908e04/laufenn.png" },
+    { "name": "Sailun",        "logo": "/__l5e/assets-v1/f0339f6e-50b3-4c95-a5a3-22197f33a329/sailun.png" },
+    { "name": "Linglong Tire", "logo": "/__l5e/assets-v1/cb6eb4dd-e86a-48af-b681-7101a7b6a028/linglong.png" },
+    { "name": "Apollo Tyres",  "logo": "/__l5e/assets-v1/bb2280dc-70a1-4c5f-812b-fe3cb5e42c9d/apollo.png" },
+    { "name": "Nokian Tyres",  "logo": "/__l5e/assets-v1/07e301b6-93e7-4f1d-b1f3-52a33dafa051/nokian.png" }
+  ]
+}
