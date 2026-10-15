@@ -637,6 +637,171 @@ export const LOCATIONS: Record<string, LocationPage> = {
     ],
     nearby: ["mobile-tyre-fitting-chingford", "mobile-tyre-fitting-edmonton"],
   },
+  "mobile-tyre-fitting-north-london": {
+    slug: "mobile-tyre-fitting-north-london",
+    name: "North London",
+    postcode: "N1 - N22, EN1 - EN3, NW1 - NW11",
+    title: "Mobile Tyre Fitting North London | 24/7 Emergency Tyres",
+    description:
+      "24/7 mobile tyre fitting across North London. Rapid 30-45 min arrival in Enfield, Barnet, Haringey, Camden & Islington. Home, work or roadside.",
+    h1: "24/7 Mobile Tyre Fitting in North London",
+    intro:
+      "Stuck with a puncture, flat battery or tyre blowout anywhere across North London? Sam's Mobile Tyres operates dedicated mobile fitting vans 24 hours a day, bringing professional tyre replacement, puncture repairs and roadside recovery directly to your driveway or roadside location.",
+    localHeading: "Rapid mobile tyre dispatch throughout North London",
+    localCopy:
+      "Our technicians cover the whole of North London including Enfield, Edmonton, Finchley, Barnet, Wood Green, Tottenham, Highgate and Camden. Strategically stationed near key arterial routes like the A406 North Circular, A10 and A1, we provide industry-leading 30 to 45 minute arrival times 24/7.",
+    homeCopy:
+      "We replace and balance car, SUV, EV and van tyres directly on your driveway or residential parking space anywhere in North London without garage hassle.",
+    workplaceCopy:
+      "Keep your day moving. Our mobile technicians fit tyres at office car parks, commercial estates and industrial parks across North London while you work.",
+    roadsideCopy:
+      "Safely pulled over on the A406 North Circular, A10, or local road? Send us your live WhatsApp location and our emergency rapid response van will reach you fast.",
+    roads: ["A406 North Circular", "A10 Great Cambridge Rd", "A1", "A503", "M25 J23-J25"],
+    faqs: [
+      {
+        q: "How fast can you reach a stranded driver in North London?",
+        a: "Our typical emergency response time across North London is 30 to 45 minutes, depending on traffic and exact location.",
+      },
+      {
+        q: "Do you supply both budget and premium tyres on mobile vans?",
+        a: "Yes. We stock all major sizes from premium brands like Michelin, Continental and Pirelli, down to reliable mid-range and budget tyres.",
+      },
+      {
+        q: "Do you operate all night across North London?",
+        a: "Yes, Sam's Mobile Tyres runs a full 24/7/365 emergency service, day, night, weekends and bank holidays.",
+      },
+      {
+        q: "Can you fit tyres on commercial vans and light goods vehicles?",
+        a: "Absolutely. We supply and fit reinforced commercial (C-rated and XL) tyres for delivery vans, trades, and fleet vehicles across North London.",
+      },
+    ],
+    nearby: [
+      "mobile-tyre-fitting-enfield",
+      "mobile-tyre-fitting-edmonton",
+      "mobile-tyre-fitting-chingford",
+    ],
+  },
+  "mobile-tyre-fitting-essex": {
+    slug: "mobile-tyre-fitting-essex",
+    name: "Essex",
+    postcode: "CM16, CM17, CM19, CM20, IG1-IG10",
+    title: "Mobile Tyre Fitting Essex | 24/7 Roadside & Home Tyres",
+    description:
+      "24/7 mobile tyre fitting across West Essex. Serving Harlow, Epping, Loughton, Brentwood, Stansted and surrounding areas with 30-50 min response times.",
+    h1: "24/7 Mobile Tyre Fitting Across Essex",
+    intro:
+      "From emergency tyre punctures on the M11 to scheduled tyre replacements at home in Epping or Harlow, Sam's Mobile Tyres provides dependable, rapid mobile tyre fitting across West Essex 24 hours a day.",
+    localHeading: "Complete mobile tyre coverage in Essex",
+    localCopy:
+      "We serve towns and rural communities across West Essex including Epping, Harlow, Loughton, Chigwell, Stansted, and Ongar. Our vans are fully equipped with heavy-duty tyre changers and digital wheel balancers to handle all tyre sizes up to 24 inches.",
+    homeCopy:
+      "Convenient driveway tyre replacement anywhere in Essex. We bring the tyre bay to your door so you never have to waste your Saturday at a tyre shop.",
+    workplaceCopy:
+      "We fit tyres at business parks, logistics hubs, and workplaces across Essex with minimal disruption to your schedule or commercial operations.",
+    roadsideCopy:
+      "Stranded near the M11, A414, or A12? Stay safe, turn on your hazard lights, and call our 24/7 Essex mobile tyre dispatch team for rapid assistance.",
+    roads: ["M11", "M25 J26-J28", "A414", "A104", "A12"],
+    faqs: [
+      {
+        q: "What areas of Essex do you cover?",
+        a: "We cover West and South-West Essex, including Harlow, Epping, Brentwood, Loughton, Stansted, Waltham Abbey, and Ilford.",
+      },
+      {
+        q: "Can you attend roadside emergencies on the M11 in Essex?",
+        a: "Yes, we provide emergency roadside tyre assistance across the M11 corridor and connecting A-roads wherever vehicles are safely located.",
+      },
+      {
+        q: "Do you offer mobile puncture repairs in Essex?",
+        a: "Yes, if your tyre damage is within the central 75% tread area and meets BS AU 159 standards, we will safely repair it on the spot.",
+      },
+    ],
+    nearby: [
+      "mobile-tyre-fitting-harlow",
+      "mobile-tyre-fitting-epping",
+      "mobile-tyre-fitting-stansted",
+    ],
+  },
+  "mobile-tyre-fitting-hertfordshire": {
+    slug: "mobile-tyre-fitting-hertfordshire",
+    name: "Hertfordshire",
+    postcode: "AL1-AL10, WD3-WD25, EN6-EN11, SG1-SG14",
+    title: "Mobile Tyre Fitting Hertfordshire | 24/7 Fast Callouts",
+    description:
+      "Comprehensive 24/7 mobile tyre fitting across Hertfordshire. Serving Watford, St Albans, Stevenage, Ware, Cheshunt and Hertford with rapid arrival.",
+    h1: "24/7 Mobile Tyre Fitting in Hertfordshire",
+    intro:
+      "Whether you're stranded roadside on the A1(M) or need fresh tyres fitted outside your home in St Albans or Watford, Sam's Mobile Tyres delivers prompt, professional mobile tyre replacement across Hertfordshire 24/7.",
+    localHeading: "Hertfordshire-wide mobile tyre network",
+    localCopy:
+      "Covering South and East Hertfordshire including Watford, St Albans, Cheshunt, Ware, Stevenage, Welwyn Garden City, and Hatfield. Our mobile units carry the latest pneumatic equipment, digital balancers, and a comprehensive inventory of tyres.",
+    homeCopy:
+      "Skip the garage waiting room. We replace tyres on your driveway anywhere in Hertfordshire, complete with new valves, digital wheel balancing, and old tyre disposal.",
+    workplaceCopy:
+      "Fleet and private vehicle tyre replacements carried out on-site at commercial centres in Watford, Hatfield, and Stevenage.",
+    roadsideCopy:
+      "Emergency tyre fitting along the A1(M), A414, A10 and M25 junctions. Call our emergency hotline for immediate dispatch.",
+    roads: ["A1(M)", "A10", "A414", "M1 J4-J8", "M25 J18-J25"],
+    faqs: [
+      {
+        q: "How quickly can you attend in Hertfordshire?",
+        a: "Depending on location, our mobile vans arrive within 30 to 50 minutes anywhere in our primary Hertfordshire coverage zones.",
+      },
+      {
+        q: "Can you change tyres on 4x4s and prestige cars?",
+        a: "Yes, we specialize in high-performance, run-flat, EV and 4x4 tyres with non-marking alloy-safe tools.",
+      },
+      {
+        q: "Are your mobile tyre fitters insured?",
+        a: "All technicians are fully trained, accredited, and carry comprehensive motor trade and public liability insurance.",
+      },
+    ],
+    nearby: [
+      "mobile-tyre-fitting-watford",
+      "mobile-tyre-fitting-st-albans",
+      "mobile-tyre-fitting-cheshunt",
+      "mobile-tyre-fitting-ware",
+    ],
+  },
+  "mobile-tyre-fitting-m25-corridor": {
+    slug: "mobile-tyre-fitting-m25-corridor",
+    name: "M25 Corridor",
+    postcode: "M25 Junctions 16 to 28",
+    title: "Mobile Tyre Fitting M25 Corridor | 24/7 Motorway Emergency",
+    description:
+      "24/7 emergency mobile tyre fitting along the M25 motorway corridor (J16 to J28). Rapid roadside assistance at service stations and safe turnoffs.",
+    h1: "24/7 Mobile Tyre Fitting on the M25 Corridor",
+    intro:
+      "A tyre blowout or severe puncture on the London Orbital Motorway is dangerous and stressful. Sam's Mobile Tyres provides dedicated 24/7 emergency mobile tyre replacement covering M25 Junctions 16 to 28 and connecting service areas.",
+    localHeading: "Emergency motorway & service area tyre replacement",
+    localCopy:
+      "We provide rapid mobile tyre response for drivers stopped at M25 service areas (South Mimms, Cobham, Thurrock), motorway slip roads, and adjacent arterial routes. Our heavy-duty mobile workshop vans carry commercial jacks and impact equipment to complete tyre changes safely and swiftly.",
+    homeCopy:
+      "Living near the M25 ring? We provide scheduled and same-day driveway tyre replacements for residents living in communities bordering the London orbital.",
+    workplaceCopy:
+      "Commercial logistics and transit vehicles operating near M25 distribution hubs can book emergency roadside tyre swaps or scheduled fleet maintenance.",
+    roadsideCopy:
+      "If you suffer a blowout on the M25, pull into an emergency refuge area or service station if possible, step behind the safety barrier, and call our emergency line immediately.",
+    roads: ["M25 (J16-J28)", "A1(M) J1 South Mimms", "M11 J6", "A10 J25"],
+    faqs: [
+      {
+        q: "Can you replace tyres directly on motorway hard shoulders?",
+        a: "Where safety regulations allow and emergency protection is in place, or preferably at emergency refuge areas and service stations, our certified technicians can perform emergency roadside tyre swaps.",
+      },
+      {
+        q: "Which M25 service stations do you attend?",
+        a: "We attend South Mimms Services (M25 J23 / A1(M)), London Gateway, and nearby turnoff facilities 24 hours a day.",
+      },
+      {
+        q: "What tyre sizes do you stock for motorway emergencies?",
+        a: "Our vans carry standard passenger car, SUV, run-flat, and commercial van tyre sizes for immediate motorway fitting.",
+      },
+    ],
+    nearby: [
+      "mobile-tyre-fitting-enfield",
+      "mobile-tyre-fitting-cheshunt",
+      "mobile-tyre-fitting-st-albans",
+    ],
+  },
 };
 
 export const ALL_LOCATION_SLUGS = Object.keys(LOCATIONS);
@@ -660,4 +825,8 @@ export const LOCATION_GEO: Record<string, { lat: number; lng: number }> = {
   "mobile-tyre-fitting-ware": { lat: 51.809, lng: -0.033 },
   "mobile-tyre-fitting-stevenage": { lat: 51.902, lng: -0.202 },
   "mobile-tyre-fitting-ilford": { lat: 51.559, lng: 0.074 },
+  "mobile-tyre-fitting-north-london": { lat: 51.588, lng: -0.115 },
+  "mobile-tyre-fitting-essex": { lat: 51.734, lng: 0.469 },
+  "mobile-tyre-fitting-hertfordshire": { lat: 51.809, lng: -0.237 },
+  "mobile-tyre-fitting-m25-corridor": { lat: 51.691, lng: -0.203 },
 };

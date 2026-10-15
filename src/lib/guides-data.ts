@@ -862,6 +862,214 @@ export const GUIDES: Record<string, GuideEntry> = {
       { label: "Reading a tyre sidewall", slug: "how-to-read-a-tyre-sidewall" },
     ],
   },
+  "uk-tyre-law": {
+    slug: "uk-tyre-law",
+    title: "UK Tyre Law: Legal Tread Depth, MOT Rules & Fines | Sam's Mobile Tyres",
+    description:
+      "A complete guide to UK tyre law: the 1.6mm legal tread limit, tyre age rules, mixing cross-ply and radial, MOT failure points, and £2,500 penalty fines.",
+    eyebrow: "Guide · UK Legislation",
+    h1: "UK Tyre Law: What Every Driver Must Know",
+    dek: "Driving on illegal or defective tyres puts lives at risk and carries severe legal penalties. Here is what UK law mandates for cars, light commercial vans, and trailers.",
+    hero: tyreCloseup,
+    datePublished: "2026-01-15",
+    dateModified: "2026-03-20",
+    intro: [
+      "In the UK, tyre regulations are strictly enforced under the Road Vehicles (Construction and Use) Regulations 1986. Operating a vehicle with tyres below legal limits not only compromises vehicle control and braking distance, but also exposes drivers to substantial fines, penalty points, and invalidated motor insurance.",
+      "Whether you manage a commercial fleet or commute daily around North London, understanding the 1.6mm tread standard, sidewall damage limits, and tyre load ratings keeps your vehicle roadworthy and compliant.",
+    ],
+    blocks: [
+      {
+        type: "text",
+        heading: "The 1.6mm Minimum Tread Depth Rule",
+        paragraphs: [
+          "For passenger cars, light utility vans and light trailers, the law specifies a minimum tyre tread depth of 1.6 millimetres across the central three-quarters of the tyre's breadth, and around the entire circumference.",
+          "While 1.6mm is the legal threshold, motoring safety bodies and tyre manufacturers strongly recommend replacing tyres once they reach 3mm, as wet-weather braking distance increases drastically below this point.",
+        ],
+      },
+      {
+        type: "pair",
+        heading: "Legal vs Illegal Tyre Conditions",
+        left: {
+          label: "Road-Legal Standard",
+          tone: "good",
+          items: [
+            "Tread depth ≥ 1.6mm across central 75%",
+            "Correct load and speed index for vehicle",
+            "No visible cords, ply or structural bulges",
+            "Matching radial tyres on the same axle",
+          ],
+        },
+        right: {
+          label: "MOT Failure & Illegal",
+          tone: "bad",
+          items: [
+            "Tread below 1.6mm in any continuous band",
+            "Sidewall lumps, bulges, or tears deeper than 25mm",
+            "Exposed internal plies or steel cords",
+            "Temporary spare used at excessive speeds",
+          ],
+        },
+      },
+      {
+        type: "steps",
+        heading: "How to check your tyre tread at home",
+        steps: [
+          {
+            t: "The 20p Coin Test",
+            d: "Insert a 20p coin into the main grooves of the tyre. If the outer band of the coin is hidden, your tread is above the 1.6mm legal limit. If the outer band is visible, your tyres may be illegal.",
+          },
+          {
+            t: "Inspect Tread Wear Indicators (TWIs)",
+            d: "Modern tyres feature raised rubber bars at 1.6mm within the tyre grooves. When the tread wears flush with these bars, immediate replacement is required.",
+          },
+          {
+            t: "Inspect the Inner & Outer Sidewalls",
+            d: "Check both the exterior and interior sidewalls for bulges, cracks, or embedded road debris such as screws or glass.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What is the penalty for driving on illegal tyres in the UK?",
+        a: "Police can issue a fine of up to £2,500 and 3 penalty points per illegal tyre. If all four tyres are defective, you face up to £10,000 in fines and 12 penalty points (an automatic driving ban).",
+      },
+      {
+        q: "Does a bald tyre invalidate car insurance?",
+        a: "Yes. If an accident occurs and your vehicle has illegal or bald tyres, insurance companies can refuse to pay out claims for vehicle damage.",
+      },
+      {
+        q: "Are the tread depth rules the same for commercial vans?",
+        a: "Yes, goods vehicles not exceeding 3,500kg (3.5t GVW) are held to the same 1.6mm minimum tread requirement as passenger cars.",
+      },
+    ],
+    related: [
+      { label: "Mobile tyre replacement", slug: "mobile-tyre-replacement" },
+      { label: "Puncture repair guide", slug: "puncture-repair-or-tyre-replacement" },
+      { label: "Reading a tyre sidewall", slug: "how-to-read-a-tyre-sidewall" },
+    ],
+  },
+  "wheel-balancing-explained": {
+    slug: "wheel-balancing-explained",
+    title: "Why Does My Steering Wheel Vibrate? Wheel Balancing Explained | Sam's Mobile Tyres",
+    description:
+      "Steering wheel shaking between 50-70 mph? Learn the symptoms of unbalanced wheels, why balancing matters, and how mobile digital balancing cures vibrations.",
+    eyebrow: "Guide · Vehicle Maintenance",
+    h1: "Why Your Steering Wheel Vibrates: Wheel Balancing Explained",
+    dek: "Vibrations through your steering wheel or vehicle seat are clear indicators of unbalanced wheels or rim damage. Here's what causes it and how it is fixed.",
+    hero: workplaceTyreFitting,
+    datePublished: "2026-02-01",
+    dateModified: "2026-03-22",
+    intro: [
+      "Even high-specification tyres and alloy wheels are not perfectly uniform in weight distribution. Minute differences in rubber density or wheel manufacturing create heavy spots that cause the wheel to wobble at motorway speeds.",
+      "Wheel balancing attaches precision counterweights to your rims so the tyre assembly spins completely true, eliminating steering wheel vibrations, premature suspension wear, and uneven tyre tread scalloping.",
+    ],
+    blocks: [
+      {
+        type: "text",
+        heading: "Wheel Balancing vs Wheel Alignment",
+        paragraphs: [
+          "Many drivers confuse wheel balancing with wheel tracking (alignment). Wheel balancing compensates for weight disparities around the rotating wheel unit using clip-on or adhesive weights.",
+          "Wheel alignment, conversely, adjusts the angles of the wheels so they point straight and parallel to the vehicle centerline (toe, camber, and caster angles).",
+        ],
+      },
+      {
+        type: "list",
+        heading: "Common symptoms of unbalanced tyres",
+        items: [
+          {
+            t: "Steering wheel shake at 50 to 70 mph",
+            d: "Vibrations felt directly through the steering wheel usually point to unbalance in the front wheels.",
+          },
+          {
+            t: "Seat or floorboard vibration",
+            d: "Vibrations felt in the driver's seat or cabin floor typically point to out-of-balance rear wheels.",
+          },
+          {
+            t: "Cupped or scalloped tread wear",
+            d: "Unbalanced wheels bounce slightly as they rotate, causing irregular wavy hollows across the tyre surface.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How often should car wheels be balanced?",
+        a: "Wheels should be balanced whenever new tyres are fitted, if a balance weight has fallen off, or every 5,000 to 8,000 miles during routine rotation.",
+      },
+      {
+        q: "Can mobile tyre fitters balance wheels on a driveway?",
+        a: "Yes. Our mobile fitting vans are equipped with computerized electronic wheel balancers that provide the exact same calibration precision as fixed garage workshops.",
+      },
+    ],
+    related: [
+      { label: "Mobile wheel balancing", slug: "wheel-balancing" },
+      { label: "Mobile tyre replacement", slug: "mobile-tyre-replacement" },
+    ],
+  },
+  "car-battery-life": {
+    slug: "car-battery-life",
+    title: "How Long Does a Car Battery Last? Signs It Needs Replacing | Sam's Mobile Tyres",
+    description:
+      "Average UK car battery lifespan, early warning signs of failure, winter battery care, and 24/7 mobile battery testing and replacement services.",
+    eyebrow: "Guide · Battery Health",
+    h1: "How Long Does a Car Battery Last? Signs It's Time to Replace",
+    dek: "A dead battery is the number one cause of roadside breakdowns in the UK. Understand lifespan expectations and how to spot a failing battery before you get stranded.",
+    hero: emergencyFitting,
+    datePublished: "2026-02-10",
+    dateModified: "2026-03-24",
+    intro: [
+      "Most standard lead-acid and AGM car batteries have a reliable lifespan of three to five years under typical UK driving conditions. However, recurring short journeys, extreme winter temperatures, and auxiliary electrical demands can accelerate degradation.",
+      "Recognizing the early warning signs of battery failure allows you to replace the unit at home or work before you find yourself immobilised on a cold morning.",
+    ],
+    blocks: [
+      {
+        type: "text",
+        heading: "Why Cold Weather Kills Weak Batteries",
+        paragraphs: [
+          "When temperatures drop below freezing, a battery's chemical reaction slows down, cutting its available cranking power by up to 35%. Simultaneously, cold engine oil thickens, requiring up to 50% more power from the starter motor.",
+          "A battery that performs acceptably in August will frequently collapse on the first frosty morning in November.",
+        ],
+      },
+      {
+        type: "list",
+        heading: "5 Warning signs your battery is failing",
+        items: [
+          {
+            t: "Sluggish engine turnover",
+            d: "When you turn the ignition, the engine cranks slowly or hesitates noticeably before firing.",
+          },
+          {
+            t: "Dim headlights and electrical glitches",
+            d: "Headlights appear dull at idle, or dashboard lights flicker when activating seat heaters or blowers.",
+          },
+          {
+            t: "Clicking sound on ignition",
+            d: "A rapid clicking noise when turning the key indicates insufficient electrical current reaching the starter solenoid.",
+          },
+          {
+            t: "Swollen battery casing or sulfur smell",
+            d: "Physical swelling or a rotten-egg scent indicates severe overheating and internal battery short-circuiting.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can a mobile technician test and replace my battery on my driveway?",
+        a: "Yes. We carry diagnostic battery conductance testers and stock common 12V AGM and standard batteries for on-site fitting across London.",
+      },
+      {
+        q: "What is the difference between an AGM and standard car battery?",
+        a: "AGM (Absorbent Glass Mat) batteries are designed for modern stop-start vehicles and handle frequent charge cycles. Standard flooded batteries are suitable for vehicles without stop-start systems.",
+      },
+    ],
+    related: [
+      { label: "Car battery replacement", slug: "car-battery-replacement" },
+      { label: "Jump start service", slug: "jump-start-service" },
+    ],
+  },
 };
 
 export const ALL_GUIDE_SLUGS = Object.keys(GUIDES);
+
