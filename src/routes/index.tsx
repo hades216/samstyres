@@ -190,6 +190,24 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
+      { title: "24/7 Mobile Tyre Fitting London | Sam's Mobile Tyres" },
+      {
+        name: "description",
+        content:
+          "Fast 24/7 mobile tyre fitting across London. Emergency puncture repair, new tyres & roadside assistance delivered to your doorstep or roadside.",
+      },
+      {
+        name: "keywords",
+        content:
+          "mobile tyre fitting london, emergency tyre fitting, 24/7 mobile tyres london, puncture repair london, mobile tyre fitter near me",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "24/7 Mobile Tyre Fitting London | Sam's Mobile Tyres" },
+      {
+        property: "og:description",
+        content:
+          "Fast 24/7 mobile tyre fitting across London. Emergency puncture repair, new tyres & roadside assistance delivered to your doorstep or roadside.",
+      },
       { property: "og:url", content: `${SITE_URL}/` },
       { property: "og:type", content: "website" },
     ],
@@ -375,8 +393,7 @@ function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={heroPosterUrl}
-          alt=""
-          aria-hidden
+          alt="Sam's Mobile Tyres rapid response vehicle and technician fitting a tyre in London"
           width={1920}
           height={1080}
           loading="eager"

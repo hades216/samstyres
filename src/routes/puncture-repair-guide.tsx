@@ -32,17 +32,23 @@ export const Route = createFileRoute("/puncture-repair-guide")({
   component: PunctureRepairGuidePage,
   head: () => ({
     meta: [
-      { title: "Tyre Puncture Repair Guide — BS AU 159 Standard Explained" },
+      { title: "Tyre Puncture Repair Guide | BS AU 159 UK Standard" },
       {
         name: "description",
         content:
-          "A practical UK guide to tyre puncture assessment: what may be repairable, what normally needs replacing and how to request a mobile inspection.",
+          "UK tyre puncture repair guide: what is legally repairable under BS AU 159, sidewall damage limits, MOT rules, and when tyres must be replaced.",
       },
-      { property: "og:title", content: "Tyre Puncture Repair Guide — BS AU 159 Explained" },
+      {
+        name: "keywords",
+        content:
+          "puncture repair guide, bs au 159 standard, can puncture be repaired, tyre puncture legal rules uk, mot tyre puncture rules",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Tyre Puncture Repair Guide | BS AU 159 UK Standard" },
       {
         property: "og:description",
         content:
-          "Repairable vs replacement, MOT rules, and what a compliant BS AU 159 repair actually involves.",
+          "UK tyre puncture repair guide: what is legally repairable under BS AU 159, sidewall damage limits, MOT rules, and when tyres must be replaced.",
       },
       { property: "og:type", content: "article" },
       { property: "og:url", content: CANONICAL },

@@ -20,16 +20,23 @@ export const Route = createFileRoute("/guides")({
   component: GuidesPage,
   head: () => ({
     meta: [
-      { title: "Tyre & Roadside Guides — Sam's Mobile Tyres" },
+      { title: "Tyre & Roadside Safety Guides | Sam's Mobile Tyres" },
       {
         name: "description",
         content:
-          "Practical UK tyre and roadside guides: blowout safety, puncture repair vs replacement, reading a tyre sidewall, TPMS warnings and more.",
+          "Practical UK tyre and roadside safety guides: blowout safety, puncture repairs vs replacement, tyre law, sidewall markings, and TPMS warnings.",
       },
-      { property: "og:title", content: "Tyre & Roadside Guides — Sam's Mobile Tyres" },
+      {
+        name: "keywords",
+        content:
+          "tyre guides uk, puncture repair advice, tyre legal limits uk, roadside emergency safety, mobile tyre tips",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Tyre & Roadside Safety Guides | Sam's Mobile Tyres" },
       {
         property: "og:description",
-        content: "Practical, plain-English tyre and roadside safety guides for UK drivers.",
+        content:
+          "Practical UK tyre and roadside safety guides: blowout safety, puncture repairs vs replacement, tyre law, sidewall markings, and TPMS warnings.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: URL },

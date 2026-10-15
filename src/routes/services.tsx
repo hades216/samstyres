@@ -15,19 +15,23 @@ import { LOCATIONS, ALL_LOCATION_SLUGS } from "@/lib/location-pages";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Mobile Tyre Services in London — Sam's Mobile Tyres" },
+      { title: "Mobile Tyre Services in London | Sam's Mobile Tyres" },
       {
         name: "description",
         content:
-          "Browse all mobile tyre services in London — 24/7 emergency fitting, puncture repair, wheel balancing, battery replacement and more. Call " +
-          PHONE +
-          ".",
+          "24/7 mobile tyre fitting, emergency puncture repair, van tyres, wheel balancing and battery replacement across London. Call 07949 891689 for dispatch.",
       },
-      { property: "og:title", content: "Mobile Tyre Services in London" },
+      {
+        name: "keywords",
+        content:
+          "mobile tyre services london, emergency tyre fitting, puncture repairs, roadside tyre assistance, mobile van tyres",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Mobile Tyre Services in London | Sam's Mobile Tyres" },
       {
         property: "og:description",
         content:
-          "24/7 mobile tyre fitting, puncture repair, batteries and roadside assistance across London.",
+          "24/7 mobile tyre fitting, emergency puncture repair, van tyres, wheel balancing and battery replacement across London. Call 07949 891689 for dispatch.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE_URL}/services` },

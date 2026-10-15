@@ -971,7 +971,7 @@ export function PageHero({
         <div className="absolute inset-0">
           <img
             src={bgImage}
-            alt=""
+            alt="Sam's Mobile Tyres service background"
             className="h-full w-full object-cover opacity-90"
             loading="eager"
             decoding="async"

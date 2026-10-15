@@ -18,17 +18,23 @@ export const Route = createFileRoute("/coverage-areas")({
   component: CoveragePage,
   head: () => ({
     meta: [
-      { title: "Coverage Areas — Sam's Mobile Tyres · Across London & M25" },
+      { title: "Coverage Areas | Sam's Mobile Tyres London & M25" },
       {
         name: "description",
         content:
-          "24/7 mobile tyre fitting coverage from Enfield across Greater London, plus St Albans, Watford, Harlow, Bishop's Stortford, Stansted, Epping, Ware, Stevenage and Ilford.",
+          "24/7 mobile tyre fitting across London, Enfield, St Albans, Watford, Harlow, Epping, Stansted & M25. Rapid response mobile fitting at home or roadside.",
       },
-      { property: "og:title", content: "Coverage Areas — Sam's Mobile Tyres" },
+      {
+        name: "keywords",
+        content:
+          "mobile tyre fitting areas, tyres north london, tyres enfield, tyres watford, tyres m25, mobile tyre coverage london",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Coverage Areas | Sam's Mobile Tyres London & M25" },
       {
         property: "og:description",
         content:
-          "Mobile tyre fitting coverage across Enfield, nearby towns, Greater London and the M25 corridor.",
+          "24/7 mobile tyre fitting across London, Enfield, St Albans, Watford, Harlow, Epping, Stansted & M25. Rapid response mobile fitting at home or roadside.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/coverage-areas" },

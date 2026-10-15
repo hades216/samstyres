@@ -127,6 +127,11 @@ export const Route = createFileRoute("/$slug")({
         meta: [
           { title: location.title },
           { name: "description", content: location.description },
+          {
+            name: "keywords",
+            content: `mobile tyre fitting ${location.name.toLowerCase()}, emergency tyres ${location.name.toLowerCase()}, puncture repair ${location.name.toLowerCase()}, ${location.postcode.toLowerCase()}`,
+          },
+          { name: "robots", content: "index, follow" },
           { property: "og:title", content: location.title },
           { property: "og:description", content: location.description },
           { property: "og:type", content: "website" },
@@ -180,6 +185,11 @@ export const Route = createFileRoute("/$slug")({
         meta: [
           { title: guide.title },
           { name: "description", content: guide.description },
+          {
+            name: "keywords",
+            content: `${guide.h1.toLowerCase()}, tyre advice uk, mobile tyre safety, tyre repair tips`,
+          },
+          { name: "robots", content: "index, follow" },
           { property: "og:title", content: guide.title },
           { property: "og:description", content: guide.description },
           { property: "og:type", content: "article" },
@@ -258,6 +268,7 @@ export const Route = createFileRoute("/$slug")({
           name: "keywords",
           content: [svc.keywords.primary, ...svc.keywords.secondary].join(", "),
         },
+        { name: "robots", content: "index, follow" },
         { property: "og:title", content: svc.metaTitle },
         { property: "og:description", content: safeServiceDescription(svc) },
         { property: "og:type", content: "website" },
@@ -607,8 +618,7 @@ function ServiceHero({ svc }: { svc: ServiceEntry }) {
     <section className="relative overflow-hidden bg-navy text-white pt-28 sm:pt-36 pb-20 sm:pb-28">
       <img
         src={svc.hero}
-        alt=""
-        aria-hidden
+        alt={`${svc.h1} — Sam's Mobile Tyres 24/7 service`}
         loading="eager"
         fetchPriority="high"
         decoding="async"

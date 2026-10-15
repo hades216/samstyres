@@ -29,16 +29,23 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About Sam's Mobile Tyres | Enfield Mobile Tyre Service" },
+      { title: "About Sam's Mobile Tyres | London 24/7 Tyre Fitters" },
       {
         name: "description",
         content:
-          "Learn about Sam's Mobile Tyres, an Enfield-based 24/7 mobile tyre fitting and roadside tyre assistance service covering London and nearby areas.",
+          "Experienced 24/7 mobile tyre fitting service based in Enfield covering London & M25. BS AU 159 certified puncture repairs and fast roadside assistance.",
       },
-      { property: "og:title", content: "About Sam's Mobile Tyres" },
+      {
+        name: "keywords",
+        content:
+          "about sams mobile tyres, certified mobile tyre fitter london, mobile tyre technicians enfield, 24/7 roadside tyre fitters",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "About Sam's Mobile Tyres | London 24/7 Tyre Fitters" },
       {
         property: "og:description",
-        content: "Enfield-based mobile tyre fitting at home, work and suitable roadside locations.",
+        content:
+          "Experienced 24/7 mobile tyre fitting service based in Enfield covering London & M25. BS AU 159 certified puncture repairs and fast roadside assistance.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: URL },

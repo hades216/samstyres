@@ -18,14 +18,24 @@ export const Route = createFileRoute("/reviews")({
   component: ReviewsPage,
   head: () => ({
     meta: [
-      { title: "Sam's Mobile Tyres Reviews | Read Feedback on Google" },
+      { title: "Sam's Mobile Tyres Reviews | Google Customer Feedback" },
       {
         name: "description",
         content:
-          "Read current customer feedback for Sam's Mobile Tyres on Google and learn how to share feedback after a mobile tyre fitting visit.",
+          "Read verified 5-star customer reviews for Sam's Mobile Tyres. Trusted emergency mobile tyre fitting and puncture repairs across London and M25.",
       },
-      { property: "og:title", content: "Sam's Mobile Tyres Reviews" },
-      { property: "og:description", content: "View current customer feedback directly on Google." },
+      {
+        name: "keywords",
+        content:
+          "sams mobile tyres reviews, mobile tyre fitting reviews london, google reviews sams tyres, trusted tyre fitter london",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Sam's Mobile Tyres Reviews | Google Customer Feedback" },
+      {
+        property: "og:description",
+        content:
+          "Read verified 5-star customer reviews for Sam's Mobile Tyres. Trusted emergency mobile tyre fitting and puncture repairs across London and M25.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:url", content: URL },
     ],

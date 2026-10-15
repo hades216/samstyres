@@ -34,15 +34,29 @@ export const Route = createFileRoute("/faqs")({
     };
     return {
       meta: [
-        { title: TITLE },
-        { name: "description", content: DESCRIPTION },
-        { property: "og:title", content: TITLE },
-        { property: "og:description", content: DESCRIPTION },
+        { title: "Mobile Tyre Fitting FAQs | Sam's Mobile Tyres London" },
+        {
+          name: "description",
+          content:
+            "Got questions on mobile tyre fitting? Read answers on 24/7 callouts, response times, BS AU 159 puncture repairs, brands and pricing across London.",
+        },
+        {
+          name: "keywords",
+          content:
+            "mobile tyre faqs, how does mobile tyre fitting work, puncture repair cost london, emergency tyre questions",
+        },
+        { name: "robots", content: "index, follow" },
+        { property: "og:title", content: "Mobile Tyre Fitting FAQs | Sam's Mobile Tyres London" },
+        {
+          property: "og:description",
+          content:
+            "Got questions on mobile tyre fitting? Read answers on 24/7 callouts, response times, BS AU 159 puncture repairs, brands and pricing across London.",
+        },
         { property: "og:type", content: "website" },
         { property: "og:url", content: URL },
         { property: "og:site_name", content: "Sam's Mobile Tyres" },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: TITLE },
+        { name: "twitter:title", content: "Mobile Tyre Fitting FAQs | Sam's Mobile Tyres London" },
         { name: "twitter:description", content: DESCRIPTION },
       ],
       links: [{ rel: "canonical", href: URL }],

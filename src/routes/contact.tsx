@@ -58,16 +58,23 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact Sam's Mobile Tyres · Call 24/7 · +44 7949 891689" },
+      { title: "Contact Sam's Mobile Tyres | 24/7 Phone & WhatsApp" },
       {
         name: "description",
         content:
-          "Call, WhatsApp, email or book online. 24/7 mobile tyre fitting across London. Enfield-based, covering all 32 boroughs.",
+          "Contact Sam's Mobile Tyres 24/7 for emergency tyre fitting, puncture repairs or home callouts in London & M25. Call or WhatsApp 07949 891689.",
       },
-      { property: "og:title", content: "Contact — Sam's Mobile Tyres" },
+      {
+        name: "keywords",
+        content:
+          "contact mobile tyre fitter london, sams mobile tyres phone number, emergency tyre fitting phone number london, whatsapp tyre service",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Contact Sam's Mobile Tyres | 24/7 Phone & WhatsApp" },
       {
         property: "og:description",
-        content: "Call, WhatsApp, or send a message — 24/7 mobile tyre response across London.",
+        content:
+          "Contact Sam's Mobile Tyres 24/7 for emergency tyre fitting, puncture repairs or home callouts in London & M25. Call or WhatsApp 07949 891689.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: URL },
