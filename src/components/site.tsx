@@ -32,7 +32,7 @@ import { LOCATIONS, ALL_LOCATION_SLUGS } from "@/lib/location-pages";
 export const ASSET_ORIGIN = "https://project--48b9a15f-c4eb-438f-9b7a-d9564dc43f27.lovable.app";
 export const assetUrl = (path: string) =>
   path.startsWith("/__l5e/") ? `${ASSET_ORIGIN}${path}` : path;
-export const logoUrl = assetUrl(logo.url);
+export const logoUrl = "/sams-logo.png";
 
 export const PHONE = "+44 7949 891689";
 export const PHONE_HREF = "tel:+447949891689";

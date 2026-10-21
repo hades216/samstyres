@@ -113,6 +113,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-site-verification", content: "google460dca1ea1d3b3d1" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       {
         name: "keywords",
@@ -154,19 +155,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "apple-touch-icon", href: "/favicon.png" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "dns-prefetch", href: "https://fonts.gstatic.com" },
-      {
-        rel: "preload",
-        as: "style",
-        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap",
-        fetchPriority: "high",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap",
-      },
+      // Self-hosted fonts - eliminates Google Fonts render-blocking round-trip
+      { rel: "preload", as: "font", href: "/fonts/inter-latin.woff2", type: "font/woff2", crossOrigin: "anonymous" },
+      { rel: "preload", as: "font", href: "/fonts/pjs-latin.woff2", type: "font/woff2", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "/fonts/fonts.css" },
     ],
     scripts: [organizationSchema, websiteSchema].map((schema) => ({
       type: "application/ld+json",

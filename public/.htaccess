@@ -1,0 +1,36 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# 1. Canonical Redirect: Enforce https://www.samsmobiletyres.co.uk
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^samsmobiletyres\.co\.uk$ [NC]
+RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
+
+# Redirect plain http to https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
+
+# 2. Prevent redirect loops or trailing slash on existing files
+# Serve existing files and directories directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 3. Clean URLs: Try to serve .html version of the requested path
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.*)/?$ $1.html [L]
+
+# 4. Fallback: SPA catch-all
+RewriteRule ^ index.html [L]
+
+# Cache static assets for 1 year
+<FilesMatch "\.(js|css|webp|png|jpg|jpeg|svg|ico|woff2|woff|ttf|otf|mp4|webm)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# Cache HTML & XML for a short time
+<FilesMatch "\.(html|xml)$">
+  Header set Cache-Control "public, max-age=3600, must-revalidate"
+</FilesMatch>
+

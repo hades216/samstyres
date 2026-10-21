@@ -40,6 +40,7 @@ import {
   GOOGLE_REVIEWS_HREF,
 } from "@/components/site";
 import { ALL_LOCATION_SLUGS, LOCATIONS } from "@/lib/location-pages";
+import { ALL_GUIDE_SLUGS, GUIDES } from "@/lib/guides-data";
 
 const assetUrl = (path: string) => (path.startsWith("/__l5e/") ? `${ASSET_ORIGIN}${path}` : path);
 
@@ -67,7 +68,7 @@ import heroVideo1Webm from "@/assets/hero-1.webm.asset.json";
 import heroVideo2Webm from "@/assets/hero-2.webm.asset.json";
 import heroVideo3Webm from "@/assets/hero-3.webm.asset.json";
 
-const heroPosterUrl = assetUrl(heroPoster.url);
+const heroPosterUrl = "/hero-poster.jpg";
 
 const heroVideos = [
   { webm: assetUrl(heroVideo1Webm.url), mp4: assetUrl(heroVideo1Mp4.url) },
@@ -236,6 +237,7 @@ function Home() {
       <EmergencyBand />
       <Gallery />
       <FAQs />
+      <Guides />
       <Contact />
       <Footer />
       <MobileStickyCTA />
@@ -262,25 +264,18 @@ function Hero() {
     const nav = navigator as Navigator & {
       connection?: { saveData?: boolean; effectiveType?: string };
     };
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
     const conn = nav.connection;
     const saveData = conn?.saveData === true;
     const slow = conn?.effectiveType === "2g" || conn?.effectiveType === "slow-2g";
-    if (saveData || slow) setUseVideo(false);
+    if (isMobile || saveData || slow) setUseVideo(false);
   }, []);
 
   // Warm the HTTP cache for every hero clip as soon as possible so that
   // subsequent <video> src swaps resolve instantly from cache — no visible
   // stall between clip 1 → 2 → 3.
   useEffect(() => {
-    if (!useVideo) return;
-    const controllers: AbortController[] = [];
-    for (const v of heroVideos) {
-      const ctrl = new AbortController();
-      controllers.push(ctrl);
-      // fire-and-forget; browser dedupes with the <link rel=preload> above
-      fetch(v.mp4, { signal: ctrl.signal, cache: "force-cache", mode: "no-cors" }).catch(() => {});
-    }
-    return () => controllers.forEach((c) => c.abort());
+    // Background videos load naturally on desktop when mounted; no aggressive background preloading
   }, [useVideo]);
 
   // Mobile Safari / Chrome often pause background video when tab is hidden.
@@ -803,8 +798,8 @@ function Services() {
                 <img
                   src={s.image}
                   alt={s.title}
-                  loading={i < 2 ? "eager" : "lazy"}
-                  fetchPriority={i < 2 ? "high" : "auto"}
+                  loading="lazy"
+                  fetchPriority="auto"
                   decoding="async"
                   width={1024}
                   height={640}
@@ -1292,7 +1287,7 @@ function Brands() {
               key={`${b.name}-${i}`}
               className="shrink-0 h-12 md:h-16 w-28 md:w-36 flex items-center justify-center px-2"
             >
-              <LogoImg brand={b} eager={i < brands.length} />
+              <LogoImg brand={b} eager={false} />
             </div>
           ))}
         </div>
@@ -1700,6 +1695,63 @@ function FAQItem({
         )}
       </AnimatePresence>
     </div>
+  );
+}
+
+
+/* ---------------- GUIDES ---------------- */
+function Guides() {
+  const featured = ALL_GUIDE_SLUGS.slice(0, 6).map((slug) => GUIDES[slug]);
+  return (
+    <section id="guides" className="section-y bg-slate-50 border-t border-border/40">
+      <div className="container-x">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <SectionHeader
+            eyebrow="Tyre & Safety Guides"
+            title={
+              <>
+                Expert Tyre Care &amp; Safety Advice,
+                <br />
+                <span className="italic text-royal">Plain English.</span>
+              </>
+            }
+            copy="Practical guides answering what London drivers search for — blowouts, punctures, UK tyre law and TPMS."
+          />
+          <Link
+            to="/guides"
+            className="inline-flex items-center gap-2 font-semibold text-royal hover:text-brand transition-colors text-sm shrink-0"
+          >
+            Browse all guides <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {featured.map((g) => (
+            <Link
+              key={g.slug}
+              to="/$slug"
+              params={{ slug: g.slug }}
+              className="group flex flex-col justify-between rounded-2xl bg-white border border-border/80 p-6 shadow-sm hover:shadow-md hover:border-brand/40 transition-all"
+            >
+              <div>
+                <span className="text-[11px] font-bold uppercase tracking-wider text-royal/80">
+                  Guide
+                </span>
+                <h3 className="mt-2 font-bold text-lg text-ink group-hover:text-royal transition-colors leading-snug">
+                  {g.title}
+                </h3>
+                <p className="mt-2.5 text-sm text-muted-foreground line-clamp-3 leading-relaxed">
+                  {g.intro}
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-border/40 flex items-center gap-1.5 text-xs font-semibold text-royal group-hover:text-brand transition-colors">
+                Read full guide <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
