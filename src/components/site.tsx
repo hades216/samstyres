@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 
 import emergency from "@/assets/emergency.webp";
-import logo from "@/assets/sams-logo.png.asset.json";
 import socialFacebook from "@/assets/social-facebook.png";
 import socialInstagram from "@/assets/social-instagram.png";
 import socialTiktok from "@/assets/social-tiktok.png";

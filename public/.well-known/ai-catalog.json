@@ -1,0 +1,54 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Sam's Mobile Tyres",
+    "identifier": "https://www.samsmobiletyres.co.uk",
+    "documentationUrl": "https://www.samsmobiletyres.co.uk/llms.txt",
+    "logoUrl": "https://www.samsmobiletyres.co.uk/sams-logo.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:samsmobiletyres.co.uk:services:mobile-tyre-fitting",
+      "displayName": "24/7 Mobile Tyre Fitting London",
+      "type": "text/html",
+      "url": "https://www.samsmobiletyres.co.uk/services",
+      "description": "Emergency and scheduled mobile tyre fitting, roadside puncture repairs and new tyre replacements across London.",
+      "tags": ["mobile-tyre-fitting", "emergency-tyres", "puncture-repair", "london"],
+      "capabilities": ["EmergencyTyreFitting", "PunctureRepair", "MobileTyreReplacement"],
+      "representativeQueries": [
+        "24/7 mobile tyre fitting London",
+        "emergency tyre replacement near me",
+        "mobile puncture repair London",
+        "mobile tyre fitter Enfield"
+      ]
+    },
+    {
+      "identifier": "urn:air:samsmobiletyres.co.uk:services:car-recovery",
+      "displayName": "24/7 Car Recovery London",
+      "type": "text/html",
+      "url": "https://www.samsmobiletyres.co.uk/car-recovery",
+      "description": "24/7 emergency vehicle recovery, flatbed breakdown towing and roadside transport across London and M25.",
+      "tags": ["car-recovery", "breakdown-towing", "vehicle-recovery", "london", "m25"],
+      "capabilities": ["CarRecovery", "BreakdownTowing", "AccidentRecovery", "RoadsideTransport"],
+      "representativeQueries": [
+        "24/7 car recovery London",
+        "emergency breakdown towing London",
+        "car recovery near me",
+        "flatbed vehicle recovery London"
+      ]
+    },
+    {
+      "identifier": "urn:air:samsmobiletyres.co.uk:docs:llms-txt",
+      "displayName": "Sam's Mobile Tyres Service Documentation",
+      "type": "text/plain",
+      "url": "https://www.samsmobiletyres.co.uk/llms.txt",
+      "description": "Structured LLM-optimized documentation of services, operational areas, vehicle specs and contact points.",
+      "tags": ["documentation", "llms", "ai-context"],
+      "capabilities": ["Documentation"],
+      "representativeQueries": [
+        "sams mobile tyres services documentation",
+        "mobile tyre fitting london price guide"
+      ]
+    }
+  ]
+}

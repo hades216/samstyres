@@ -52,8 +52,6 @@ import van from "@/assets/van.webp";
 import tools from "@/assets/tools.webp";
 import luxuryCar from "@/assets/luxury-car.webp";
 import london from "@/assets/london.webp";
-import logo from "@/assets/sams-logo.png.asset.json";
-import heroPoster from "@/assets/hero-poster.jpg.asset.json";
 import svcEmergency from "@/assets/service-emergency.webp";
 import svcReplacement from "@/assets/service-replacement.webp";
 import svcPuncture from "@/assets/service-puncture.webp";
@@ -394,7 +392,7 @@ function Hero() {
           height={1080}
           loading="eager"
           fetchPriority="high"
-          decoding="async"
+          decoding="sync"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
             aReady && useVideo ? "opacity-0" : "opacity-100"
           }`}

@@ -158,7 +158,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       // Self-hosted fonts - eliminates Google Fonts render-blocking round-trip
       { rel: "preload", as: "font", href: "/fonts/inter-latin.woff2", type: "font/woff2", crossOrigin: "anonymous" },
       { rel: "preload", as: "font", href: "/fonts/pjs-latin.woff2", type: "font/woff2", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "/fonts/fonts.css" },
     ],
     scripts: [organizationSchema, websiteSchema].map((schema) => ({
       type: "application/ld+json",

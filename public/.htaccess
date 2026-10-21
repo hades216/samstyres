@@ -15,6 +15,12 @@ RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
 RewriteRule ^wheel-balancing/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
 RewriteRule ^car-battery-replacement/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
 
+# Ensure ai-catalog.json has JSON content-type and CORS for AI discovery agents
+<Files "ai-catalog.json">
+  Header set Content-Type "application/json; charset=utf-8"
+  Header set Access-Control-Allow-Origin "*"
+</Files>
+
 # 2. Prevent redirect loops or trailing slash on existing files
 # Serve existing files and directories directly
 RewriteCond %{REQUEST_FILENAME} -f [OR]
