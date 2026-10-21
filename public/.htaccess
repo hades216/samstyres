@@ -11,6 +11,10 @@ RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
 
+# 1b. 301 Redirects for retired services to preserve SEO rankings
+RewriteRule ^wheel-balancing/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
+RewriteRule ^car-battery-replacement/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
+
 # 2. Prevent redirect loops or trailing slash on existing files
 # Serve existing files and directories directly
 RewriteCond %{REQUEST_FILENAME} -f [OR]

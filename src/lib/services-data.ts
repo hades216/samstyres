@@ -7,7 +7,6 @@ import imgMobileTyreReplacement from "@/assets/svc/mobile-tyre-replacement.webp"
 import imgMobilePunctureRepair from "@/assets/svc/mobile-puncture-repair.webp";
 import imgRoadsideTyreAssistance from "@/assets/svc/roadside-tyre-assistance.webp";
 import imgLockingWheelNutRemoval from "@/assets/svc/locking-wheel-nut-removal.webp";
-import imgCarBatteryReplacement from "@/assets/svc/car-battery-replacement.webp";
 import imgJumpStartService from "@/assets/svc/jump-start-service.webp";
 import imgFleetMobileTyreServices from "@/assets/svc/fleet-mobile-tyre-services.webp";
 import imgVanTyreReplacement from "@/assets/svc/van-tyre-replacement.webp";
@@ -16,7 +15,7 @@ import imgPremiumTyreBrands from "@/assets/svc/premium-tyre-brands.webp";
 import imgWinterTyres from "@/assets/svc/winter-tyres.webp";
 import imgSummerTyres from "@/assets/svc/summer-tyres.webp";
 import imgAllSeasonTyres from "@/assets/svc/all-season-tyres.webp";
-import imgWheelBalancing from "@/assets/svc/wheel-balancing.webp";
+import imgCarRecovery from "@/assets/svc/roadside-tyre-assistance.webp";
 import imgTpmsSensorReplacement from "@/assets/svc/tpms-sensor-replacement.webp";
 import imgTyrePressureCheck from "@/assets/svc/tyre-pressure-check.webp";
 import imgEmergencyBlowoutAssistance from "@/assets/svc/emergency-blowout-assistance.webp";
@@ -212,7 +211,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Do you offer any warranty?", a: "All tyres carry full manufacturer UK warranty. On workmanship we guarantee our fitting for the life of the tyre." },
       { q: "Do you handle wheel alignment?", a: "Alignment requires a fixed rig and isn't part of a standard mobile fit. We'll flag any obvious uneven wear on your old tyres and recommend a partner alignment garage if needed." },
     ],
-    related: ["premium-tyre-brands", "wheel-balancing", "home-tyre-fitting", "workplace-tyre-fitting", "same-day-tyre-fitting"],
+    related: ["premium-tyre-brands", "car-recovery", "home-tyre-fitting", "workplace-tyre-fitting", "same-day-tyre-fitting"],
   },
 
   "mobile-puncture-repair": {
@@ -280,7 +279,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "What if the puncture is unrepairable?", a: "We'll show you the damage, explain why, and quote a matched replacement on the spot. No pressure — you're free to source elsewhere; you'll only pay a small call-out toward the inspection." },
       { q: "Do you fix slow punctures?", a: "Yes — slow punctures are often the easiest to repair because the tyre hasn't been run damagingly flat. Book us before the tyre goes fully down." },
     ],
-    related: ["emergency-mobile-tyre-fitting", "mobile-tyre-replacement", "roadside-tyre-assistance", "wheel-balancing", "tyre-pressure-check"],
+    related: ["emergency-mobile-tyre-fitting", "mobile-tyre-replacement", "roadside-tyre-assistance", "car-recovery", "tyre-pressure-check"],
   },
 
   "roadside-tyre-assistance": {
@@ -401,62 +400,87 @@ export const SERVICES: Record<string, ServiceEntry> = {
     related: ["locking-wheel-key-recovery", "emergency-mobile-tyre-fitting", "roadside-tyre-assistance", "mobile-tyre-replacement", "mobile-puncture-repair"],
   },
 
-  "car-battery-replacement": {
-    slug: "car-battery-replacement",
-    category: "battery",
-    navLabel: "Battery Replacement",
-    h1: "Mobile Car Battery Replacement in London",
-    eyebrow: "OEM-Grade Batteries · Fitted On-Site",
-    metaTitle: "Mobile Car Battery Replacement London | Bosch, Varta, Yuasa",
+  "car-recovery": {
+    slug: "car-recovery",
+    category: "emergency",
+    navLabel: "24/7 Car Recovery",
+    h1: "24/7 Car Recovery in London",
+    eyebrow: "Emergency Breakdown & Accident Towing",
+    metaTitle: "24/7 Car Recovery London | Emergency Vehicle Towing & Roadside Rescue",
     metaDescription:
-      "Mobile car battery replacement across London. Genuine Bosch, Varta and Yuasa batteries, delivered and fitted on-site with full BMS coding. 24/7.",
-    hero: imgCarBatteryReplacement,
+      "Rapid 24/7 car recovery and emergency vehicle towing across Greater London & M25. Flatbed recovery, breakdown transport, accident towing & winching. Call 07949 891689.",
+    hero: imgCarRecovery,
     keywords: {
-      primary: "mobile battery replacement London",
-      secondary: ["car battery fitting", "flat battery service", "mobile battery replacement", "BMS coding London"],
+      primary: "24/7 car recovery London",
+      secondary: [
+        "emergency vehicle recovery London",
+        "car towing London",
+        "breakdown recovery near me",
+        "24 hour car recovery London",
+        "flatbed recovery truck London",
+        "motorway car recovery M25",
+        "accident recovery London",
+        "cheap car recovery London",
+        "roadside vehicle transport",
+      ],
     },
     intro: [
-      "Modern car batteries are more than a lead-acid box. Start-stop systems need AGM or EFB chemistry, and every replacement on a modern German, Japanese or Korean car requires the Battery Management System (BMS) to be coded to the new battery — otherwise the charging profile will over-charge and destroy the new battery within months.",
-      "Sam's Mobile Tyres replaces batteries at your home, workplace or roadside across London, with genuine Bosch, Varta and Yuasa batteries and full BMS coding for BMW, Mercedes, Audi, VW, Volvo, Land Rover, Kia, Hyundai, Toyota and Lexus. Old batteries are recycled through a licensed waste facility — no fly-tipping, no fine.",
+      "Stuck at the roadside on the North Circular, stranded in an unfamiliar borough at 2am, or involved in an unexpected breakdown on the M25? When your vehicle cannot be driven safely, you need a dependable, rapid-response recovery vehicle on scene fast. Sam's Mobile Tyres provides comprehensive 24/7 emergency car recovery and towing across all 32 London boroughs, Greater London, and the M25 motorway network.",
+      "Our modern fleet of tilt-and-slide flatbed recovery trucks and specialized wheel-lift support vehicles are equipped to recover all cars, vans, 4x4s, prestige sports cars, and modern electric vehicles (EVs). Whether you have suffered a major mechanical breakdown, severe suspension failure, collision damage, or multiple tyre blowouts, our certified recovery operators load, secure, and transport your vehicle safely to your home, workplace, or preferred repair garage with guaranteed upfront pricing.",
     ],
     quickFacts: [
-      { label: "Brands", value: "Bosch · Varta · Yuasa" },
-      { label: "Chemistry", value: "AGM · EFB · Standard flooded" },
-      { label: "Coding", value: "Full BMS coding included" },
-      { label: "Warranty", value: "3–5 years depending on brand" },
+      { label: "Response time", value: "30–45 min London response" },
+      { label: "Availability", value: "24 Hours · 7 Days · 365 Nights" },
+      { label: "Fleet type", value: "Modern Flatbed & Spec-Lift" },
+      { label: "Coverage", value: "All 32 London Boroughs & M25" },
     ],
     benefits: [
-      { title: "OEM-grade only", body: "Bosch S5/S6, Varta Silver/Blue, Yuasa YBX — batteries that match or exceed the original spec." },
-      { title: "BMS coding included", body: "Full battery registration for BMW/Mercedes/Audi/VW/Volvo — critical for start-stop cars." },
-      { title: "AGM & EFB stocked", body: "Not all mobile fitters carry the modern chemistries — we do, for every common fitment." },
-      { title: "Old battery recycled", body: "Environment Agency licensed disposal. Certificates on request." },
-      { title: "3–5 year warranty", body: "Full UK warranty on every battery. We handle warranty claims directly." },
-      { title: "Health check included", body: "Alternator output, parasitic drain and voltage-under-load tested before you're charged for a battery." },
+      { title: "Rapid 24/7 Dispatch", body: "Direct telephone dispatch answered immediately day and night. Nearest recovery unit dispatched straight to your exact coordinates." },
+      { title: "Damage-Free Flatbed Loading", body: "Modern hydraulic tilt-and-slide flatbed trucks with low approach angles, ideal for low-clearance sports cars and luxury saloons." },
+      { title: "Electric Vehicle (EV) Certified", body: "Specialist dollies and skates for AWD, hybrid, and electric vehicles (Tesla, Porsche, BMW) to prevent electric motor drag damage." },
+      { title: "Any Breakdown or Accident", body: "Complete recovery for mechanical failure, electrical shutdown, gearbox lockup, accident damage, and off-road ditch winching." },
+      { title: "Transparent Upfront Pricing", body: "Guaranteed fixed quotes before dispatch. Zero hidden mileage tricks, no unexpected night surcharges." },
+      { title: "Full Transport Insurance", body: "£10m comprehensive public liability and goods-in-transit insurance protecting your vehicle from hook-up to final delivery." },
     ],
     process: [
-      { title: "Diagnose first", body: "We test voltage under load, alternator output and parasitic drain before quoting — sometimes it's not the battery." },
-      { title: "Match the exact spec", body: "OEM CCA, Ah, terminal position, chemistry (AGM/EFB/flooded) — matched to your car exactly." },
-      { title: "Fit & code", body: "Battery installed with electronic memory-saver, terminals torqued, BMS coded on the vehicle diagnostic port." },
-      { title: "Verify & photograph", body: "Charging voltage verified, coding confirmed, old battery removed for recycling." },
+      { title: "1. Call Our 24/7 Dispatch", body: "Call +44 7949 891689. Provide your location, vehicle make/model, and nature of the breakdown." },
+      { title: "2. Transparent Fixed Quote", body: "Receive an upfront, all-inclusive price and estimated time of arrival (ETA) before dispatch." },
+      { title: "3. Rapid Roadside Arrival", body: "A fully equipped recovery operator arrives with emergency beacon lighting and safety equipment." },
+      { title: "4. Professional Loading & Securing", body: "Your vehicle is safely winched or lifted onto the flatbed using non-marking wheel straps." },
+      { title: "5. Safe Transport to Destination", body: "We transport you and your vehicle directly to your home address, dealership, garage, or secure storage facility." },
     ],
-    vehicleTypes: ["All cars & SUVs", "Vans up to 3.5t", "Executive & luxury (BMW/Mercedes/Audi/Porsche)", "Japanese & Korean marques", "Start-stop equipped vehicles"],
+    vehicleTypes: [
+      "All Cars & Saloons",
+      "SUVs, 4x4s & Crossovers",
+      "Vans & Light Commercials (up to 3.5t)",
+      "Electric & Hybrid Vehicles (EVs)",
+      "Prestige & Performance Supercars",
+      "Non-Runners & Accident-Damaged Vehicles",
+    ],
     coverageAreas: COVERAGE_LONDON,
     whyUs: [
-      { title: "Real diagnosis first", body: "We don't sell you a battery you don't need — voltage-under-load and alternator check every time." },
-      { title: "Coding capability", body: "Full BMS coding hardware on every van — not something you're referred elsewhere for." },
-      { title: "Memory-safe fit", body: "Radios, seat memory, sat-nav and steering-angle sensors all preserved via memory-saver during fitting." },
-      { title: "Recycling included", body: "Licensed disposal certificates on request — critical for fleet compliance." },
+      { title: "Average 30–45 Min Arrival", body: "Strategically stationed recovery units across North, East, South, West and Central London for immediate motorway and city access." },
+      { title: "5.0★ Verified Customer Rating", body: "Over 76 verified Google reviews testifying to our reliability, care, and fast roadside support." },
+      { title: "Motorway & Dual-Carriageway Safe", body: "Fully compliant with Highways England safety standards for live motorway and dual-carriageway extractions." },
+      { title: "One-Stop Roadside Rescue", body: "If your issue can be resolved on-site (e.g., tyre replacement or jump start), we fix it immediately so you avoid towing altogether." },
     ],
     faqs: [
-      { q: "How do I know it's the battery and not the alternator?", a: "The classic sign is a car that starts fine after a jump but dies again overnight — usually a battery. Slow-turning that gets slower with the engine running suggests alternator. We test both before recommending a battery." },
-      { q: "Do you code the new battery?", a: "Yes — full BMS coding on BMW, Mercedes, Audi, VW, Volvo, Land Rover and most Kia/Hyundai. Coding is not optional on modern cars." },
-      { q: "How much is a mobile battery replacement?", a: "Battery pricing depends on size, chemistry (standard, EFB, AGM) and coding requirements. Confirmed upfront on the call before we dispatch. Call +44 7949 891689 for a live quote — no callout fees." },
-      { q: "What about EV 12V batteries?", a: "Yes — Tesla, Kia EV6, Hyundai Ioniq 5 and other EVs use a conventional 12V for accessories. We stock and code these." },
-      { q: "How long does replacement take?", a: "20–40 minutes at your location including diagnosis, fitting and coding." },
-      { q: "Do you take away the old battery?", a: "Yes, disposed through a licensed recycler. Certificates provided for fleet operators." },
-      { q: "What warranty do I get?", a: "3-year warranty on Yuasa YBX, 4-year on Bosch S5, 5-year on Varta Silver. We handle any warranty claim directly with the manufacturer." },
+      { q: "How quickly can a recovery truck reach me in London?", a: "Our average emergency arrival time is between 30 to 45 minutes across Greater London and the M25 ring, depending on real-time traffic conditions. When you call, we give you an accurate, real-time ETA." },
+      { q: "What areas of London do you cover for car recovery?", a: "We provide 24/7 recovery across all 32 London boroughs (including Central, North, South, East, and West London), Hertfordshire, Essex, and surrounding M25 motorway corridors (M1, M4, M11, M40, A406, and A13)." },
+      { q: "Can you recover my car from the motorway (M25, M1, M4, A406)?", a: "Yes. Our recovery technicians are fully trained for high-speed motorway and dual-carriageway attendance, carrying compliant high-visibility equipment, amber warning beacons, and safety gear." },
+      { q: "Can you safely tow electric vehicles (EVs) and hybrids?", a: "Yes. Most EVs (such as Tesla, Polestar, Nissan Leaf, BMW i4) cannot be towed on their drive wheels without risking powertrain damage. We use full flatbed transport and wheel skates to ensure zero wheel rotation during transit." },
+      { q: "How much does 24/7 car recovery cost in London?", a: "Pricing is calculated based on vehicle type, location, and destination mileage. We provide an exact, guaranteed fixed quote over the phone before we dispatch so there are never any unexpected roadside surprises." },
+      { q: "Where can you transport my recovered vehicle?", a: "We can tow your car to any requested destination: your home address, your local trusted garage, a manufacturer dealership, or an overnight secure storage yard anywhere in the UK." },
+      { q: "Can passengers travel in the recovery truck cab?", a: "Yes. Our recovery trucks have passenger seating so you and your passengers can travel safely in the comfort of the heated cab to your final destination." },
+      { q: "What if my car is locked in park, has broken suspension, or missing wheels?", a: "Our trucks are equipped with heavy-duty winches, wheel skates, and recovery dollies specifically designed to safely load vehicles with locked transmissions, snapped ball joints, or missing wheels without causing underbody damage." },
+      { q: "Are you available 24 hours including weekends and bank holidays?", a: "Yes, our recovery dispatch line operates 24 hours a day, 7 days a week, 365 days a year without exception." },
     ],
-    related: ["jump-start-service", "emergency-mobile-tyre-fitting", "roadside-tyre-assistance", "fleet-mobile-tyre-services"],
+    related: [
+      "emergency-mobile-tyre-fitting",
+      "roadside-tyre-assistance",
+      "jump-start-service",
+      "emergency-blowout-assistance",
+    ],
   },
 
   "jump-start-service": {
@@ -515,7 +539,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Will jump-starting my car damage the electronics?", a: "Not when done correctly at OEM-designated points with a regulated jump pack. Damage risk comes from ordinary cables from another car — which is what our pack replaces." },
       { q: "Do you attend supermarket and multi-storey car parks?", a: "Yes — as long as we can get the van within 5–10 metres of your vehicle." },
     ],
-    related: ["car-battery-replacement", "emergency-mobile-tyre-fitting", "roadside-tyre-assistance", "emergency-blowout-assistance"],
+    related: ["car-recovery", "emergency-mobile-tyre-fitting", "roadside-tyre-assistance", "emergency-blowout-assistance"],
   },
 
   "fleet-mobile-tyre-services": {
@@ -869,7 +893,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "What's the ideal summer tyre for a family SUV?", a: "Michelin Latitude Tour HP, Continental CrossContact H/T, or Pirelli Scorpion Verde — long-life, quiet, good wet-grip." },
       { q: "Do you stock EV-specific summer tyres?", a: "Yes — Michelin e·Primacy, Continental EcoContact 6 Q, Bridgestone Turanza Eco. EV compounds resist torque wear and reduce road noise." },
     ],
-    related: ["winter-tyres", "all-season-tyres", "premium-tyre-brands", "mobile-tyre-replacement", "wheel-balancing"],
+    related: ["winter-tyres", "all-season-tyres", "premium-tyre-brands", "mobile-tyre-replacement", "car-recovery"],
   },
 
   "all-season-tyres": {
@@ -927,64 +951,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Are they good for EVs?", a: "Yes — Michelin CrossClimate 2 T0 is Tesla-approved and available for Model 3 and Model Y. Continental has an EV-optimised AllSeasonContact 2 variant." },
       { q: "What about performance cars?", a: "For dedicated performance cars we'd still recommend summer tyres. All-seasons are best for family, urban and light-executive use." },
     ],
-    related: ["winter-tyres", "summer-tyres", "premium-tyre-brands", "mobile-tyre-replacement", "wheel-balancing"],
-  },
-
-  "wheel-balancing": {
-    slug: "wheel-balancing",
-    category: "specialist",
-    navLabel: "Wheel Balancing",
-    h1: "Mobile Wheel Balancing in London",
-    eyebrow: "Dynamic Balance · On-Board Balancer",
-    metaTitle: "Mobile Wheel Balancing London | Vibration-Free Driving",
-    metaDescription:
-      "Mobile wheel balancing across London. Dynamic on-board Hunter-grade balancing — vibration-free driving up to motorway speeds.",
-    hero: imgWheelBalancing,
-    keywords: {
-      primary: "wheel balancing London",
-      secondary: ["mobile wheel balancing", "dynamic wheel balancing", "tyre balancing London"],
-    },
-    intro: [
-      "A steering-wheel wobble at 55–70 mph, a subtle vibration through the seat, or uneven tread wear across a set of tyres — all classic signs of an out-of-balance wheel. Correct dynamic wheel balancing is a precision job: sub-5-gram accuracy, with weights positioned to match the wheel's specific geometry.",
-      "Every wheel we fit is balanced on an on-board dynamic balancer to sub-5-gram tolerance. Balancing-only visits — where you already have tyres fitted elsewhere but the drive is rough — are also available across London.",
-    ],
-    quickFacts: [
-      { label: "Accuracy", value: "Sub-5g dynamic" },
-      { label: "Machine", value: "Hunter-grade on-board balancer" },
-      { label: "Time per wheel", value: "10–15 minutes" },
-      { label: "Weights", value: "Adhesive & clip-on, alloy-safe" },
-    ],
-    benefits: [
-      { title: "Sub-5g accuracy", body: "Well below the 15g imbalance threshold that starts to cause perceptible wobble at motorway speeds." },
-      { title: "On-board balancer", body: "Hunter-grade dynamic balancer on the van — no need to remove wheels to a garage." },
-      { title: "Alloy-safe weights", body: "Adhesive weights on painted alloys — never hammered clip-ons on cosmetic wheels." },
-      { title: "Included in every fit", body: "Balancing is part of every tyre fit as standard — never an added-on fee." },
-      { title: "Uneven-wear diagnosis", body: "We inspect the tyre for wear patterns that suggest alignment, not just balance, issues." },
-      { title: "TPMS-safe", body: "Balanced without disturbing the TPMS sensor or valve — no reset required after." },
-    ],
-    process: [
-      { title: "Assess the symptom", body: "Where is the vibration felt — steering wheel (front wheels) or seat (rear wheels)? What speed?" },
-      { title: "Remove & inspect", body: "Wheel removed, cleaned of old weight residue, visually inspected for wheel damage or contamination." },
-      { title: "Dynamic balance", body: "Spun on the balancer; weights positioned to sub-5g accuracy on inner and outer planes." },
-      { title: "Refit & torque", body: "Torqued to spec, photographed. Test drive on request." },
-    ],
-    vehicleTypes: ["All cars", "SUVs & 4x4s", "Vans up to 3.5t", "Executive & luxury", "Motorsport & track cars"],
-    coverageAreas: COVERAGE_LONDON,
-    whyUs: [
-      { title: "Included in every fit", body: "Not a paid extra — balancing is a non-negotiable part of the fitting job." },
-      { title: "Alloy-safe weights", body: "Adhesive weights on cosmetic wheels; never hammer-fitted clip-ons on painted alloys." },
-      { title: "Precision equipment", body: "Weekly-calibrated Hunter-grade dynamic balancer — same class as high-end garage rigs." },
-      { title: "Honest diagnosis", body: "If the vibration is alignment or a bent wheel — not balance — we say so, and don't charge to re-balance uselessly." },
-    ],
-    faqs: [
-      { q: "Do I need balancing if I've just had new tyres fitted?", a: "Yes — every new tyre should be balanced. If you weren't offered balancing with your new tyres, we'd honestly recommend re-doing them. It should be included, not extra." },
-      { q: "How do I know if my wheels are out of balance?", a: "Vibration at specific speeds (usually 55–75mph), a wobbling steering wheel, or uneven tyre wear are the classic signs. Rear-wheel imbalance is felt through the seat, front-wheel through the steering." },
-      { q: "How much is mobile wheel balancing?", a: "Balance-only visits are quoted upfront on the call. Balancing is included free with any new tyre fit — no add-on charge." },
-      { q: "Can you balance run-flat tyres?", a: "Yes — run-flats need balancing exactly like standard tyres. All our vans handle them without issue." },
-      { q: "Will balancing fix a wobble at all speeds?", a: "Balancing fixes speed-specific vibrations (usually 55–75mph). Constant wobble at all speeds suggests bent wheel, damaged tyre, or alignment issue — we diagnose during the visit." },
-      { q: "Do you check for alignment during balancing?", a: "We visually check tread-wear patterns for alignment symptoms and honestly recommend an alignment specialist if needed. Alignment requires a fixed rig we don't carry mobile." },
-    ],
-    related: ["mobile-tyre-replacement", "tpms-sensor-replacement", "tyre-pressure-check", "premium-tyre-brands", "mobile-puncture-repair"],
+    related: ["winter-tyres", "summer-tyres", "premium-tyre-brands", "mobile-tyre-replacement", "car-recovery"],
   },
 
   "tpms-sensor-replacement": {
@@ -1041,7 +1008,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Do vans have TPMS?", a: "Newer commercial vehicles yes — Sprinter, Crafter, Transit Custom. Older Transits often don't have it factory-fitted." },
       { q: "Can you handle BMW/Mercedes/Audi TPMS?", a: "Yes — full OBD relearn capability for all common premium marques including staggered fitments." },
     ],
-    related: ["mobile-tyre-replacement", "tyre-pressure-check", "wheel-balancing", "premium-tyre-brands", "van-tyre-replacement"],
+    related: ["mobile-tyre-replacement", "tyre-pressure-check", "car-recovery", "premium-tyre-brands", "van-tyre-replacement"],
   },
 
   "tyre-pressure-check": {
@@ -1098,7 +1065,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Do you check my spare?", a: "Yes — space-saver and full-size spares checked and reported. Very often the most-forgotten tyre." },
       { q: "What is a 'safe' tread depth?", a: "The legal minimum in the UK is 1.6mm across the central 75% of the tread. We honestly flag anything below 3mm as approaching replacement — wet-braking performance drops sharply below 3mm." },
     ],
-    related: ["wheel-balancing", "tpms-sensor-replacement", "mobile-puncture-repair", "mobile-tyre-replacement", "fleet-mobile-tyre-services"],
+    related: ["car-recovery", "tpms-sensor-replacement", "mobile-puncture-repair", "mobile-tyre-replacement", "fleet-mobile-tyre-services"],
   },
 
   "emergency-blowout-assistance": {
@@ -1271,7 +1238,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Do you fit tyres on Sundays?", a: "Yes — no weekend premium." },
       { q: "What if my parking is very tight?", a: "We can usually work with 1m around each wheel. If access is genuinely impossible we'll say so before dispatch and suggest a nearby location." },
     ],
-    related: ["mobile-tyre-replacement", "same-day-tyre-fitting", "workplace-tyre-fitting", "premium-tyre-brands", "wheel-balancing"],
+    related: ["mobile-tyre-replacement", "same-day-tyre-fitting", "workplace-tyre-fitting", "premium-tyre-brands", "car-recovery"],
   },
 
   "workplace-tyre-fitting": {
@@ -1388,7 +1355,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Do you fit tyres at private events?", a: "Yes — Goodwood, Silverstone, London Concours and similar events by advance arrangement. Discreet, out-of-shot service." },
       { q: "Is your service more expensive for luxury cars?", a: "Not for our labour — the tyres themselves are more expensive because of the marking and construction. Our fitting price is the same standard." },
     ],
-    related: ["premium-tyre-brands", "mobile-tyre-replacement", "tpms-sensor-replacement", "wheel-balancing", "home-tyre-fitting"],
+    related: ["premium-tyre-brands", "mobile-tyre-replacement", "tpms-sensor-replacement", "car-recovery", "home-tyre-fitting"],
   },
 };
 

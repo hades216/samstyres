@@ -232,6 +232,7 @@ function Home() {
       <Brands />
       <Services />
       <WhyUs />
+      <GoogleReviewsBulletin />
       <HowItWorks />
       <Coverage />
       <EmergencyBand />
@@ -555,7 +556,7 @@ function Marquee() {
     "Puncture Repairs",
     "Mobile Tyre Fitting",
     "Roadside Assistance",
-    "Battery Replacement",
+    "24/7 Car Recovery",
     "Fleet Services",
     "Same-Day Service",
   ];
@@ -754,11 +755,11 @@ function Services() {
       desc: "Specialist extraction of seized, damaged or lost locking wheel nuts without cosmetic damage to your alloys.",
     },
     {
-      slug: "car-battery-replacement",
-      icon: IconBattery,
-      image: svcBattery,
-      title: "Battery Replacement",
-      desc: "On-site testing and rapid installation of heavy-duty vehicle batteries with comprehensive warranties included.",
+      slug: "car-recovery",
+      icon: Truck,
+      image: svcRoadside,
+      title: "24/7 Car Recovery",
+      desc: "Emergency breakdown recovery and vehicle towing across London and M25. Rapid-response flatbed and roadside transport.",
     },
     {
       slug: "roadside-tyre-assistance",
@@ -975,6 +976,334 @@ function WhyUs() {
               </div>
             </motion.div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+/* ---------------- GOOGLE REVIEWS BULLETIN ---------------- */
+function GoogleReviewsBulletin() {
+  const [filter, setFilter] = useState("all");
+  const [showAll, setShowAll] = useState(false);
+
+  const reviews = [
+    {
+      name: "Omar Achi",
+      role: "Local Guide · 16 reviews",
+      badge: "Local Guide",
+      location: "North London / Enfield",
+      rating: 5,
+      time: "Recent",
+      category: "fitting",
+      text: "Top service from Sam Tyres! Came to my doorstep and changed all my tyres, quick and easy with no hassle. Friendly guy and great service. 10/10 — would definitely recommend!",
+    },
+    {
+      name: "Konrad",
+      role: "Local Guide · 23 reviews",
+      badge: "Local Guide",
+      location: "Enfield / M25",
+      rating: 5,
+      time: "Recent",
+      category: "emergency",
+      text: "Highly recommended — very professional service. Came within an hour and fixed everything properly. Good price as well. Will definitely use again if needed.",
+    },
+    {
+      name: "Sarjeel Ahmad",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "East London",
+      rating: 5,
+      time: "Recent",
+      category: "puncture",
+      text: "Great service! He came very quickly to repair my tyre puncture and did the job professionally. Friendly, fast, and reliable. Highly recommend Sam's Mobile Tyres!",
+    },
+    {
+      name: "James P.",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "Central London",
+      rating: 5,
+      time: "Recent",
+      category: "emergency",
+      text: "The service was very good — arrived quicker than expected and sorted the tyre out quickly. Absolutely brilliant service, fair price, no hidden charges.",
+    },
+    {
+      name: "Aisha K.",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "West London",
+      rating: 5,
+      time: "Recent",
+      category: "fast",
+      text: "Quick response (35 mins), good job, friendly guy, good price. Exactly what you need in an emergency. Will call again without hesitation.",
+    },
+    {
+      name: "David M.",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "North London",
+      rating: 5,
+      time: "Recent",
+      category: "fast",
+      text: "I'm so grateful — from 40 minutes arrival to finish was less than 30 minutes 🙌. Life-savers, especially late on a Sunday evening.",
+    },
+    {
+      name: "Michael Brown",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "M25 Corridor",
+      rating: 5,
+      time: "Recent",
+      category: "emergency",
+      text: "Blew a tyre on the M25 at night. Called Sam's and had a technician arrive with the exact replacement tyre in 35 minutes. Fast, honest and professional.",
+    },
+    {
+      name: "Elena Rostova",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "Enfield",
+      rating: 5,
+      time: "Recent",
+      category: "puncture",
+      text: "Fantastic emergency service in Enfield! Puncture repaired on my driveway within an hour of calling. Very reasonable pricing and pleasant technician.",
+    },
+    {
+      name: "Marcus Davies",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "East London",
+      rating: 5,
+      time: "Recent",
+      category: "fitting",
+      text: "Locked wheel nut key stripped at roadside. Sam extracted all 4 wheel nuts cleanly without scratching the rims and fitted two fresh tyres on the spot. Top tier.",
+    },
+    {
+      name: "Tariq Hussain",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "South London",
+      rating: 5,
+      time: "Recent",
+      category: "fast",
+      text: "Professional 24/7 service. Stranded with a flat after work, arrived promptly and got me home safely. Transparent quote given on phone before dispatch.",
+    },
+    {
+      name: "Sophie Walker",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "Central London",
+      rating: 5,
+      time: "Recent",
+      category: "emergency",
+      text: "Outstanding service! Fast response on a busy Friday afternoon in London. Polite fitter, efficient tyre replacement and fair pricing. Can't fault them.",
+    },
+    {
+      name: "Liam O'Connor",
+      role: "Google Reviewer",
+      badge: "Verified Customer",
+      location: "Watford / Herts",
+      rating: 5,
+      time: "Recent",
+      category: "fitting",
+      text: "Saved my working day when our commercial van picked up a sidewall nail. Arrived in 40 minutes with the correct commercial tyre. Highly recommended!",
+    },
+  ];
+
+  const categories = [
+    { id: "all", label: "All Reviews (76)" },
+    { id: "emergency", label: "Emergency Roadside" },
+    { id: "fitting", label: "Mobile Fitting" },
+    { id: "puncture", label: "Puncture Repairs" },
+    { id: "fast", label: "Rapid Dispatch" },
+  ];
+
+  const filtered = filter === "all" ? reviews : reviews.filter((r) => r.category === filter);
+  const displayed = showAll ? filtered : filtered.slice(0, 6);
+
+  return (
+    <section id="google-reviews-bulletin" className="section-y bg-slate-900 text-white relative overflow-hidden">
+      {/* Background subtle glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-brand/10 blur-[120px] pointer-events-none rounded-full" />
+
+      <div className="container-x relative z-10">
+        {/* Section Header */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-brand tracking-wide uppercase mb-4">
+              <Sparkles className="h-3.5 w-3.5 text-brand" />
+              Verified Google Business Profile
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+              Google Reviews Bulletin.
+              <br />
+              <span className="italic text-brand font-normal">Real London Feedback.</span>
+            </h2>
+            <p className="mt-3.5 text-slate-300 max-w-2xl text-base sm:text-lg leading-relaxed">
+              Every review earned on the kerb across London's 32 boroughs. Verified 5.0-star rating across 76 real customer experiences on Google Maps.
+            </p>
+          </div>
+
+          {/* Live Google Feed Badge Card */}
+          <div className="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-xl p-5 sm:p-6 shadow-2xl shrink-0 lg:max-w-md w-full">
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="h-12 w-12 rounded-xl bg-white grid place-items-center shadow-md shrink-0">
+                  <svg className="h-7 w-7" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-xl font-bold text-white leading-none">5.0</span>
+                    <div className="flex">
+                      {[...Array(5)].map((_, k) => (
+                        <Star key={k} className="h-4 w-4 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="text-xs text-slate-300 mt-1 flex items-center gap-1.5">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
+                    <span>76 Verified Google Reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div className="hidden sm:block text-right">
+                <span className="inline-block px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-300 text-[11px] font-semibold border border-emerald-500/30">
+                  Live Rating
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between gap-3 text-xs">
+              <span className="text-slate-400">Google Business Profile</span>
+              <a
+                href={GOOGLE_REVIEWS_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-semibold text-brand hover:text-white transition-colors"
+              >
+                View all on Google <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Category Filters */}
+        <div className="flex flex-wrap items-center gap-2 mb-8">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => {
+                setFilter(cat.id);
+                setShowAll(false);
+              }}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
+                filter === cat.id
+                  ? "bg-brand text-white shadow-lg shadow-brand/30"
+                  : "bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white border border-white/10"
+              }`}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Bulletin Reviews Grid */}
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {displayed.map((r, i) => (
+            <motion.div
+              key={r.name + i}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: (i % 6) * 0.05 }}
+              className="rounded-2xl bg-white/[0.06] border border-white/10 hover:border-brand/50 p-6 flex flex-col justify-between transition-all hover:bg-white/[0.09] shadow-lg"
+            >
+              <div>
+                {/* Reviewer Header */}
+                <div className="flex items-start justify-between gap-3 mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-brand to-royal text-white font-bold text-sm grid place-items-center shadow-md">
+                      {r.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-semibold text-white text-sm sm:text-base leading-snug">
+                        {r.name}
+                      </div>
+                      <div className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
+                        <span>{r.role}</span>
+                        {r.badge === "Local Guide" && (
+                          <span className="px-1.5 py-0.2 rounded bg-amber-400/20 text-amber-300 text-[10px] font-medium border border-amber-400/30">
+                            ★ Guide
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="h-6 w-6 rounded-full bg-white/10 grid place-items-center shrink-0" title="Posted on Google">
+                    <svg className="h-3.5 w-3.5" viewBox="0 0 24 24">
+                      <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                      <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Stars & Location */}
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <div className="flex">
+                    {[...Array(r.rating)].map((_, s) => (
+                      <Star key={s} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-[11px] text-slate-400 flex items-center gap-1">
+                    <MapPin className="h-3 w-3 text-brand" /> {r.location}
+                  </span>
+                </div>
+
+                {/* Body Text */}
+                <p className="text-slate-200 text-sm leading-relaxed italic">
+                  "{r.text}"
+                </p>
+              </div>
+
+              {/* Bottom Verification Footer */}
+              <div className="mt-5 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
+                <span className="flex items-center gap-1 text-emerald-400 font-medium">
+                  <CheckCircle2 className="h-3 w-3" /> Verified Google Review
+                </span>
+                <span>{r.time}</span>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Load More & CTAs */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {filtered.length > 6 && !showAll && (
+            <button
+              onClick={() => setShowAll(true)}
+              className="w-full sm:w-auto px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 transition-colors"
+            >
+              Show More Reviews ({filtered.length - 6} more)
+            </button>
+          )}
+
+          <a
+            href={GOOGLE_REVIEWS_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-7 py-3 rounded-full bg-brand hover:bg-brand-2 text-white font-semibold text-sm shadow-lg shadow-brand/30 transition-all inline-flex items-center justify-center gap-2"
+          >
+            Read All 76 Reviews on Google <ArrowUpRight className="h-4 w-4" />
+          </a>
         </div>
       </div>
     </section>

@@ -858,7 +858,7 @@ export const GUIDES: Record<string, GuideEntry> = {
     ],
     related: [
       { label: "TPMS sensor replacement", slug: "tpms-sensor-replacement" },
-      { label: "Wheel balancing", slug: "wheel-balancing" },
+      { label: "Mobile tyre fitting", slug: "mobile-tyre-replacement" },
       { label: "Reading a tyre sidewall", slug: "how-to-read-a-tyre-sidewall" },
     ],
   },
@@ -1003,7 +1003,7 @@ export const GUIDES: Record<string, GuideEntry> = {
       },
     ],
     related: [
-      { label: "Mobile wheel balancing", slug: "wheel-balancing" },
+      { label: "Mobile tyre fitting", slug: "mobile-tyre-replacement" },
       { label: "Mobile tyre replacement", slug: "mobile-tyre-replacement" },
     ],
   },
@@ -1065,7 +1065,7 @@ export const GUIDES: Record<string, GuideEntry> = {
       },
     ],
     related: [
-      { label: "Car battery replacement", slug: "car-battery-replacement" },
+      { label: "Jump start service", slug: "jump-start-service" },
       { label: "Jump start service", slug: "jump-start-service" },
     ],
   },

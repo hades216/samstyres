@@ -300,16 +300,15 @@ export function Header() {
 /* ---------------- SERVICES MEGA MENU (desktop) ---------------- */
 const FEATURED_SERVICE_SLUGS = [
   "emergency-mobile-tyre-fitting",
+  "car-recovery",
   "mobile-tyre-replacement",
   "mobile-puncture-repair",
   "roadside-tyre-assistance",
-  "car-battery-replacement",
   "jump-start-service",
   "fleet-mobile-tyre-services",
   "van-tyre-replacement",
   "same-day-tyre-fitting",
   "premium-tyre-brands",
-  "wheel-balancing",
   "tpms-sensor-replacement",
 ] as const;
 
@@ -325,6 +324,7 @@ const MEGA_GROUPS: MegaGroup[] = [
     icon: Zap,
     slugs: [
       "emergency-mobile-tyre-fitting",
+      "car-recovery",
       "roadside-tyre-assistance",
       "jump-start-service",
       "same-day-tyre-fitting",
@@ -336,7 +336,6 @@ const MEGA_GROUPS: MegaGroup[] = [
     slugs: [
       "mobile-tyre-replacement",
       "mobile-puncture-repair",
-      "wheel-balancing",
       "tpms-sensor-replacement",
       "premium-tyre-brands",
     ],
@@ -344,7 +343,7 @@ const MEGA_GROUPS: MegaGroup[] = [
   {
     label: "Vehicles & Business",
     icon: Truck,
-    slugs: ["van-tyre-replacement", "fleet-mobile-tyre-services", "car-battery-replacement"],
+    slugs: ["van-tyre-replacement", "fleet-mobile-tyre-services"],
   },
 ];
 
@@ -514,14 +513,13 @@ export function Footer() {
             title="Services"
             items={[
               { label: "24/7 Emergency Fitting", to: "/emergency-mobile-tyre-fitting" },
+              { label: "24/7 Car Recovery", to: "/car-recovery" },
               { label: "Puncture Repair", to: "/mobile-puncture-repair" },
               { label: "Roadside Assistance", to: "/roadside-tyre-assistance" },
-              { label: "Battery Replacement", to: "/car-battery-replacement" },
               { label: "Jump Start Service", to: "/jump-start-service" },
               { label: "Fleet Services", to: "/fleet-mobile-tyre-services" },
               { label: "Van Tyre Replacement", to: "/van-tyre-replacement" },
               { label: "Same-Day Fitting", to: "/same-day-tyre-fitting" },
-              { label: "Wheel Balancing", to: "/wheel-balancing" },
             ]}
           />
           <FooterCol

@@ -19,19 +19,19 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "24/7 mobile tyre fitting, emergency puncture repair, van tyres, wheel balancing and battery replacement across London. Call 07949 891689 for dispatch.",
+          "24/7 mobile tyre fitting, emergency puncture repair, van tyres, 24/7 car recovery and roadside assistance across London. Call 07949 891689 for dispatch.",
       },
       {
         name: "keywords",
         content:
-          "mobile tyre services london, emergency tyre fitting, puncture repairs, roadside tyre assistance, mobile van tyres",
+          "mobile tyre services london, 24/7 car recovery london, emergency tyre fitting, puncture repairs, roadside assistance, vehicle towing london",
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Mobile Tyre Services in London | Sam's Mobile Tyres" },
       {
         property: "og:description",
         content:
-          "24/7 mobile tyre fitting, emergency puncture repair, van tyres, wheel balancing and battery replacement across London. Call 07949 891689 for dispatch.",
+          "24/7 mobile tyre fitting, emergency puncture repair, van tyres, 24/7 car recovery and roadside assistance across London. Call 07949 891689 for dispatch.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE_URL}/services` },
@@ -46,7 +46,7 @@ const CATEGORY_ORDER: { key: string; label: string; blurb: string }[] = [
   {
     key: "emergency",
     label: "Emergency & Roadside",
-    blurb: "24/7 tyre assistance at suitable locations across London.",
+    blurb: "24/7 car recovery, emergency tyre fitting, and roadside assistance across London.",
   },
   {
     key: "fitting",
@@ -56,12 +56,12 @@ const CATEGORY_ORDER: { key: string; label: string; blurb: string }[] = [
   {
     key: "repair",
     label: "Repair & Diagnostics",
-    blurb: "Punctures, balancing, TPMS and pressure checks on-site.",
+    blurb: "Punctures, TPMS sensor replacement and tyre pressure checks on-site.",
   },
   {
     key: "battery",
     label: "Battery & Power",
-    blurb: "Jump start and battery replacement — most vehicles covered.",
+    blurb: "Mobile jump start service — heavy-duty booster packs for all petrol, diesel & hybrid vehicles.",
   },
   {
     key: "specialist",
