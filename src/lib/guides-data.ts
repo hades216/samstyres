@@ -1003,8 +1003,9 @@ export const GUIDES: Record<string, GuideEntry> = {
       },
     ],
     related: [
-      { label: "Mobile tyre fitting", slug: "mobile-tyre-replacement" },
       { label: "Mobile tyre replacement", slug: "mobile-tyre-replacement" },
+      { label: "Puncture repair or replacement", slug: "puncture-repair-or-tyre-replacement" },
+      { label: "Tyre pressure check", slug: "tyre-pressure-check" },
     ],
   },
   "car-battery-life": {
@@ -1066,7 +1067,8 @@ export const GUIDES: Record<string, GuideEntry> = {
     ],
     related: [
       { label: "Jump start service", slug: "jump-start-service" },
-      { label: "Jump start service", slug: "jump-start-service" },
+      { label: "24/7 Car recovery", slug: "car-recovery" },
+      { label: "Roadside tyre assistance", slug: "roadside-tyre-assistance" },
     ],
   },
 };

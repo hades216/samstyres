@@ -815,13 +815,13 @@ function Services() {
                   {s.desc}
                 </p>
                 <div className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition-all group-hover:gap-2.5">
-                  Learn more <ArrowRight className="h-4 w-4" />
+                  Explore {s.title.toLowerCase()} <ArrowRight className="h-4 w-4" />
                 </div>
               </div>
               <Link
                 to="/$slug"
                 params={{ slug: s.slug }}
-                aria-label={`${s.title} — read more`}
+                aria-label={`View details and pricing for ${s.title}`}
                 className="absolute inset-0 z-10 rounded-[20px] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand"
               />
             </motion.div>

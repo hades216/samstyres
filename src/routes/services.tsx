@@ -140,7 +140,7 @@ function ServicesPage() {
                           {s.eyebrow}
                         </p>
                         <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-[12px] text-slate-500">
-                          <span className="font-medium text-navy/80">Learn more</span>
+                          <span className="font-medium text-navy/80">View service</span>
                           <span className="text-brand font-semibold">Call for quote</span>
                         </div>
                       </div>

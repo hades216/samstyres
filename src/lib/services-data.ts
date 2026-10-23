@@ -151,7 +151,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "What if my wheel is damaged?", a: "Cosmetic kerb damage is fine — we can still fit. Structural cracks or bent alloys we photograph and honestly flag before fitting; we won't fit a tyre onto an unsafe wheel." },
       { q: "Can you help if my locking wheel nut key is lost?", a: "Yes. Our emergency vans carry a full locking-nut removal kit. In most cases we can extract the nut without alloy damage and refit a standard nut in the same visit." },
     ],
-    related: ["mobile-puncture-repair", "roadside-tyre-assistance", "same-day-tyre-fitting", "emergency-blowout-assistance", "locking-wheel-nut-removal"],
+    related: ["car-recovery", "mobile-puncture-repair", "roadside-tyre-assistance", "same-day-tyre-fitting", "emergency-blowout-assistance"],
   },
 
   "mobile-tyre-replacement": {
@@ -338,7 +338,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Do you attend collisions?", a: "For tyre-only damage from a kerb strike or pothole, yes. If the vehicle is damaged beyond the tyre we'll recommend a recovery partner." },
       { q: "Can you replace on a pavement in Central London?", a: "Yes — most of Central London, subject to safe access around the vehicle. Congestion charge and ULEZ compliance are the driver's responsibility." },
     ],
-    related: ["emergency-mobile-tyre-fitting", "emergency-blowout-assistance", "mobile-puncture-repair", "jump-start-service", "same-day-tyre-fitting"],
+    related: ["car-recovery", "emergency-mobile-tyre-fitting", "emergency-blowout-assistance", "mobile-puncture-repair", "jump-start-service"],
   },
 
   "locking-wheel-nut-removal": {
@@ -1122,7 +1122,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
       { q: "Do you attend blowouts in Central London?", a: "Yes — most streets accessible. Ultra-narrow one-ways may need us to work partly on the pavement with cones deployed." },
       { q: "What if I don't have a spare?", a: "That's the norm now — many modern cars come without spares. We bring the actual matched replacement tyre; no need for a spare." },
     ],
-    related: ["emergency-mobile-tyre-fitting", "roadside-tyre-assistance", "mobile-tyre-replacement", "same-day-tyre-fitting", "jump-start-service"],
+    related: ["car-recovery", "emergency-mobile-tyre-fitting", "roadside-tyre-assistance", "mobile-tyre-replacement", "jump-start-service"],
   },
 
   "locking-wheel-key-recovery": {

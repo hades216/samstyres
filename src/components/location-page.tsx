@@ -32,6 +32,11 @@ const SERVICES = [
     "Help for a damaged or unusable tyre at a safe location.",
   ],
   [
+    "car-recovery",
+    "24/7 Car recovery & towing",
+    "Rapid flatbed recovery and roadside transport across London.",
+  ],
+  [
     "mobile-tyre-replacement",
     "Mobile tyre replacement",
     "Replacement tyres supplied and fitted at home, work or roadside.",
@@ -45,6 +50,11 @@ const SERVICES = [
     "roadside-tyre-assistance",
     "Roadside tyre assistance",
     "Practical tyre help when your vehicle cannot continue safely.",
+  ],
+  [
+    "jump-start-service",
+    "Mobile jump start",
+    "Professional 12V battery boost and alternator diagnostic checks.",
   ],
 ] as const;
 
@@ -164,7 +174,7 @@ export function LocationPage({ location }: { location: LocationPageData }) {
               </>
             }
           />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map(([slug, title, copy]) => (
               <Link
                 key={slug}
@@ -175,7 +185,7 @@ export function LocationPage({ location }: { location: LocationPageData }) {
                 <h3 className="font-display text-lg font-bold text-ink">{title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{copy}</p>
                 <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brand">
-                  View service{" "}
+                  Explore {title.toLowerCase()}{" "}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>
