@@ -175,6 +175,7 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="ueRsLq2oncG3XYpGZ06dqw" async></script>
       </head>
       <body>
         {children}
