@@ -86,7 +86,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "24/7 Emergency Fitting",
     h1: "24/7 Emergency Mobile Tyre Fitting in London",
     eyebrow: "24/7 Rapid Response",
-    metaTitle: "24/7 Emergency Mobile Tyre Fitting London | Sam's",
+    metaTitle: "24/7 Emergency Mobile Tyre Fitting London | Sam's Tyres",
     metaDescription:
       "24/7 emergency mobile tyre fitting across London. Blowouts, punctures & roadside replacements. Median arrival 28 minutes. Call +44 7949 891689.",
     hero: imgEmergencyMobileTyreFitting,
@@ -406,9 +406,9 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "24/7 Car Recovery",
     h1: "24/7 Car Recovery in London",
     eyebrow: "Emergency Breakdown & Accident Towing",
-    metaTitle: "24/7 Car Recovery London | Emergency Vehicle Towing & Roadside Rescue",
+    metaTitle: "24/7 Car Recovery London | Breakdown Towing & Rescue",
     metaDescription:
-      "Rapid 24/7 car recovery and emergency vehicle towing across Greater London & M25. Flatbed recovery, breakdown transport, accident towing & winching. Call 07949 891689.",
+      "Rapid 24/7 car recovery & vehicle towing across London and M25. Flatbed recovery, breakdown transport & roadside rescue. Call 07949 891689.",
     hero: imgCarRecovery,
     keywords: {
       primary: "24/7 car recovery London",
@@ -607,7 +607,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "Van Tyre Replacement",
     h1: "Mobile Van Tyre Replacement in London",
     eyebrow: "Vans · LGVs · Light Commercials",
-    metaTitle: "Van Tyre Replacement London | Mobile & Commercial",
+    metaTitle: "Mobile Van Tyre Replacement London | Commercial Vans",
     metaDescription:
       "Mobile van tyre replacement across London. C, CP and reinforced tyres for Transit, Sprinter, Ducato and Crafter. Load-rated fitting, 24/7.",
     hero: imgVanTyreReplacement,
@@ -787,7 +787,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "Winter Tyres",
     h1: "Winter Tyre Fitting in London",
     eyebrow: "Cold-Weather Compound · 3PMSF Certified",
-    metaTitle: "Winter Tyres London | Mobile Fitting & Storage",
+    metaTitle: "Winter Tyres London | Mobile Winter Tyre Fitting and Care",
     metaDescription:
       "Winter tyre supply, fitting and off-season storage across London. 3PMSF certified compounds — dramatically shorter braking below 7°C.",
     hero: imgWinterTyres,
@@ -845,7 +845,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "Summer Tyres",
     h1: "Summer Tyre Fitting in London",
     eyebrow: "Warm-Weather Compound · Maximum Grip",
-    metaTitle: "Summer Tyres London | Mobile Fitting & Supply",
+    metaTitle: "Summer Tyres London | Mobile Tyre Fitting and Swap",
     metaDescription:
       "Summer tyre supply and fitting across London. Michelin Primacy, Continental PremiumContact, Bridgestone Turanza and more — fitted at your kerb.",
     hero: imgSummerTyres,
@@ -902,7 +902,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "All-Season Tyres",
     h1: "All-Season Tyre Fitting in London",
     eyebrow: "One Set · Year-Round · 3PMSF Certified",
-    metaTitle: "All-Season Tyres London | CrossClimate & AllSeasonContact",
+    metaTitle: "All-Season Tyres London | CrossClimate AllSeasonContact",
     metaDescription:
       "All-season tyre fitting across London. Michelin CrossClimate 2 and Continental AllSeasonContact — genuine 3PMSF certified, one set year-round.",
     hero: imgAllSeasonTyres,
@@ -1017,7 +1017,7 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "Tyre Pressure Check",
     h1: "Mobile Tyre Pressure Check & Adjustment in London",
     eyebrow: "Pressure · Tread · Condition",
-    metaTitle: "Tyre Pressure Check London | Mobile Inspection",
+    metaTitle: "Tyre Pressure Check London | Mobile Inspection & Top Up",
     metaDescription:
       "Mobile tyre pressure check and full tyre condition inspection across London. Free with any fit; standalone quoted upfront.",
     hero: imgTyrePressureCheck,
@@ -1131,9 +1131,9 @@ export const SERVICES: Record<string, ServiceEntry> = {
     navLabel: "Locking Wheel Key Recovery",
     h1: "Locking Wheel Nut Key Recovery in London",
     eyebrow: "Lost Key · Replacement Sourcing",
-    metaTitle: "Locking Wheel Key Recovery London | Sourcing & Replacement",
+    metaTitle: "Locking Wheel Key Recovery London | Sourcing and Supply",
     metaDescription:
-      "Lost your locking wheel nut key? We source replacements or extract without the key. Mobile service across London.",
+      "Lost your locking wheel nut key? We source exact replacements or extract without damage. Fast 24/7 mobile service across London and M25.",
     hero: imgLockingWheelKeyRecovery,
     keywords: {
       primary: "locking wheel key recovery",

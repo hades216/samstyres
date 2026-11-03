@@ -263,21 +263,21 @@ export const Route = createFileRoute("/$slug")({
     return {
       meta: [
         { title: svc.metaTitle },
-        { name: "description", content: safeServiceDescription(svc) },
+        { name: "description", content: svc.metaDescription },
         {
           name: "keywords",
           content: [svc.keywords.primary, ...svc.keywords.secondary].join(", "),
         },
         { name: "robots", content: "index, follow" },
         { property: "og:title", content: svc.metaTitle },
-        { property: "og:description", content: safeServiceDescription(svc) },
+        { property: "og:description", content: svc.metaDescription },
         { property: "og:type", content: "website" },
         { property: "og:url", content: url },
         { property: "og:image", content: image },
         { property: "og:site_name", content: "Sam's Mobile Tyres" },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: svc.metaTitle },
-        { name: "twitter:description", content: safeServiceDescription(svc) },
+        { name: "twitter:description", content: svc.metaDescription },
         { name: "twitter:image", content: image },
       ],
       links: [

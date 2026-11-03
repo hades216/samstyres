@@ -153,7 +153,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
     slug: "mobile-tyre-fitting-edmonton",
     name: "Edmonton",
     postcode: "N9 and N18",
-    title: "Mobile Tyre Fitting Edmonton | 24/7 Roadside Help",
+    title: "Mobile Tyre Fitting Edmonton | 24/7 Roadside Tyres",
     description:
       "Mobile tyre fitting in Edmonton, N9 and N18. Get 24/7 tyre replacement, puncture assessment and roadside assistance at your location.",
     h1: "Mobile Tyre Fitting in Edmonton",
@@ -361,7 +361,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
     slug: "mobile-tyre-fitting-harlow",
     name: "Harlow",
     postcode: "CM17, CM18, CM19 and CM20",
-    title: "Mobile Tyre Fitting Harlow | 24/7 Emergency Tyres",
+    title: "Mobile Tyre Fitting Harlow | 24/7 Emergency Tyre Help",
     description:
       "24/7 mobile tyre fitting in Harlow, CM17 to CM20, for tyre replacement, puncture repair assessment and roadside assistance at home, work or roadside.",
     h1: "24/7 Mobile Tyre Fitting in Harlow",
@@ -481,7 +481,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
     slug: "mobile-tyre-fitting-epping",
     name: "Epping",
     postcode: "CM16",
-    title: "Mobile Tyre Fitting Epping | 24/7 Tyre Assistance",
+    title: "Mobile Tyre Fitting Epping | 24/7 Rapid Tyre Service",
     description:
       "24/7 mobile tyre fitting in Epping, CM16, for tyre replacement, puncture assessment and roadside assistance near Epping Forest and the M25.",
     h1: "24/7 Mobile Tyre Fitting in Epping",
@@ -521,7 +521,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
     slug: "mobile-tyre-fitting-ware",
     name: "Ware",
     postcode: "SG12",
-    title: "Mobile Tyre Fitting Ware | 24/7 Emergency Tyres",
+    title: "Mobile Tyre Fitting Ware | 24/7 Emergency Tyre Help",
     description:
       "24/7 mobile tyre fitting in Ware, SG12, for tyre replacement, puncture assessment and roadside assistance at home, work or a safe roadside location.",
     h1: "24/7 Mobile Tyre Fitting in Ware",
@@ -561,7 +561,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
     slug: "mobile-tyre-fitting-stevenage",
     name: "Stevenage",
     postcode: "SG1 and SG2",
-    title: "Mobile Tyre Fitting Stevenage | 24/7 Tyre Help",
+    title: "Mobile Tyre Fitting Stevenage | 24/7 Emergency Fitting",
     description:
       "Mobile tyre fitting in Stevenage, SG1 and SG2, available 24/7 for tyre replacement, puncture assessment and roadside assistance near the A1(M).",
     h1: "24/7 Mobile Tyre Fitting in Stevenage",
@@ -601,7 +601,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
     slug: "mobile-tyre-fitting-ilford",
     name: "Ilford",
     postcode: "IG1, IG2, IG3, IG4 and IG6",
-    title: "Mobile Tyre Fitting Ilford | 24/7 Emergency Tyres",
+    title: "Mobile Tyre Fitting Ilford | 24/7 Emergency Tyre Help",
     description:
       "24/7 mobile tyre fitting in Ilford, IG1 to IG6, for tyre replacement, puncture assessment and roadside assistance at home, work or roadside.",
     h1: "24/7 Mobile Tyre Fitting in Ilford",

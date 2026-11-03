@@ -18,7 +18,7 @@ export const Route = createFileRoute("/coverage-areas")({
   component: CoveragePage,
   head: () => ({
     meta: [
-      { title: "Coverage Areas | Sam's Mobile Tyres London & M25" },
+      { title: "Tyre Coverage Areas | Sam's Mobile Tyres London" },
       {
         name: "description",
         content:
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/coverage-areas")({
           "mobile tyre fitting areas, tyres north london, tyres enfield, tyres watford, tyres m25, mobile tyre coverage london",
       },
       { name: "robots", content: "index, follow" },
-      { property: "og:title", content: "Coverage Areas | Sam's Mobile Tyres London & M25" },
+      { property: "og:title", content: "Tyre Coverage Areas | Sam's Mobile Tyres London" },
       {
         property: "og:description",
         content:

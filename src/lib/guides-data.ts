@@ -52,7 +52,7 @@ export type GuideEntry = {
 export const GUIDES: Record<string, GuideEntry> = {
   "m25-tyre-blowout-what-to-do": {
     slug: "m25-tyre-blowout-what-to-do",
-    title: "What to Do After a Tyre Blowout on the M25 | Sam's Mobile Tyres",
+    title: "Tyre Blowout on the M25: Safe Steps | Sam's Tyres UK",
     description:
       "A tyre blowout on the M25 or another smart motorway is frightening but manageable. Here's the safe sequence: control the car, find a refuge, call for help.",
     eyebrow: "Guide · Motorway Safety",
@@ -151,7 +151,7 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "emergency-tyre-fitting-a10-enfield": {
     slug: "emergency-tyre-fitting-a10-enfield",
-    title: "Emergency Tyre Fitting Near the A10 in Enfield | Sam's Mobile Tyres",
+    title: "Emergency Tyre Fitting Near A10 Enfield | Sam's Tyres",
     description:
       "Stopped with a damaged tyre near the A10 in Enfield? Here's how to stop safely, share your exact location, and get mobile tyre help to you.",
     eyebrow: "Guide · Enfield & the A10",
@@ -301,7 +301,7 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "mobile-tyre-fitting-cost-enfield": {
     slug: "mobile-tyre-fitting-cost-enfield",
-    title: "What Affects the Cost of Mobile Tyre Fitting in Enfield | Sam's Mobile Tyres",
+    title: "Mobile Tyre Fitting Cost in Enfield | Sam's Tyres Guide",
     description:
       "There's no single price for mobile tyre fitting — here's what actually drives the cost, and what to have ready for an accurate quote.",
     eyebrow: "Guide · Pricing Factors",
@@ -390,7 +390,7 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "lost-locking-wheel-nut-key": {
     slug: "lost-locking-wheel-nut-key",
-    title: "Lost Locking Wheel Nut Key: What to Do | Sam's Mobile Tyres",
+    title: "Lost Locking Wheel Nut Key: What to Do | Sam's Tyres",
     description:
       "Can't find your locking wheel nut key? Here's where to check first, what to avoid, and the safe ways to get the wheel off anyway.",
     eyebrow: "Guide · Locking Wheel Nuts",
@@ -472,7 +472,7 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "puncture-repair-or-tyre-replacement": {
     slug: "puncture-repair-or-tyre-replacement",
-    title: "Mobile Puncture Repair or Full Tyre Replacement? | Sam's Mobile Tyres",
+    title: "Mobile Puncture Repair vs Replacement | Sam's Tyres UK",
     description:
       "Not every puncture needs a new tyre — but not every puncture is repairable either. Here's the decision framework and what happens at each stage.",
     eyebrow: "Guide · Repair vs Replace",
@@ -558,9 +558,9 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "how-long-does-mobile-tyre-fitting-take": {
     slug: "how-long-does-mobile-tyre-fitting-take",
-    title: "How Long Does Mobile Tyre Fitting Take? | Sam's Mobile Tyres",
+    title: "How Long Does Mobile Tyre Fitting Take? | Sam's Tyres",
     description:
-      "Mobile tyre fitting has two separate time components — getting to you, and doing the job. Here's what affects each one.",
+      "Mobile tyre fitting has two separate time parts: getting to your location and doing the job. Here is what affects each one.",
     eyebrow: "Guide · What to Expect",
     h1: "How long does mobile tyre fitting take?",
     dek: "There are two separate clocks running — how long it takes to reach you, and how long the job itself takes once the fitter arrives.",
@@ -640,7 +640,7 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "emergency-van-tyre-replacement-north-london": {
     slug: "emergency-van-tyre-replacement-north-london",
-    title: "Emergency Van Tyre Replacement in North London | Sam's Mobile Tyres",
+    title: "Emergency Van Tyre Replacement North London | Sam's",
     description:
       "A van tyre failure is a different problem to a car — load, axle position and tyre rating all matter. Here's what to check and share.",
     eyebrow: "Guide · Commercial & Van Tyres",
@@ -717,7 +717,7 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "how-to-read-a-tyre-sidewall": {
     slug: "how-to-read-a-tyre-sidewall",
-    title: "How to Read a Tyre Sidewall: Size, Load Index & Speed Rating | Sam's Mobile Tyres",
+    title: "How to Read a Tyre Sidewall: Size and Load | Sam's",
     description:
       "Tyre sidewalls carry every specification you need — size, construction, load index, speed rating and age. Here's how to decode them.",
     eyebrow: "Guide · Tyre Basics",
@@ -784,9 +784,9 @@ export const GUIDES: Record<string, GuideEntry> = {
 
   "tpms-warning-light-meaning": {
     slug: "tpms-warning-light-meaning",
-    title: "TPMS Warning Light: What It Means and What to Do | Sam's Mobile Tyres",
+    title: "TPMS Warning Light: Meaning and Actions | Sam's Tyres",
     description:
-      "A TPMS light isn't always a puncture — temperature changes and sensor faults trigger it too. Here's how to work out which one you're dealing with.",
+      "A TPMS light is not always a puncture — temperature shifts or sensor faults trigger it too. Here is how to work out which one you have.",
     eyebrow: "Guide · Dashboard Warnings",
     h1: "TPMS warning light: what it means and what to do",
     dek: "A tyre pressure warning light is worth taking seriously, but it isn't automatically a puncture. Here's how to work out which it is.",
@@ -864,7 +864,7 @@ export const GUIDES: Record<string, GuideEntry> = {
   },
   "uk-tyre-law": {
     slug: "uk-tyre-law",
-    title: "UK Tyre Law: Legal Tread Depth, MOT Rules & Fines | Sam's Mobile Tyres",
+    title: "UK Tyre Law: Legal Tread Depth and MOT | Sam's Tyres",
     description:
       "A complete guide to UK tyre law: the 1.6mm legal tread limit, tyre age rules, mixing cross-ply and radial, MOT failure points, and £2,500 penalty fines.",
     eyebrow: "Guide · UK Legislation",
@@ -951,7 +951,7 @@ export const GUIDES: Record<string, GuideEntry> = {
   },
   "wheel-balancing-explained": {
     slug: "wheel-balancing-explained",
-    title: "Why Does My Steering Wheel Vibrate? Wheel Balancing Explained | Sam's Mobile Tyres",
+    title: "Why Does My Steering Wheel Vibrate? Wheel Balancing",
     description:
       "Steering wheel shaking between 50-70 mph? Learn the symptoms of unbalanced wheels, why balancing matters, and how mobile digital balancing cures vibrations.",
     eyebrow: "Guide · Vehicle Maintenance",
@@ -1010,7 +1010,7 @@ export const GUIDES: Record<string, GuideEntry> = {
   },
   "car-battery-life": {
     slug: "car-battery-life",
-    title: "How Long Does a Car Battery Last? Signs It Needs Replacing | Sam's Mobile Tyres",
+    title: "How Long Does a Car Battery Last? | Sam's Tyres Guide",
     description:
       "Average UK car battery lifespan, early warning signs of failure, winter battery care, and 24/7 mobile battery testing and replacement services.",
     eyebrow: "Guide · Battery Health",
