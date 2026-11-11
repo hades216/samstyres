@@ -15,11 +15,41 @@ RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
 RewriteRule ^wheel-balancing/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
 RewriteRule ^car-battery-replacement/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
 
+# 1c. Security Headers
+<IfModule mod_headers.c>
+  # Enforce modern Content Security Policy (allows GTM, GA4, Ahrefs, Cloudflare, Google Maps, inline hydration)
+  Header set Content-Security-Policy "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://analytics.ahrefs.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src 'self' https://www.googletagmanager.com https://www.google.com https://maps.google.com; connect-src 'self' https: wss:; worker-src 'self' blob:; object-src 'none'; base-uri 'self';"
+  
+  # Prevent MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Anti-Clickjacking protection
+  Header set X-Frame-Options "SAMEORIGIN"
+  
+  # Referrer policy for privacy & accurate attribution
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Strict Transport Security (HSTS) - 1 year
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  
+  # Modern Permissions Policy
+  Header set Permissions-Policy "geolocation=(self), microphone=(), camera=(), payment=(), usb=()"
+  
+  # Anti-XSS Protection filter
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
 # Ensure ai-catalog.json has JSON content-type and CORS for AI discovery agents
 <Files "ai-catalog.json">
   Header set Content-Type "application/json; charset=utf-8"
   Header set Access-Control-Allow-Origin "*"
 </Files>
+
+# Ensure crawler & security files have correct plain text encoding
+<FilesMatch "^(robots\.txt|humans\.txt|ads\.txt|app-ads\.txt|security\.txt)$">
+  Header set Content-Type "text/plain; charset=utf-8"
+  Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
 
 # 2. Prevent redirect loops or trailing slash on existing files
 # Serve existing files and directories directly
@@ -43,4 +73,3 @@ RewriteRule ^ index.html [L]
 <FilesMatch "\.(html|xml)$">
   Header set Cache-Control "public, max-age=3600, must-revalidate"
 </FilesMatch>
-

@@ -1,0 +1,3 @@
+# Direct / Reseller records (IAB Tech Lab standard placeholder for brand safety & anti-spoofing)
+# samsmobiletyres.co.uk is a direct verified business domain.
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

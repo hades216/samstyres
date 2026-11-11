@@ -46,6 +46,14 @@ const websiteSchema = {
   name: "Sam's Mobile Tyres",
   url: SITE_URL,
   publisher: { "@id": `${SITE_URL}/#business` },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE_URL}/services?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 function NotFoundComponent() {
@@ -127,6 +135,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "24/7 emergency mobile tyre fitting, puncture repairs and roadside help across London. Fast response, premium tyres, trained technicians.",
       },
       { name: "author", content: "Sam's Mobile Tyres" },
+      { name: "geo.region", content: "GB-ENG" },
+      { name: "geo.placename", content: "London, Enfield, Greater London" },
+      { name: "geo.position", content: "51.6521;-0.0807" },
+      { name: "ICBM", content: "51.6521, -0.0807" },
+      { property: "og:locale", content: "en_GB" },
       { property: "og:title", content: "Sam's Mobile Tyres — 24/7 Mobile Tyre Fitting London" },
       {
         property: "og:description",

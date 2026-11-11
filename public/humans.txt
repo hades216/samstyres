@@ -1,0 +1,11 @@
+/* TEAM */
+Founder & Lead Technician: Sam
+Contact: info@samsmobiletyres.co.uk
+Location: London, UK
+
+/* SITE */
+Standards: HTML5, CSS3, ESNext
+Framework: TanStack Start & React 19
+Design: Awwwards-Standard Bento & Obsidian Mesh
+Doctype: HTML5
+IDE: Antigravity

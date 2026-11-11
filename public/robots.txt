@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Disallow private build artifacts and internal utilities
+Disallow: /api/
+Disallow: /_build/
+
 Sitemap: https://www.samsmobiletyres.co.uk/sitemap.xml

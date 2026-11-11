@@ -1,0 +1,7 @@
+Contact: mailto:info@samsmobiletyres.co.uk
+Contact: tel:+447949891689
+Expires: 2027-12-31T23:59:59.000Z
+Encryption: https://www.samsmobiletyres.co.uk/pgp-key.txt
+Preferred-Languages: en
+Canonical: https://www.samsmobiletyres.co.uk/.well-known/security.txt
+Policy: https://www.samsmobiletyres.co.uk/security-policy.html
