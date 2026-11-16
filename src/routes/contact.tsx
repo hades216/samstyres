@@ -64,12 +64,7 @@ export const Route = createFileRoute("/contact")({
         content:
           "Contact Sam's Mobile Tyres 24/7 for emergency tyre fitting, puncture repairs or home callouts in London & M25. Call or WhatsApp 07949 891689.",
       },
-      {
-        name: "keywords",
-        content:
-          "contact mobile tyre fitter london, sams mobile tyres phone number, emergency tyre fitting phone number london, whatsapp tyre service",
-      },
-      { name: "robots", content: "index, follow" },
+            { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Contact Sam's Mobile Tyres | 24/7 Phone & WhatsApp" },
       {
         property: "og:description",

@@ -24,12 +24,7 @@ export const Route = createFileRoute("/coverage-areas")({
         content:
           "24/7 mobile tyre fitting across London, Enfield, St Albans, Watford, Harlow, Epping, Stansted & M25. Rapid response mobile fitting at home or roadside.",
       },
-      {
-        name: "keywords",
-        content:
-          "mobile tyre fitting areas, tyres north london, tyres enfield, tyres watford, tyres m25, mobile tyre coverage london",
-      },
-      { name: "robots", content: "index, follow" },
+            { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Tyre Coverage Areas | Sam's Mobile Tyres London" },
       {
         property: "og:description",

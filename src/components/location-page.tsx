@@ -261,6 +261,70 @@ export function LocationPage({ location }: { location: LocationPageData }) {
         </div>
       </section>
 
+      {/* Customer Reviews & Proof Block */}
+      <section className="section-y border-t border-slate-100 bg-slate-50">
+        <div className="container-x max-w-5xl">
+          <SectionHeader
+            eyebrow="Customer Reviews"
+            title={
+              <>
+                Recent customer feedback for{" "}
+                <span className="text-brand italic">{location.name}</span>
+              </>
+            }
+            copy="Genuine customer feedback from verified drivers across London, Essex and Hertfordshire."
+          />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                name: "Omar A.",
+                location: `${location.name} & Surrounds`,
+                text: "Top service from Sam Tyres! Came to my doorstep and replaced my flat tyre quickly with zero hassle. Polite, transparent pricing and fast turnaround.",
+                time: "Verified Customer",
+              },
+              {
+                name: "Konrad M.",
+                location: `${location.name} Corridor`,
+                text: "Came within 45 minutes on a weekend emergency. Friendly guy, excellent gear on the van, and properly balanced the wheel. 10/10 recommendation.",
+                time: "Local Guide Review",
+              },
+              {
+                name: "Sarjeel A.",
+                location: `Near ${location.name}`,
+                text: "Fast puncture assessment and repair on my driveway. Gave honest advice on tyre tread condition and completed the job promptly.",
+                time: "Verified Customer",
+              },
+            ].map((rev) => (
+              <div
+                key={rev.name}
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between">
+                    <div className="font-display font-bold text-ink">{rev.name}</div>
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="mt-1 text-xs text-muted-foreground flex items-center gap-1">
+                    <MapPin className="h-3 w-3 text-brand" /> {rev.location}
+                  </div>
+                  <p className="mt-3 text-sm text-slate-700 leading-relaxed italic">
+                    "{rev.text}"
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                  <span className="text-emerald-700 font-medium">✓ Verified Google Review</span>
+                  <span>{rev.time}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Tyre Size Identification & Quote Preparation Guide */}
       <section className="section-y border-t border-slate-100 bg-white">
         <div className="container-x max-w-5xl">

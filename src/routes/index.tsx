@@ -195,12 +195,7 @@ export const Route = createFileRoute("/")({
         content:
           "Fast 24/7 mobile tyre fitting across London. Emergency puncture repair, new tyres & roadside assistance delivered to your doorstep or roadside.",
       },
-      {
-        name: "keywords",
-        content:
-          "mobile tyre fitting london, emergency tyre fitting, 24/7 mobile tyres london, puncture repair london, mobile tyre fitter near me",
-      },
-      { name: "robots", content: "index, follow" },
+            { name: "robots", content: "index, follow" },
       { property: "og:title", content: "24/7 Mobile Tyre Fitting London | Sam's Mobile Tyres" },
       {
         property: "og:description",

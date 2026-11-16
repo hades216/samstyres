@@ -35,12 +35,7 @@ export const Route = createFileRoute("/about")({
         content:
           "Experienced 24/7 mobile tyre fitting service based in Enfield covering London & M25. BS AU 159 certified puncture repairs and fast roadside assistance.",
       },
-      {
-        name: "keywords",
-        content:
-          "about sams mobile tyres, certified mobile tyre fitter london, mobile tyre technicians enfield, 24/7 roadside tyre fitters",
-      },
-      { name: "robots", content: "index, follow" },
+            { name: "robots", content: "index, follow" },
       { property: "og:title", content: "About Sam's Mobile Tyres | London 24/7 Tyre Fitters" },
       {
         property: "og:description",
@@ -67,7 +62,7 @@ export function AboutPage() {
             Mobile tyre help, <span className="text-brand">where you need it.</span>
           </>
         }
-        copy="Sam's Mobile Tyres is based in Enfield and provides 24/7 mobile tyre fitting and roadside tyre assistance across London and nearby areas."
+        copy="Sam's Mobile Tyres operates fully equipped mobile tyre vans dispatched directly to homes, workplaces and roadside breakdowns across London, Essex, Hertfordshire and the M25 corridor."
         breadcrumb={[{ label: "Home", to: "/" }, { label: "About" }]}
         bgImage={van}
       />
@@ -109,7 +104,7 @@ export function AboutPage() {
             <ul className="mt-6 space-y-5 text-sm text-muted-foreground">
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 shrink-0 text-brand" />
-                <span>93 Burncroft Avenue, Enfield, EN3 7JQ, serving London and nearby priority areas.</span>
+                <span>Operating base: 93 Burncroft Avenue, Enfield, EN3 7JQ — dispatching 24/7 mobile units across Greater London, Essex, and Hertfordshire.</span>
               </li>
               <li className="flex gap-3">
                 <Wrench className="h-5 w-5 shrink-0 text-brand" />

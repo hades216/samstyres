@@ -228,11 +228,7 @@ export const Route = createFileRoute("/$slug")({
         meta: [
           { title: guide.title },
           { name: "description", content: guide.description },
-          {
-            name: "keywords",
-            content: `${guide.h1.toLowerCase()}, tyre advice uk, mobile tyre safety, tyre repair tips`,
-          },
-          { name: "robots", content: "index, follow" },
+                    { name: "robots", content: "index, follow" },
           { property: "og:title", content: guide.title },
           { property: "og:description", content: guide.description },
           { property: "og:type", content: "article" },
@@ -307,11 +303,7 @@ export const Route = createFileRoute("/$slug")({
       meta: [
         { title: svc.metaTitle },
         { name: "description", content: svc.metaDescription },
-        {
-          name: "keywords",
-          content: [svc.keywords.primary, ...svc.keywords.secondary].join(", "),
-        },
-        { name: "robots", content: "index, follow" },
+                { name: "robots", content: "index, follow" },
         { property: "og:title", content: svc.metaTitle },
         { property: "og:description", content: svc.metaDescription },
         { property: "og:type", content: "website" },

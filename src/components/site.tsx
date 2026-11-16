@@ -463,8 +463,8 @@ export function Footer() {
               />
             </Link>
             <p className="mt-5 text-sm leading-relaxed text-white/60 max-w-sm">
-              London's trusted 24/7 mobile tyre fitting service. Premium tyres, professional
-              technicians, delivered to your location — day or night.
+              Trusted 24/7 mobile tyre fitting across London, Essex and Hertfordshire. Premium tyres, professional
+              technicians, delivered directly to your home, work or roadside location.
             </p>
             <a
               href={PHONE_HREF}
@@ -580,7 +580,7 @@ export function Footer() {
                   className="flex items-start gap-3 text-white/70 hover:text-brand transition-colors"
                 >
                   <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                  <span>Enfield, London — 24/7 mobile service</span>
+                  <span>London, Essex & Hertfordshire — 24/7 Mobile Service</span>
                 </Link>
               </li>
             </ul>

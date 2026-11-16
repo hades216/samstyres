@@ -40,12 +40,7 @@ export const Route = createFileRoute("/faqs")({
           content:
             "Got questions on mobile tyre fitting? Read answers on 24/7 callouts, response times, BS AU 159 puncture repairs, brands and pricing across London.",
         },
-        {
-          name: "keywords",
-          content:
-            "mobile tyre faqs, how does mobile tyre fitting work, puncture repair cost london, emergency tyre questions",
-        },
-        { name: "robots", content: "index, follow" },
+                { name: "robots", content: "index, follow" },
         { property: "og:title", content: "Mobile Tyre Fitting FAQs | Sam's Mobile Tyres London" },
         {
           property: "og:description",

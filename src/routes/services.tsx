@@ -21,12 +21,7 @@ export const Route = createFileRoute("/services")({
         content:
           "24/7 mobile tyre fitting, emergency puncture repair, van tyres, 24/7 car recovery and roadside assistance across London. Call 07949 891689 for dispatch.",
       },
-      {
-        name: "keywords",
-        content:
-          "mobile tyre services london, 24/7 car recovery london, emergency tyre fitting, puncture repairs, roadside assistance, vehicle towing london",
-      },
-      { name: "robots", content: "index, follow" },
+            { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Mobile Tyre Services in London | Sam's Mobile Tyres" },
       {
         property: "og:description",

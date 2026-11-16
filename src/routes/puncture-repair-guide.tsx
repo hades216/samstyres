@@ -38,12 +38,7 @@ export const Route = createFileRoute("/puncture-repair-guide")({
         content:
           "UK tyre puncture repair guide: what is legally repairable under BS AU 159, sidewall damage limits, MOT rules, and when tyres must be replaced.",
       },
-      {
-        name: "keywords",
-        content:
-          "puncture repair guide, bs au 159 standard, can puncture be repaired, tyre puncture legal rules uk, mot tyre puncture rules",
-      },
-      { name: "robots", content: "index, follow" },
+            { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Tyre Puncture Repair Guide | BS AU 159 UK Standard" },
       {
         property: "og:description",

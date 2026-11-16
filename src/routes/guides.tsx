@@ -26,12 +26,7 @@ export const Route = createFileRoute("/guides")({
         content:
           "Practical UK tyre and roadside safety guides: blowout safety, puncture repairs vs replacement, tyre law, sidewall markings, and TPMS warnings.",
       },
-      {
-        name: "keywords",
-        content:
-          "tyre guides uk, puncture repair advice, tyre legal limits uk, roadside emergency safety, mobile tyre tips",
-      },
-      { name: "robots", content: "index, follow" },
+            { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Tyre & Roadside Safety Guides | Sam's Mobile Tyres" },
       {
         property: "og:description",
