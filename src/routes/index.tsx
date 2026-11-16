@@ -225,6 +225,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       <Header />
+      <main id="main-content">
       <Hero />
       <Marquee />
       <Brands />
@@ -238,6 +239,7 @@ function Home() {
       <FAQs />
       <Guides />
       <Contact />
+      </main>
       <Footer />
       <MobileStickyCTA />
       <WhatsAppFab />

@@ -123,11 +123,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "google-site-verification", content: "google460dca1ea1d3b3d1" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
-      {
-        name: "keywords",
-        content:
-          "mobile tyre fitting london, 24/7 mobile tyres, emergency tyre fitting, puncture repair london, mobile tyre fitter near me, roadside tyre replacement",
-      },
       { title: "Sam's Mobile Tyres — 24/7 Mobile Tyre Fitting London" },
       {
         name: "description",

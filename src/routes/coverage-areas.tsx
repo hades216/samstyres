@@ -142,6 +142,7 @@ export function CoveragePage() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       <Header />
+      <main id="main-content">
       <PageHero
         eyebrow="Where We Roll"
         title={
@@ -340,6 +341,7 @@ export function CoveragePage() {
       </section>
 
       <EmergencyBand />
+      </main>
       <Footer />
       <MobileStickyCTA />
       <WhatsAppFab />

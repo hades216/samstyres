@@ -366,36 +366,57 @@ export const LOCATIONS: Record<string, LocationPage> = {
       "24/7 mobile tyre fitting in Harlow, CM17 to CM20, for tyre replacement, puncture repair assessment and roadside assistance at home, work or roadside.",
     h1: "24/7 Mobile Tyre Fitting in Harlow",
     intro:
-      "A flat or damaged tyre in Harlow does not need to mean a tow and a wait at a garage. Sam's Mobile Tyres attends homes, workplaces and safe roadside locations across the town with mobile fitting, replacement and puncture assessment.",
-    localHeading: "Mobile tyre help across Harlow and the M11 corridor",
+      "A flat or damaged tyre in Harlow does not need to mean a tow and a wait at a garage. Sam's Mobile Tyres attends homes, workplaces and safe roadside locations across Harlow with rapid mobile tyre fitting, emergency replacement and BSAU159 puncture repair assessment. Our mobile vans operate 24 hours a day with typical arrival within 30 to 60 minutes.",
+    localHeading: "Mobile tyre help across Harlow, Old Harlow and the M11 corridor",
     localCopy:
-      "Harlow's town centre, Old Harlow and the surrounding neighbourhoods sit close to the A414 and M11 Junction 7. When you call, share the full postcode, vehicle registration and tyre size, and for roadside calls near the M11 give the direction of travel and a live map pin.",
+      "Harlow's busy town centre, Church Langley, Old Harlow, Pinnacles, and Templefields sit close to the A414 and M11 Junction 7. Dispatched directly toward CM17–CM20, our technicians provide quick 30–60 minute response times. When calling for emergency assistance, simply share your tyre size markings (e.g. 205/55 R16) and vehicle registration for an upfront, transparent quote.",
     homeCopy:
-      "Book fitting on a driveway or suitable private parking area in Harlow. Let us know about any estate barriers, permits or restricted parking before the visit.",
+      "Puncture repair and tyre replacement at home in Harlow. We attend driveways, residential bays and private parking across Church Langley and Old Harlow without garage queues.",
     workplaceCopy:
-      "For business parks and office sites around Harlow, share the site name, access instructions and a contact who can authorise entry if required.",
+      "Tyres fitted while you work across Harlow business parks, Pinnacles Industrial Estate and Templefields. Simply leave your vehicle keys or meet our technician at your parking space.",
     roadsideCopy:
-      "For a flat tyre near the A414 or M11, stop somewhere safe and visible, keep hazard lights on and do not continue driving on a deflated tyre.",
-    roads: ["A414", "A1025", "M11 Junction 7", "CM18", "CM20"],
+      "Emergency roadside tyre assistance near the A414, A1025 and M11 Junction 7. Pull into a safe, well-lit position, activate hazard lights and share a live map pin for rapid attendance.",
+    roads: ["A414", "A1025", "M11 Junction 7", "CM17", "CM18", "CM19", "CM20"],
     faqs: [
       {
-        q: "Which parts of Harlow do you cover?",
-        a: "We cover CM17 to CM20, including the town centre and Old Harlow, subject to safe vehicle access and current availability.",
+        q: "Do you provide 24/7 mobile tyre fitting in Harlow?",
+        a: "Yes. We operate round the clock, 365 days a year across CM17, CM18, CM19 and CM20, including Old Harlow, Church Langley and industrial areas.",
       },
       {
-        q: "Can you help near M11 Junction 7?",
-        a: "Roadside assistance is available where the vehicle has reached a safe, accessible position. Provide the direction of travel and a precise map pin.",
+        q: "How fast can a mobile tyre fitter reach Harlow?",
+        a: "Our typical response time across Harlow and the M11 corridor is 30 to 60 minutes, subject to live traffic and current technician availability.",
       },
       {
-        q: "Can a puncture be assessed at my home in Harlow?",
-        a: "Yes. The tyre must be inspected to decide whether it can be safely repaired or whether replacement is required.",
+        q: "How much does mobile tyre fitting cost in Harlow?",
+        a: "Pricing is transparent with no hidden fitting fees. The final cost depends on your tyre dimensions, chosen brand (budget, mid-range or premium) and whether fitting is scheduled or emergency roadside.",
       },
       {
-        q: "Can I arrange tyre fitting while I am at work?",
-        a: "Yes, if the workplace permits mobile maintenance and there is suitable space around the vehicle. Send access instructions when booking.",
+        q: "Can you repair a tyre puncture at home in Harlow?",
+        a: "Yes. Minor tread punctures within BSAU159 safety standards can be permanently repaired on your driveway. If shoulder or sidewall damage makes repair unsafe, we carry replacement tyres.",
+      },
+      {
+        q: "Can you provide roadside assistance near M11 Junction 7?",
+        a: "Yes. If you suffer a puncture or blowout near M11 Junction 7 or the A414, pull into a safe stopping area, keep hazard lights illuminated and send your live WhatsApp location pin.",
+      },
+      {
+        q: "What payment methods do you accept?",
+        a: "We accept all major credit and debit cards, contactless payments, bank transfers and cash upon successful completion of your tyre fitting.",
+      },
+      {
+        q: "Can you fit tyres at my workplace in Templefields or Pinnacles?",
+        a: "Yes. As long as our technician has safe working clearance around your vehicle, we can fit or replace tyres in commercial car parks while you continue your shift.",
+      },
+      {
+        q: "How do I find my tyre size before requesting a quote?",
+        a: "Check the raised numbers on your tyre's outer sidewall. An example format is 205/55 R16 91V, representing width, profile, rim size, load rating and speed index.",
       },
     ],
-    nearby: ["mobile-tyre-fitting-epping", "mobile-tyre-fitting-bishops-stortford"],
+    nearby: [
+      "mobile-tyre-fitting-epping",
+      "mobile-tyre-fitting-bishops-stortford",
+      "mobile-tyre-fitting-waltham-abbey",
+      "mobile-tyre-fitting-stansted",
+    ],
   },
   "mobile-tyre-fitting-bishops-stortford": {
     slug: "mobile-tyre-fitting-bishops-stortford",
@@ -486,36 +507,53 @@ export const LOCATIONS: Record<string, LocationPage> = {
       "24/7 mobile tyre fitting in Epping, CM16, for tyre replacement, puncture assessment and roadside assistance near Epping Forest and the M25.",
     h1: "24/7 Mobile Tyre Fitting in Epping",
     intro:
-      "Sam's Mobile Tyres covers Epping with mobile fitting, tyre replacement and puncture assessment at suitable homes, workplaces and roadside locations, including routes around Epping Forest and the M25.",
-    localHeading: "Tyre help around Epping and the M25 corridor",
+      "Sam's Mobile Tyres provides round-the-clock mobile tyre fitting, emergency roadside tyre replacement and BSAU159 puncture assessment across Epping and CM16. Whether you are at home, work, or stopped on routes near Epping Forest or M25 Junctions 26 & 27, our mobile units arrive with average dispatch in 30 to 60 minutes.",
+    localHeading: "24/7 tyre help across Epping, CM16 and the M25 corridor",
     localCopy:
-      "Epping's town centre, surrounding villages and the routes toward M25 Junction 26/27 each need slightly different access details. Share your postcode or a map pin, the tyre size and whether the vehicle is on a driveway, in a car park or stopped near woodland roads.",
+      "Covering Epping High Street, Bell Common, Theydon Bois, North Weald and routes toward M25 Junctions 26 & 27. From residential driveways to rural country roads alongside Epping Forest, our mobile vans carry specialist fitting equipment and balanced tyres for cars, SUVs, 4x4s and light commercial vans. Call or WhatsApp with your tyre size (e.g. 205/55 R16) and location for immediate dispatch.",
     homeCopy:
-      "Book fitting at a driveway or suitable private parking space in Epping. Let us know about any gated access or parking restrictions before the visit.",
+      "Driveway tyre fitting and mobile puncture repairs at home across Epping and CM16. No need to visit a local garage or wait for a tow truck; we fit and balance your new tyres on-site.",
     workplaceCopy:
-      "For workplace visits around Epping, share the site address and entry instructions so the fitting can be arranged around your schedule.",
+      "Convenient workplace tyre fitting across Epping commercial parks and office spaces. We handle the tyre replacement while you work, saving you valuable time.",
     roadsideCopy:
-      "If you are stopped near Epping Forest or an unlit stretch of road, use hazard lights, stay somewhere safe and share a live location pin rather than relying on a road name alone.",
+      "Emergency roadside tyre assistance along the B1393, A113 and M25 Junction 26/27. For breakdowns near Epping Forest or unlit country lanes, park safely, activate hazard lights and send a live map pin.",
     roads: ["B1393", "A113", "M25 Junction 26", "M25 Junction 27", "CM16"],
     faqs: [
       {
-        q: "Do you provide mobile tyre fitting throughout Epping?",
-        a: "Yes, across CM16 at suitable homes, workplaces and roadside locations, subject to access and availability.",
+        q: "Do you provide 24/7 mobile tyre fitting throughout Epping?",
+        a: "Yes. We offer 24/7 call-outs across CM16 and surrounding Essex villages, attending homes, workplaces and roadside breakdowns.",
       },
       {
-        q: "Can you help near Epping Forest roads?",
-        a: "We can attend accessible locations around Epping. A live map pin is important where landmarks and road names may be unclear among woodland routes.",
+        q: "What is your typical arrival time in Epping?",
+        a: "Our technicians typically arrive within 30 to 60 minutes across Epping and nearby M25 junctions, depending on traffic conditions.",
+      },
+      {
+        q: "How much does mobile tyre fitting cost in Epping?",
+        a: "Pricing is transparent with no hidden call-out fees. The price includes mobile callout, tyre supply, fitting, new valve and wheel balancing based on your specific tyre size and brand preference.",
+      },
+      {
+        q: "Can you help on roadside breakdowns near Epping Forest?",
+        a: "Yes. If your tyre deflates near Epping Forest or on rural roads, pull onto a safe verge, keep your hazard lights on and send us your live WhatsApp location pin.",
       },
       {
         q: "Can you attend near M25 Junction 26 or 27?",
-        a: "Assistance is available where the vehicle is in a safe, accessible position near the junctions. Share the exact carriageway and direction of travel.",
+        a: "Yes. We provide emergency tyre assistance near M25 Junctions 26 and 27 whenever your vehicle is in an accessible, safe location.",
       },
       {
-        q: "Can every puncture be repaired?",
-        a: "No. Sidewall damage, larger injuries and unsafe tyre condition can require replacement. The tyre must be inspected before repair is confirmed.",
+        q: "Can every puncture be repaired on-site?",
+        a: "Minor punctures within the central 70% tread area can be repaired under BSAU159 standards. Sidewall splits or run-flat damage will require tyre replacement.",
+      },
+      {
+        q: "What details do I need when calling for tyre help?",
+        a: "Please provide your vehicle registration, the tyre size markings from your sidewall (e.g., 205/55 R16), and your current postcode or live map location.",
       },
     ],
-    nearby: ["mobile-tyre-fitting-waltham-abbey", "mobile-tyre-fitting-harlow"],
+    nearby: [
+      "mobile-tyre-fitting-waltham-abbey",
+      "mobile-tyre-fitting-harlow",
+      "mobile-tyre-fitting-chingford",
+      "mobile-tyre-fitting-enfield",
+    ],
   },
   "mobile-tyre-fitting-ware": {
     slug: "mobile-tyre-fitting-ware",

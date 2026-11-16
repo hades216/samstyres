@@ -59,6 +59,7 @@ export function AboutPage() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       <Header />
+      <main id="main-content">
       <PageHero
         eyebrow="About Us"
         title={
@@ -128,6 +129,7 @@ export function AboutPage() {
         </div>
       </section>
       <EmergencyBand />
+      </main>
       <Footer />
       <MobileStickyCTA />
       <WhatsAppFab />

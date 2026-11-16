@@ -123,14 +123,57 @@ export const Route = createFileRoute("/$slug")({
           acceptedAnswer: { "@type": "Answer", text: a },
         })),
       };
+      const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "@id": `${url}#localbusiness`,
+        name: `Sam's Mobile Tyres — ${location.name}`,
+        url,
+        telephone: PHONE,
+        priceRange: "££",
+        image: `${SITE_URL}/og-preview.jpg`,
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday",
+            ],
+            opens: "00:00",
+            closes: "23:59",
+          },
+        ],
+        areaServed: {
+          "@type": "Place",
+          name: location.name,
+          ...(geo
+            ? {
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: geo.lat,
+                  longitude: geo.lng,
+                },
+              }
+            : {}),
+        },
+      };
+
       return {
         meta: [
           { title: location.title },
           { name: "description", content: location.description },
-          {
-            name: "keywords",
-            content: `mobile tyre fitting ${location.name.toLowerCase()}, emergency tyres ${location.name.toLowerCase()}, puncture repair ${location.name.toLowerCase()}, ${location.postcode.toLowerCase()}`,
-          },
+          ...(geo
+            ? [
+                { name: "geo.placename", content: `${location.name}, Essex, UK` },
+                { name: "geo.position", content: `${geo.lat};${geo.lng}` },
+                { name: "ICBM", content: `${geo.lat}, ${geo.lng}` },
+              ]
+            : []),
           { name: "robots", content: "index, follow" },
           { property: "og:title", content: location.title },
           { property: "og:description", content: location.description },
@@ -142,7 +185,7 @@ export const Route = createFileRoute("/$slug")({
           { name: "twitter:description", content: location.description },
         ],
         links: [{ rel: "canonical", href: url }],
-        scripts: [serviceSchema, breadcrumbSchema, faqSchema].map((schema) => ({
+        scripts: [serviceSchema, localBusinessSchema, breadcrumbSchema, faqSchema].map((schema) => ({
           type: "application/ld+json",
           children: JSON.stringify(schema),
         })),
@@ -338,6 +381,7 @@ function ServiceDetailPage({ svc }: { svc: ServiceEntry }) {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       <Header />
+      <main id="main-content">
 
       {/* 1 · Hero */}
       <ServiceHero svc={svc} />
@@ -577,6 +621,7 @@ function ServiceDetailPage({ svc }: { svc: ServiceEntry }) {
 
       {/* 18 · Final Local SEO paragraph */}
       <LocalSeoSection paragraph={localSeo} />
+      </main>
 
       <Footer />
       <MobileStickyCTA />

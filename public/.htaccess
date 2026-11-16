@@ -1,6 +1,10 @@
-Options -MultiViews
+DirectoryIndex index.html
+Options -MultiViews +FollowSymLinks
 RewriteEngine On
 RewriteBase /
+
+# Direct pass-through for sitemap.xml, robots.txt and well-known files
+RewriteRule ^(sitemap\.xml|robots\.txt|ai-catalog\.json|humans\.txt|ads\.txt|app-ads\.txt)$ - [L]
 
 # 1. Canonical Redirect: Enforce https://www.samsmobiletyres.co.uk
 # Redirect non-www to www
@@ -17,7 +21,7 @@ RewriteRule ^car-battery-replacement/?$ https://www.samsmobiletyres.co.uk/servic
 
 # 1c. Security Headers
 <IfModule mod_headers.c>
-  # Enforce modern Content Security Policy (allows GTM, GA4, Ahrefs, Cloudflare, Google Maps, inline hydration)
+  # Content Security Policy (allows GTM, GA4, Ahrefs, Google Maps, inline hydration)
   Header set Content-Security-Policy "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://analytics.ahrefs.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src 'self' https://www.googletagmanager.com https://www.google.com https://maps.google.com; connect-src 'self' https: wss:; worker-src 'self' blob:; object-src 'none'; base-uri 'self';"
   
   # Prevent MIME type sniffing
@@ -39,7 +43,12 @@ RewriteRule ^car-battery-replacement/?$ https://www.samsmobiletyres.co.uk/servic
   Header set X-XSS-Protection "1; mode=block"
 </IfModule>
 
-# Ensure ai-catalog.json has JSON content-type and CORS for AI discovery agents
+# Ensure XML and JSON content types are correct
+<Files "sitemap.xml">
+  Header set Content-Type "application/xml; charset=utf-8"
+  Header set Access-Control-Allow-Origin "*"
+</Files>
+
 <Files "ai-catalog.json">
   Header set Content-Type "application/json; charset=utf-8"
   Header set Access-Control-Allow-Origin "*"
@@ -51,8 +60,7 @@ RewriteRule ^car-battery-replacement/?$ https://www.samsmobiletyres.co.uk/servic
   Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
 
-# 2. Prevent redirect loops or trailing slash on existing files
-# Serve existing files and directories directly
+# 2. Prevent redirect loops or trailing slash on existing files and directories
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]

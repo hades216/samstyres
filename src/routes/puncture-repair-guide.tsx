@@ -191,6 +191,7 @@ function PunctureRepairGuidePage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
+      <main id="main-content">
 
       <PageHero
         eyebrow="Guide · BS AU 159"
@@ -391,6 +392,7 @@ function PunctureRepairGuidePage() {
       </section>
 
       <EmergencyBand />
+      </main>
       <Footer />
       <WhatsAppFab />
       <MobileStickyCTA />

@@ -165,6 +165,7 @@ export function GuidePage({ guide }: { guide: GuideEntry }) {
   return (
     <div className="min-h-screen bg-white overflow-x-clip">
       <Header />
+      <main id="main-content">
 
       <PageHero
         eyebrow={guide.eyebrow}
@@ -265,6 +266,7 @@ export function GuidePage({ guide }: { guide: GuideEntry }) {
           </div>
         </section>
       )}
+      </main>
 
       <EmergencyBand />
       <Footer />

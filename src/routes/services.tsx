@@ -74,6 +74,7 @@ function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
+      <main id="main-content">
 
       <PageHero
         eyebrow="All Services"
@@ -182,6 +183,7 @@ function ServicesPage() {
         </div>
       </section>
 
+      </main>
       <Footer />
       <MobileStickyCTA />
       <WhatsAppFab />

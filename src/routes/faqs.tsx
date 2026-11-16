@@ -70,6 +70,7 @@ function FaqsPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
+      <main id="main-content">
       <PageHero
         eyebrow="Support · Knowledge Base"
         title="Frequently asked questions"
@@ -114,6 +115,7 @@ function FaqsPage() {
         </div>
       </section>
       <EmergencyBand />
+      </main>
       <Footer />
       <WhatsAppFab />
       <MobileStickyCTA />

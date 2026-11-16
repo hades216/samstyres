@@ -4,10 +4,14 @@ import {
   BriefcaseBusiness,
   Car,
   CheckCircle2,
+  Clock,
   Home,
   MapPin,
   MessageCircle,
   Phone,
+  ShieldCheck,
+  Star,
+  Wrench,
 } from "lucide-react";
 import {
   EmergencyBand,
@@ -62,6 +66,7 @@ export function LocationPage({ location }: { location: LocationPageData }) {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       <Header />
+      <main id="main-content">
       <PageHero
         eyebrow={`${location.postcode} · Open 24/7`}
         title={
@@ -99,9 +104,17 @@ export function LocationPage({ location }: { location: LocationPageData }) {
           >
             <MessageCircle className="h-4 w-4" /> Send tyre details
           </a>
-          <span className="inline-flex items-center gap-2 text-sm text-muted-foreground sm:ml-auto">
-            <MapPin className="h-4 w-4 text-brand" /> {location.postcode}
-          </span>
+          <div className="flex items-center gap-4 text-xs sm:text-sm text-slate-700 font-medium sm:ml-auto">
+            <span className="inline-flex items-center gap-1.5 text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
+              <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> 4.9 Rating (Verified)
+            </span>
+            <span className="hidden md:inline-flex items-center gap-1.5 text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+              <Clock className="h-4 w-4 text-emerald-600" /> 30–60 Min Response
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-slate-600">
+              <MapPin className="h-4 w-4 text-brand" /> {location.postcode}
+            </span>
+          </div>
         </div>
       </section>
 
@@ -248,13 +261,72 @@ export function LocationPage({ location }: { location: LocationPageData }) {
         </div>
       </section>
 
+      {/* Tyre Size Identification & Quote Preparation Guide */}
+      <section className="section-y border-t border-slate-100 bg-white">
+        <div className="container-x max-w-5xl">
+          <SectionHeader
+            eyebrow="Quick Guide"
+            title="How to find your tyre size before calling"
+            copy={`Providing your tyre size allows our mobile van to arrive in ${location.name} fully stocked with the exact matching tyre.`}
+          />
+          <div className="mt-10 grid gap-8 md:grid-cols-2 items-center">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-7">
+              <div className="font-mono text-xs uppercase tracking-wider text-brand font-bold">
+                Example Markings
+              </div>
+              <div className="mt-2 text-3xl font-extrabold text-navy font-mono">
+                205 / 55 R 16 <span className="text-brand">91V</span>
+              </div>
+              <ul className="mt-6 space-y-3 text-sm text-slate-700">
+                <li className="flex items-start gap-2">
+                  <span className="font-mono font-bold text-navy w-12 shrink-0">205</span>
+                  <span>Width of the tyre in millimetres.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="font-mono font-bold text-navy w-12 shrink-0">55</span>
+                  <span>Aspect ratio (height as % of tyre width).</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="font-mono font-bold text-navy w-12 shrink-0">R 16</span>
+                  <span>Radial construction & 16-inch wheel rim diameter.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="font-mono font-bold text-brand w-12 shrink-0">91V</span>
+                  <span>Load index (615kg) and speed rating (V = up to 149mph).</span>
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <div className="card-premium p-6">
+                <div className="flex items-center gap-3">
+                  <ShieldCheck className="h-5 w-5 text-emerald-600 shrink-0" />
+                  <h3 className="font-display font-bold text-ink">Transparent Pricing Factors</h3>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  Final quotes depend on tyre size, premium vs mid-range/budget brands, and location. Our quote is fully transparent with no hidden fitting fees.
+                </p>
+              </div>
+              <div className="card-premium p-6">
+                <div className="flex items-center gap-3">
+                  <Wrench className="h-5 w-5 text-brand shrink-0" />
+                  <h3 className="font-display font-bold text-ink">Puncture Assessment Protocol</h3>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  Minor tread punctures within BSAU159 standards are safely repaired on-site. Shoulder or sidewall damage requires full tyre replacement for safety.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="border-y border-slate-100 bg-slate-50 py-12">
         <div className="container-x">
           <h2 className="font-display text-2xl font-bold text-ink">
             Nearby mobile tyre fitting areas
           </h2>
           <div className="mt-5 flex flex-wrap gap-3">
-            {location.nearby.map((slug) => (
+            {location.nearby.filter((slug) => LOCATIONS[slug]).map((slug) => (
               <Link
                 key={slug}
                 to="/$slug"
@@ -271,6 +343,7 @@ export function LocationPage({ location }: { location: LocationPageData }) {
           </div>
         </div>
       </section>
+      </main>
 
       <EmergencyBand />
       <Footer />

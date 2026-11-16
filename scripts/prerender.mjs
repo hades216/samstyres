@@ -15,17 +15,20 @@ const locMatches = [...sitemapContent.matchAll(/<loc>https:\/\/www\.samsmobilety
 const routes = locMatches.map(m => m[1] === '' ? '/' : m[1]);
 console.log(`Parsed ${routes.length} routes from sitemap.xml`);
 
-// 2. Start server
+const PORT = 3055;
+
+// 2. Start server on isolated port
 const serverProcess = spawn('node', ['.output/server/index.mjs'], {
   cwd: rootDir,
-  stdio: 'inherit'
+  stdio: 'inherit',
+  env: { ...process.env, PORT: String(PORT), NITRO_PORT: String(PORT) }
 });
 
 // Wait 4 seconds for server to start
 await new Promise(r => setTimeout(r, 4000));
 
 async function fetchRoute(route) {
-  const url = `http://localhost:3000${route}`;
+  const url = `http://localhost:${PORT}${route}`;
   const filename = route === '/' ? 'index.html' : `${route.replace(/^\//, '')}.html`;
   const outPath = path.resolve(distDir, filename);
 

@@ -132,6 +132,7 @@ export function ContactPage() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       <Header />
+      <main id="main-content">
       <PageHero
         eyebrow="Get In Touch"
         title={
@@ -363,6 +364,7 @@ export function ContactPage() {
       </section>
 
       <EmergencyBand />
+      </main>
       <Footer />
       <MobileStickyCTA />
       <WhatsAppFab />
