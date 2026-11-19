@@ -377,36 +377,13 @@ export function LocationPage({ location }: { location: LocationPageData }) {
             </div>
             <div className="space-y-4">
               <div className="card-premium p-6">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <ShieldCheck className="h-5 w-5 text-emerald-600 shrink-0" />
-                    <h3 className="font-display font-bold text-ink">Transparent Pricing & Starting Rates</h3>
-                  </div>
-                  <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
-                    No Hidden Fees
-                  </span>
+                <div className="flex items-center gap-3">
+                  <ShieldCheck className="h-5 w-5 text-emerald-600 shrink-0" />
+                  <h3 className="font-display font-bold text-ink">Upfront Quote & No Hidden Fees</h3>
                 </div>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                  Upfront fixed pricing before dispatch. Typical starting rates across {location.name}:
+                  Every quote is agreed in advance based on your exact tyre size, brand preference, and location. No surprise call-out additions when our technician arrives.
                 </p>
-                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4 text-center">
-                  <div className="rounded-xl bg-slate-50 p-2.5 border border-slate-100">
-                    <div className="text-xs text-muted-foreground">Puncture Repair</div>
-                    <div className="text-base font-bold text-navy mt-0.5">from £45</div>
-                  </div>
-                  <div className="rounded-xl bg-slate-50 p-2.5 border border-slate-100">
-                    <div className="text-xs text-muted-foreground">Budget Tyres</div>
-                    <div className="text-base font-bold text-navy mt-0.5">from £65</div>
-                  </div>
-                  <div className="rounded-xl bg-slate-50 p-2.5 border border-slate-100">
-                    <div className="text-xs text-muted-foreground">Mid-Range</div>
-                    <div className="text-base font-bold text-navy mt-0.5">from £85</div>
-                  </div>
-                  <div className="rounded-xl bg-slate-50 p-2.5 border border-slate-100">
-                    <div className="text-xs text-muted-foreground">Premium Brands</div>
-                    <div className="text-base font-bold text-navy mt-0.5">from £120</div>
-                  </div>
-                </div>
               </div>
               <div className="card-premium p-6">
                 <div className="flex items-center gap-3">

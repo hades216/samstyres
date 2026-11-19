@@ -15,7 +15,7 @@ const locMatches = [...sitemapContent.matchAll(/<loc>https:\/\/www\.samsmobilety
 const routes = locMatches.map(m => m[1] === '' ? '/' : m[1]);
 console.log(`Parsed ${routes.length} routes from sitemap.xml`);
 
-const PORT = 3055;
+const PORT = 3060;
 
 // 2. Start server on isolated port
 const serverProcess = spawn('node', ['.output/server/index.mjs'], {

@@ -687,7 +687,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
       "Stranded with a puncture, tyre blowout or flat battery in North London? Sam's Mobile Tyres provides round-the-clock emergency mobile tyre fitting, BSAU159 puncture repair assessment and mobile wheel replacement direct to your driveway, workplace car park or safe roadside location across North and North West London. We dispatch fully equipped vans 24 hours a day with arrival within 30 to 45 minutes.",
     localHeading: "Rapid mobile tyre fitting across Barnet, Haringey, Enfield, Camden & Islington",
     localCopy:
-      "Dispatched from our primary base in Enfield (EN3), our mobile tyre technicians operate across the A406 North Circular, A10, A1, A503 and M25 junctions 23 to 25. We provide rapid emergency call-outs across Barnet, Finchley, Wood Green, Tottenham, Highgate, Muswell Hill, Camden Town and Islington. Transparent pricing with budget tyres from £65, mid-range from £85, premium brands from £120, and puncture repair from £45.",
+      "Dispatched from our primary base in Enfield (EN3), our mobile tyre technicians operate across the A406 North Circular, A10, A1, A503 and M25 junctions 23 to 25. We provide rapid emergency call-outs across Barnet, Finchley, Wood Green, Tottenham, Highgate, Muswell Hill, Camden Town and Islington. Clear, upfront quotes before dispatch with no hidden call-out fees across all vehicle types and sizes.",
     homeCopy:
       "Professional mobile tyre fitting and electronic wheel balancing at your doorstep. We fit tyres on driveways and residential streets across Enfield, Barnet, Finchley, Southgate and Haringey with zero garage queues.",
     workplaceCopy:
@@ -711,7 +711,7 @@ export const LOCATIONS: Record<string, LocationPage> = {
       },
       {
         q: "How much does mobile tyre fitting cost in North London?",
-        a: "We offer transparent, upfront quotes before dispatch with no hidden call-out fees. Puncture repairs start from £45. Fitted replacement tyres start from £65 for budget options, £85 for mid-range (Kumho, Nexen), and £120 for premium brands (Michelin, Goodyear, Continental, Pirelli).",
+        a: "Pricing is fully transparent with no hidden fitting fees. We confirm your exact quote over the phone before dispatch based on your tyre dimensions, chosen brand (budget, mid-range or premium) and location.",
       },
       {
         q: "Do you provide 24/7 emergency tyre fitting in North London?",
