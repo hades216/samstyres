@@ -752,7 +752,7 @@ function Services() {
     {
       slug: "car-recovery",
       icon: Truck,
-      image: svcRoadside,
+      image: van,
       title: "24/7 Car Recovery",
       desc: "Emergency breakdown recovery and vehicle towing across London and M25. Rapid-response flatbed and roadside transport.",
     },

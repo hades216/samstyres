@@ -15,7 +15,7 @@ import imgPremiumTyreBrands from "@/assets/svc/premium-tyre-brands.webp";
 import imgWinterTyres from "@/assets/svc/winter-tyres.webp";
 import imgSummerTyres from "@/assets/svc/summer-tyres.webp";
 import imgAllSeasonTyres from "@/assets/svc/all-season-tyres.webp";
-import imgCarRecovery from "@/assets/svc/roadside-tyre-assistance.webp";
+import imgCarRecovery from "@/assets/van.webp";
 import imgTpmsSensorReplacement from "@/assets/svc/tpms-sensor-replacement.webp";
 import imgTyrePressureCheck from "@/assets/svc/tyre-pressure-check.webp";
 import imgEmergencyBlowoutAssistance from "@/assets/svc/emergency-blowout-assistance.webp";
