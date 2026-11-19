@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { MapPin, Clock, Zap, Phone, CheckCircle2 } from "lucide-react";
+import { MapPin, Clock, Zap, Phone, CheckCircle2, ArrowRight } from "lucide-react";
 import {
   Header,
   Footer,
@@ -331,6 +331,46 @@ export function CoveragePage() {
                 <Phone className="h-4 w-4" /> Check my postcode
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Helpful resources and guides cross-links */}
+      <section className="section-y border-t border-slate-100 bg-slate-50">
+        <div className="container-x">
+          <SectionHeader
+            eyebrow="Helpful Resources"
+            title="Tyre advice, pricing and customer feedback"
+            copy="Learn more about our mobile tyre fitting services, safety advice and verified driver reviews."
+          />
+          <div className="mt-10 grid gap-5 sm:grid-cols-3">
+            <Link to="/reviews" className="card-premium card-premium-hover p-6">
+              <h3 className="font-display text-lg font-bold text-ink">Customer Reviews</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                Read 76+ verified 5-star Google reviews from drivers across London, Essex and Hertfordshire.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+                View reviews <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link to="/guides" className="card-premium card-premium-hover p-6">
+              <h3 className="font-display text-lg font-bold text-ink">Tyre Care & Fitting Guides</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                Explore our expert roadside advice, tyre size identification tips and puncture repair guidelines.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+                Explore guides <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link to="/services" className="card-premium card-premium-hover p-6">
+              <h3 className="font-display text-lg font-bold text-ink">All Mobile Services</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                Emergency mobile fitting, puncture repair, commercial van tyres, locking wheel nut removal and jump starts.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+                Browse services <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

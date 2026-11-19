@@ -169,7 +169,7 @@ export const Route = createFileRoute("/$slug")({
           { name: "description", content: location.description },
           ...(geo
             ? [
-                { name: "geo.placename", content: `${location.name}, Essex, UK` },
+                { name: "geo.placename", content: `${location.name}, ${location.name.toLowerCase().includes('london') || ['enfield', 'edmonton', 'chingford', 'ilford'].includes(location.slug.replace('mobile-tyre-fitting-', '')) ? 'London' : ['st-albans', 'watford', 'ware', 'stevenage', 'cheshunt', 'waltham-cross'].includes(location.slug.replace('mobile-tyre-fitting-', '')) ? 'Hertfordshire' : 'Essex'}, UK` },
                 { name: "geo.position", content: `${geo.lat};${geo.lng}` },
                 { name: "ICBM", content: `${geo.lat}, ${geo.lng}` },
               ]
