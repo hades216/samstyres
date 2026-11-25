@@ -88,6 +88,13 @@ export function AboutPage() {
                 <Phone className="h-4 w-4" />
                 Call {PHONE}
               </a>
+              <Link to="/services" className="btn-base btn-outline">
+                <Wrench className="h-4 w-4" />
+                Explore Services
+              </Link>
+              <Link to="/faqs" className="btn-base btn-outline">
+                Frequently Asked Questions
+              </Link>
               <a
                 href={WHATSAPP_HREF}
                 target="_blank"

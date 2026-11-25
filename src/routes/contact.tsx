@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import {
   Phone,
@@ -354,6 +354,78 @@ export function ContactPage() {
                 </form>
               )}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Services & Assistance Silo Navigation */}
+      <section className="border-t border-slate-100 bg-slate-50 py-12">
+        <div className="container-x">
+          <SectionHeader
+            eyebrow="Direct Assistance"
+            title="Explore our key mobile tyre services"
+            copy="Need immediate roadside assistance, emergency puncture repair or looking for local coverage information?"
+          />
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <Link
+              to="/$slug"
+              params={{ slug: "emergency-mobile-tyre-fitting" }}
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Emergency Mobile Tyre Fitting</h3>
+                <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                  24/7 rapid mobile tyre dispatch to roadside, home or motorway across London and M25.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Emergency service <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/$slug"
+              params={{ slug: "mobile-puncture-repair" }}
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Mobile Puncture Repair</h3>
+                <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                  Permanent BS AU 159 plug-patch repairs completed on-site wherever your car is parked.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Puncture repair <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/$slug"
+              params={{ slug: "mobile-tyre-replacement" }}
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Mobile Tyre Replacement</h3>
+                <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                  Budget, mid-range and premium tyres fitted with laser digital wheel balancing.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Tyre replacement <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/faqs"
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Frequently Asked Questions</h3>
+                <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                  Got questions on payment, arrival times, tyre sizes or out-of-hours coverage?
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Read FAQs <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, CheckCircle2, MapPin, MessageCircle, Star } from "lucide-react";
 import {
   EmergencyBand,
@@ -146,6 +146,46 @@ export function ReviewsPage() {
             >
               View all 76+ reviews live on Google <ArrowUpRight className="h-4 w-4" />
             </a>
+          </div>
+
+          {/* Cross-linking block */}
+          <div className="mt-16 pt-12 border-t border-slate-100 grid gap-6 sm:grid-cols-3">
+            <Link
+              to="/services"
+              className="card-premium p-6 hover:-translate-y-1 transition-transform"
+            >
+              <h3 className="font-display font-bold text-ink">All Mobile Tyre Services</h3>
+              <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                Explore emergency fitting, roadside recovery, locking wheel nut removal and commercial van tyres.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-brand">
+                Browse services <ArrowUpRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/coverage-areas"
+              className="card-premium p-6 hover:-translate-y-1 transition-transform"
+            >
+              <h3 className="font-display font-bold text-ink">London Coverage Areas</h3>
+              <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                Check our coverage across North London, East London, Central London, Essex, Hertfordshire & M25.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-brand">
+                View coverage <ArrowUpRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/faqs"
+              className="card-premium p-6 hover:-translate-y-1 transition-transform"
+            >
+              <h3 className="font-display font-bold text-ink">Customer FAQs</h3>
+              <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                Got questions before booking? Read straight answers about our pricing, dispatch, and fitting.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-brand">
+                View FAQs <ArrowUpRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

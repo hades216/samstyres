@@ -10,6 +10,7 @@ import {
   Phone,
   MapPin,
   FileCheck2,
+  ArrowRight,
 } from "lucide-react";
 import {
   Header,
@@ -382,6 +383,79 @@ function PunctureRepairGuidePage() {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services & Local Hubs Cross-Links */}
+      <section className="py-12 bg-slate-50 border-t border-slate-200">
+        <div className="container-x max-w-5xl">
+          <SectionHeader
+            eyebrow="Related Services"
+            title="Professional mobile tyre assistance near you"
+            copy="Whether you need immediate roadside puncture assistance or a complete mobile replacement, our mobile tyre vans are ready 24/7."
+          />
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <Link
+              to="/$slug"
+              params={{ slug: "mobile-puncture-repair" }}
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Mobile Puncture Repair</h3>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  BS AU 159 compliant on-site repair at your home, workplace, or roadside.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Service details <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/$slug"
+              params={{ slug: "mobile-tyre-replacement" }}
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Mobile Tyre Replacement</h3>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  New tyres fitted and balanced at your location when repair is unsafe.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Tyre replacement <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/$slug"
+              params={{ slug: "emergency-mobile-tyre-fitting" }}
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Emergency Tyre Fitting</h3>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  24/7 emergency response across London and the M25 ring road.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Emergency fitting <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+            <Link
+              to="/$slug"
+              params={{ slug: "mobile-tyre-fitting-enfield" }}
+              className="card-premium p-5 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+            >
+              <div>
+                <h3 className="font-display font-bold text-ink">Mobile Tyres in Enfield</h3>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Our operating base covering Enfield, Barnet, Cheshunt, and North London.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold text-brand flex items-center gap-1">
+                Local area hub <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

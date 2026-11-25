@@ -136,7 +136,7 @@ function ServicesPage() {
                           {s.eyebrow}
                         </p>
                         <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-[12px] text-slate-500">
-                          <span className="font-medium text-navy/80">View service</span>
+                          <span className="font-semibold text-navy group-hover:text-brand transition-colors">Explore {s.navLabel}</span>
                           <span className="text-brand font-semibold">Call for quote</span>
                         </div>
                       </div>
@@ -156,10 +156,10 @@ function ServicesPage() {
               Local coverage
             </div>
             <h2 className="mt-3 font-display text-3xl font-bold text-navy">
-              Mobile tyre fitting around Enfield
+              Mobile tyre fitting around Enfield & London
             </h2>
             <p className="mt-3 text-slate-600">
-              See postcode, road and booking information for each priority service area.
+              See postcode, road and booking information for each priority service area across London and the M25.
             </p>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -174,6 +174,19 @@ function ServicesPage() {
                 <ArrowUpRight className="ml-2 inline h-4 w-4" />
               </Link>
             ))}
+          </div>
+
+          {/* Cross-linking to FAQs & Guides */}
+          <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-4">
+            <Link to="/faqs" className="btn-base btn-outline text-sm">
+              Mobile tyre fitting FAQs
+            </Link>
+            <Link to="/guides" className="btn-base btn-outline text-sm">
+              Tyre care & puncture guides
+            </Link>
+            <Link to="/coverage-areas" className="btn-base btn-outline text-sm">
+              All London coverage areas
+            </Link>
           </div>
         </div>
       </section>

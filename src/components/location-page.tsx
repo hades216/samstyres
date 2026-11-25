@@ -416,6 +416,12 @@ export function LocationPage({ location }: { location: LocationPageData }) {
             <Link to="/guides" className="btn-base btn-outline text-sm">
               Tyre guides & advice
             </Link>
+            <Link to="/faqs" className="btn-base btn-outline text-sm">
+              Common questions (FAQs)
+            </Link>
+            <Link to="/services" className="btn-base btn-outline text-sm">
+              All mobile services
+            </Link>
             <Link to="/contact" className="btn-base btn-primary text-sm">
               Contact us
             </Link>

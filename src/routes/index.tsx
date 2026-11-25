@@ -1931,9 +1931,23 @@ function FAQs() {
           <p className="mt-5 p-body max-w-md text-muted-foreground">
             Straight answers on availability, pricing, coverage and fitting — no small print.
           </p>
+          <div className="mt-6 flex flex-col sm:flex-row lg:flex-col gap-3">
+            <Link
+              to="/faqs"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-navy transition-colors"
+            >
+              View all frequently asked questions <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-navy transition-colors"
+            >
+              Browse all mobile services <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
           <a
             href={PHONE_HREF}
-            className="mt-8 hidden lg:inline-flex items-center gap-2 rounded-2xl bg-navy px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-navy/20 hover:-translate-y-0.5 transition-all"
+            className="mt-6 hidden lg:inline-flex items-center gap-2 rounded-2xl bg-navy px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-navy/20 hover:-translate-y-0.5 transition-all"
           >
             <Phone className="h-4 w-4" /> Still stuck? Call {PHONE}
           </a>
