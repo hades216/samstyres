@@ -31,11 +31,11 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "We cover Enfield Town and the surrounding EN1, EN2 and EN3 districts. Whether your vehicle is on a driveway near Bush Hill Park, outside work around Enfield Highway or stopped safely near the A10, tell us the tyre size and exact location so the right equipment and replacement options can be prepared before dispatch.",
     homeCopy:
-      "Book fitting at your Enfield home without taking time out for a garage visit. A safe driveway, private parking bay or suitable kerbside space is normally all that is needed.",
+      "Book fitting at your Enfield home across EN1, EN2 and EN3 — from Winchmore Hill, Southgate and Palmers Green to Forty Hill and Bush Hill Park — without taking time out for a garage visit.",
     workplaceCopy:
-      "If the vehicle is parked at work, share the business address, access instructions and parking details. The fitting can be arranged around your availability.",
+      "If the vehicle is parked at work around Brimsdown, Innova Park, Great Cambridge Industrial Estate or Enfield Retail Park, share the site address and parking bay details so fitting can be arranged around your shift.",
     roadsideCopy:
-      "For roadside calls, move to the safest available position and share a pin or nearby landmark. We will confirm what assistance is suitable before travel.",
+      "For roadside calls near the A10 Great Cambridge Road, A110 Southbury Road, A1055 Meridian Way or M25 Junction 25, move to the safest available position and share a pin or nearby landmark.",
     roads: ["A10", "A110", "M25 Junction 25", "EN1", "EN2", "EN3"],
     faqs: [
       {
@@ -75,28 +75,28 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "Waltham Cross sits beside the A10, A121 and M25 Junction 25, so a precise location matters. For calls from the town centre, retail areas or connecting roads, send a postcode or map pin and explain whether the vehicle is in a car park, on private ground or safely off the live carriageway.",
     homeCopy:
-      "Home fitting is available across EN8 where there is level, accessible space around the vehicle. Share any gate, height or parking restrictions before booking.",
+      "Home fitting is available across EN8 — including Holdbrook, Rosedale and residential streets off Eleanor Cross Road — where there is level, accessible space around the vehicle.",
     workplaceCopy:
-      "For workplace visits near the town centre or local retail and industrial areas, provide reception or security instructions so access can be arranged smoothly.",
+      "For workplace visits near Waltham Cross town centre, Pavilions Shopping Centre or commercial yards off High Street and Station Road, provide reception or security instructions so access is smooth.",
     roadsideCopy:
-      "If the problem happens near the A10, A121 or M25 approaches, prioritise personal safety and give the direction of travel, nearest junction and a live location pin.",
-    roads: ["A10", "A121", "M25 Junction 25", "EN8"],
+      "If a tyre fails near the A10 Great Cambridge Road, A121 Winston Churchill Way or M25 Junction 25 roundabout, prioritise personal safety and share your direction of travel, nearest exit and a live pin.",
+    roads: ["A10", "A121 Winston Churchill Way", "M25 Junction 25", "Eleanor Cross Rd", "EN8"],
     faqs: [
       {
-        q: "Do you fit tyres at homes in Waltham Cross?",
-        a: "Yes, provided the vehicle is on safe and accessible ground with enough room to work around the affected wheel.",
+        q: "Do you fit tyres at homes across Waltham Cross EN8?",
+        a: "Yes, across Holdbrook, Rosedale and central EN8 streets, provided the vehicle is on safe, level ground with room to work around the affected wheel.",
       },
       {
-        q: "Is mobile tyre replacement available around EN8 at night?",
-        a: "The service operates 24/7. Availability and the appropriate tyre option are confirmed when you call or message.",
+        q: "Is mobile tyre replacement available around Waltham Cross at night?",
+        a: "Yes, our mobile dispatch operates 24/7 across EN8. Availability and suitable tyre options are confirmed when you call or message.",
       },
       {
-        q: "What should I do after a tyre problem near Junction 25?",
-        a: "Move away from moving traffic if it is safe to do so, switch on hazard lights and share your direction, junction and exact map location.",
+        q: "What should I do after a tyre problem near M25 Junction 25 or the A121?",
+        a: "Pull clear of live traffic if safe, switch on hazard lights and share your direction of travel, junction exit and exact map pin.",
       },
       {
-        q: "Do I need to know my tyre size?",
-        a: "It helps. The size is printed on the tyre sidewall; a clear photo can be sent by WhatsApp if you are unsure how to read it.",
+        q: "Can you attend retail or workplace car parks in Waltham Cross?",
+        a: "Yes, where site rules permit mobile work. Share any height barriers or permit requirements when booking.",
       },
     ],
     nearby: [
@@ -115,32 +115,32 @@ export const LOCATIONS: Record<string, LocationPage> = {
     h1: "24/7 Mobile Tyre Fitting in Cheshunt",
     intro:
       "Need tyre help without arranging a tow or garage appointment? Sam's Mobile Tyres covers Cheshunt with mobile fitting, replacement, puncture assessment and roadside assistance at suitable locations, including homes and workplaces across EN7.",
-    localHeading: "Mobile fitting from Cheshunt to the A10 corridor",
+    localHeading: "Mobile fitting across Cheshunt, Turnford and Goff's Oak",
     localCopy:
-      "Calls in Cheshunt can range from residential driveways to busy routes linking the A10 and A1170. When contacting us, include the full postcode, vehicle registration and tyre size. For roadside assistance, a location pin and direction of travel help identify the safest way to reach you.",
+      "Calls in Cheshunt range from residential driveways in Goff's Oak, Hammond Street and Flamstead End to busy commuter routes linking the A10 Turnford interchange and the A1170 High Street. Include your full EN7 or EN8 postcode, vehicle registration and tyre size so we can confirm stock and access before dispatch.",
     homeCopy:
-      "Arrange fitting on a driveway or suitable private parking area in Cheshunt. Let us know if the vehicle is in underground, gated or restricted parking.",
+      "Arrange driveway or private-bay fitting anywhere in Cheshunt, Turnford or Goff's Oak. Let us know if the vehicle is behind security gates or in a permit-controlled bay.",
     workplaceCopy:
-      "A workplace visit can be arranged where the site permits mobile maintenance. Share site access, parking and contact-person details before dispatch.",
+      "We attend workplace and retail car parks around Brookfield Centre, Old Pond and Turnford commercial units where site rules allow mobile maintenance.",
     roadsideCopy:
-      "For a flat tyre away from home, stop somewhere safe and visible. Do not continue driving on a deflated tyre, as this can damage the wheel and tyre further.",
-    roads: ["A10", "A1170", "M25 corridor", "EN7"],
+      "For a flat tyre on the A10 near Turnford, Lieutenant Ellis Way or the A1170, pull into a safe, visible bay and avoid driving on a deflated tyre.",
+    roads: ["A10 Turnford", "A1170 High Street", "Lieutenant Ellis Way", "M25 J25", "EN7"],
     faqs: [
       {
-        q: "Which parts of Cheshunt do you cover?",
-        a: "We cover the EN7 area and nearby routes, subject to safe vehicle access and current availability.",
+        q: "Do you cover Goff's Oak, Turnford and Flamstead End as well as central Cheshunt?",
+        a: "Yes. We cover all of EN7 including Goff's Oak, Turnford, Hammond Street and Flamstead End, subject to safe vehicle access.",
       },
       {
-        q: "Can you assess a puncture at my home?",
-        a: "Yes. The tyre must be inspected to decide whether the damage can be safely repaired or whether replacement is required.",
+        q: "Can you attend Brookfield Centre or Old Pond car parks in Cheshunt?",
+        a: "Yes, where parking management permits mobile tyre work. Share the car park section and any height-barrier details when calling.",
       },
       {
-        q: "Can you help on the A10 near Cheshunt?",
-        a: "Roadside assistance is available where the vehicle has reached a safe and accessible position. Provide the direction and a precise map pin.",
+        q: "Can you help on the A10 near Cheshunt and Turnford?",
+        a: "Roadside assistance is available where the vehicle has reached a safe, off-carriageway position. Send your direction of travel and a live map pin.",
       },
       {
-        q: "Can I arrange tyre fitting while I am at work?",
-        a: "Yes, if the workplace permits it and there is a suitable area around the vehicle. Send access instructions when booking.",
+        q: "Can a puncture be assessed on my driveway in Cheshunt?",
+        a: "Yes. We inspect the tyre on-site under BS AU 159 rules to confirm whether a permanent internal repair is safe or replacement is needed.",
       },
     ],
     nearby: [
@@ -163,11 +163,11 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "Edmonton's mix of residential streets, workplace parking and major routes means access details are important. If you are near the A10, A406 or Meridian Way, share your direction of travel and a live pin. In residential areas, confirm whether the vehicle is on a driveway, estate parking or kerbside space.",
     homeCopy:
-      "Home fitting can be booked across N9 and N18 where the vehicle is safely parked with working room beside the affected wheel.",
+      "Home fitting can be booked across Lower Edmonton, Upper Edmonton, Angel Edmonton and around Pymmes Park (N9 and N18) where there is safe working room beside the wheel.",
     workplaceCopy:
-      "For commercial sites and workplace car parks, check that mobile work is permitted and send any gate, reception or loading-area instructions.",
+      "For Eley Industrial Estate, Ravenside Retail Park, Aztec 406 and sites near North Middlesex Hospital, check that mobile work is permitted and send any gate or loading-bay instructions.",
     roadsideCopy:
-      "On a busy urban road, personal safety comes first. Move out of the traffic flow if possible and do not stand beside the vehicle where passing traffic is close.",
+      "On busy routes like the A406 North Circular, A10 Great Cambridge Road or A1055 Meridian Way, personal safety comes first — move clear of traffic flow and share a live pin.",
     roads: ["A10", "A406", "Meridian Way", "N9", "N18"],
     faqs: [
       {
@@ -203,28 +203,28 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "From residential streets around Chingford to connections with the A406, A112 and A1009, each call begins with your exact location and tyre details. Clear access information is especially useful around narrow roads, controlled parking and the routes beside Epping Forest.",
     homeCopy:
-      "Avoid arranging a garage visit by booking at a suitable driveway or parking space. The area must be firm, level and accessible for safe work.",
+      "Book on a driveway or residential bay across Chingford Mount, North Chingford, Highams Park and Friday Hill without needing a garage visit.",
     workplaceCopy:
-      "Mobile fitting can be arranged at work where the landowner allows it. Provide parking-zone and entry details so the visit can be planned correctly.",
+      "Mobile fitting can be arranged at workplace car parks around Chingford and Highams Park where the site owner permits it. Share parking-zone and entry details.",
     roadsideCopy:
-      "If you are stopped near woodland or on an unlit route, use hazard lights, stay somewhere safe and share a live location rather than relying only on a road name.",
-    roads: ["A406", "A112", "A1009", "E4"],
+      "If you are stopped near Sewardstone Road, the A406 Crooked Billet or unlit Epping Forest lanes, use hazard lights and share a live map pin.",
+    roads: ["A406 Crooked Billet", "A112", "A1009", "Sewardstone Rd", "E4"],
     faqs: [
       {
-        q: "Is mobile tyre fitting available throughout Chingford?",
-        a: "Yes. We cover E4 at suitable residential, workplace and roadside locations, subject to access and availability.",
+        q: "Do you cover North Chingford, Chingford Mount and Highams Park?",
+        a: "Yes. We cover all of E4 including North Chingford, Chingford Mount, Highams Park and Friday Hill at suitable residential and workplace locations.",
       },
       {
-        q: "Can you help near Epping Forest roads?",
-        a: "We can attend accessible locations around Chingford. A live map pin is important where landmarks and road names may be unclear.",
+        q: "Can you help on roads bordering Epping Forest?",
+        a: "We attend accessible spots around Epping Forest and Sewardstone Road. A live WhatsApp pin is especially helpful where street landmarks are sparse.",
       },
       {
-        q: "Can you repair every puncture?",
-        a: "No. Sidewall damage, larger injuries and unsafe tyre condition can require replacement. The tyre must be inspected before repair is confirmed.",
+        q: "Can a puncture be repaired in E4 or will I need a new tyre?",
+        a: "Minor tread punctures meeting BS AU 159 can be repaired on-site; sidewall splits, bulges or run-flat damage require replacement after inspection.",
       },
       {
-        q: "What photos should I send on WhatsApp?",
-        a: "Send the full wheel, the visible damage, the tyre-size markings and the vehicle's location where it is safe to take those photos.",
+        q: "What should I send on WhatsApp before dispatch?",
+        a: "Send a photo of the tyre sidewall size (e.g. 205/55 R16), the visible damage, your vehicle registration and your E4 postcode or pin.",
       },
     ],
     nearby: [
@@ -243,32 +243,32 @@ export const LOCATIONS: Record<string, LocationPage> = {
     h1: "Mobile Tyre Fitting in Waltham Abbey",
     intro:
       "Sam's Mobile Tyres provides 24/7 mobile tyre fitting and roadside tyre assistance across Waltham Abbey. Drivers in EN9 can request replacement tyres or puncture assessment at suitable home, workplace and roadside locations.",
-    localHeading: "EN9 coverage near the M25 corridor",
+    localHeading: "EN9 coverage across Waltham Abbey and M25 Junction 26",
     localCopy:
-      "Waltham Abbey connects local streets with the A10, A121 and M25 Junction 26. For help on or near these routes, share the direction of travel, nearest junction and a map pin. For town and residential calls, a full postcode and clear parking instructions help avoid delays finding the vehicle.",
+      "Waltham Abbey links local residential streets in Upshire, Sewardstone and Honey Lane with the A121 Dowding Way and M25 Junction 26. For roadside calls near the motorway approaches, share your carriageway direction and a map pin; for town-centre or Lea Valley calls, a full EN9 postcode helps us locate you without delay.",
     homeCopy:
-      "Book a mobile visit at home where there is a safe driveway or suitable parking space. Mention gates, permits or restricted access before the visit.",
+      "Book a mobile visit at home across Waltham Abbey, Upshire and Sewardstone where there is a safe driveway or bay. Mention narrow lanes, gates or permit restrictions when booking.",
     workplaceCopy:
-      "For business parks and workplace locations around EN9, provide the site name, entrance and a contact who can authorise access if required.",
+      "For industrial units and logistics yards around Highbridge Street, Brooker Road and Lea Valley in EN9, provide the site name, gatehouse contact and bay location.",
     roadsideCopy:
-      "If a tyre fails near an M25 approach, stop only where safe and follow official motorway safety guidance. Give the precise junction and carriageway direction when calling.",
-    roads: ["A10", "A121", "M25 Junction 26", "EN9"],
+      "If a tyre fails on the A121 Dowding Way or near M25 Junction 26, pull clear of live lanes, follow motorway safety guidance and share your exact junction and direction.",
+    roads: ["A121 Dowding Way", "M25 Junction 26", "Honey Lane", "Sewardstone Rd", "EN9"],
     faqs: [
       {
-        q: "Do you offer mobile tyre fitting across EN9?",
-        a: "Yes. Waltham Abbey and the EN9 district are covered at suitable homes, workplaces and safe roadside locations.",
+        q: "Do you cover Upshire, Sewardstone and central Waltham Abbey?",
+        a: "Yes. All of EN9 including Waltham Abbey town centre, Upshire, Honey Lane and Sewardstone is covered at safe, accessible locations.",
       },
       {
-        q: "Can you attend near M25 Junction 26?",
-        a: "Assistance is available around the junction where the vehicle is in a safe, accessible position. Share the exact carriageway and direction.",
+        q: "Can you attend breakdowns near M25 Junction 26?",
+        a: "Yes, where the vehicle is stopped in a safe, accessible position off live traffic. Share the carriageway direction and a live pin.",
       },
       {
-        q: "Can you fit a tyre in a workplace car park?",
-        a: "Yes, subject to site permission, safe working space and access for the service vehicle.",
+        q: "Can you fit commercial van tyres at Brooker Road or Highbridge Street yards?",
+        a: "Yes, we fit standard and C-rated commercial van tyres at EN9 industrial estates subject to site permission and safe working clearance.",
       },
       {
-        q: "How can I speed up the booking call?",
-        a: "Have your registration, tyre size, exact location and a description or photo of the damage ready.",
+        q: "What details do you need for an EN9 callout?",
+        a: "Share your vehicle registration, sidewall tyre size, EN9 postcode or map pin, and a photo of the damaged tyre if safe to take one.",
       },
     ],
     nearby: [
@@ -291,11 +291,11 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "We cover the city centre, Marshalswick, Fleetville, London Colney and the surrounding AL1 to AL4 postcodes. Whether the vehicle is parked near the Cathedral, on an estate off the A1081 or stopped near the M25 and M1 interchange, share your exact location and tyre size so the right equipment is loaded before we set off.",
     homeCopy:
-      "Book fitting at your St Albans home without a garage trip. A driveway, private parking bay or suitable kerbside space is normally enough room to work safely.",
+      "Book fitting at your St Albans home across AL1 to AL4 — including St Stephens, Bernards Heath, Chiswell Green and Park Street — without a garage trip.",
     workplaceCopy:
-      "For business parks and office sites around St Albans, share the address, parking arrangement and any entry instructions so the visit can be planned around your day.",
+      "For business parks and office sites around Alban Park, Porters Wood, Centurion Park and Hatfield Road, share the address, parking arrangement and entry instructions.",
     roadsideCopy:
-      "If the tyre fails on the A1081, A414 or near the M25/M1 interchange, get the vehicle as far from moving traffic as possible and share a live location pin.",
+      "If the tyre fails on the A1081, A414 North Orbital or near M25 Junctions 21A/22 and M1 Junction 6, get the vehicle clear of live traffic and share a live pin.",
     roads: ["A1081", "A414", "M25 Junction 21", "M1 Junction 6", "AL1", "AL3"],
     faqs: [
       {
@@ -331,28 +331,28 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "Watford sits at the meeting point of the M1 and M25, so a precise location matters. For calls from the town centre, Cassiobury, Bushey or Garston, send a postcode or map pin and let us know whether the vehicle is in a car park, on private ground or stopped safely off a live carriageway.",
     homeCopy:
-      "Home fitting is available across Watford where there is level, accessible space around the vehicle. Mention any gate codes, height restrictions or permit parking before booking.",
+      "Home fitting is available across Watford — from Nascot Wood and Oxhey to Leavesden and North Watford — where there is level, accessible space around the vehicle.",
     workplaceCopy:
-      "For office parks and workplace sites near the town centre or the M1 corridor, share reception details or entry instructions so access can be arranged smoothly.",
+      "For Watford Business Park, Croxley Park, town-centre offices or sites near Watford General Hospital, share reception or barrier details so access is smooth.",
     roadsideCopy:
-      "If the problem happens near the M1, M25 or A41, prioritise personal safety, stay clear of live lanes and give the direction of travel and nearest junction.",
-    roads: ["A41", "A412", "M1 Junction 5", "M25 Junction 19", "M25 Junction 20", "WD17"],
+      "If a tyre fails on the A41 Dome Roundabout, A412 St Albans Road, M1 Junction 5 or M25 Junctions 19/20, prioritise safety, stay clear of live lanes and share your direction and junction.",
+    roads: ["A41 Dome Roundabout", "A412 St Albans Rd", "M1 J5", "M25 J19 & J20", "WD17"],
     faqs: [
       {
-        q: "Do you fit tyres at homes in Watford?",
-        a: "Yes, provided the vehicle is on safe and accessible ground with enough space to work around the affected wheel.",
+        q: "Do you fit tyres at homes across WD17, WD18, WD24 and WD25?",
+        a: "Yes, across Nascot Wood, Oxhey, Cassiobury, Bushey, Garston and Leavesden, provided the vehicle is on safe, level ground.",
       },
       {
-        q: "Is mobile tyre replacement available in Watford at night?",
-        a: "The service operates 24/7. Availability and the appropriate tyre option are confirmed when you call or message.",
+        q: "Can you attend Watford Business Park or Croxley Park?",
+        a: "Yes, we fit tyres at Watford commercial parks where site rules permit mobile work. Share barrier codes or security instructions when booking.",
       },
       {
-        q: "What should I do after a tyre problem near the M1/M25?",
-        a: "Move away from moving traffic if it is safe to do so, switch on hazard lights and share your direction of travel, nearest junction and a live map pin.",
+        q: "What should I do after a tyre problem near M1 J5 or M25 J19/20?",
+        a: "Move away from live traffic if safe, switch on hazard lights and share your direction of travel, nearest junction and a live map pin.",
       },
       {
-        q: "Do you cover Cassiobury, Bushey and Garston as well as the town centre?",
-        a: "Yes, across WD17 to WD25, subject to safe access and current availability.",
+        q: "Is mobile tyre replacement available in Watford overnight?",
+        a: "Yes, our mobile dispatch operates 24/7 across Watford. Availability and tyre options are confirmed when you call or message.",
       },
     ],
     nearby: ["mobile-tyre-fitting-st-albans", "mobile-tyre-fitting-enfield"],
@@ -428,32 +428,32 @@ export const LOCATIONS: Record<string, LocationPage> = {
     h1: "24/7 Mobile Tyre Fitting in Bishop's Stortford",
     intro:
       "Sam's Mobile Tyres provides 24/7 mobile tyre fitting and roadside tyre assistance across Bishop's Stortford. Drivers in CM23 can request replacement tyres or puncture assessment at suitable home, workplace and roadside locations.",
-    localHeading: "CM23 coverage near the M11 and Stansted",
+    localHeading: "CM23 coverage across Bishop's Stortford and M11 Junction 8",
     localCopy:
-      "Bishop's Stortford connects local streets with the A1250, A120 and M11 Junction 8. For help on or near these routes, share the direction of travel, nearest junction and a map pin. For town and residential calls, a full postcode and clear parking instructions help avoid delays finding the vehicle.",
+      "Bishop's Stortford connects residential neighbourhoods such as Thorley Park, Bishop's Park and Hockerill with the A1250, A120 bypass and M11 Junction 8. For roadside calls near the bypass or motorway approaches, share your direction of travel and a map pin; for town-centre or residential driveways, a full CM23 postcode helps us reach you smoothly.",
     homeCopy:
-      "Book a mobile visit at home where there is a safe driveway or suitable parking space. Mention gates, permits or restricted access before the visit.",
+      "Book a mobile visit at home across Thorley Park, Bishop's Park, Hockerill and Parsonage Lane where there is a safe driveway or bay. Mention gates or permit zones before the visit.",
     workplaceCopy:
-      "For business parks and workplace locations around CM23, provide the site name, entrance details and a contact who can authorise access if required.",
+      "For industrial estates and business sites along Raynham Road, Dunmow Road and London Road in CM23, provide the site name and any gatehouse contact details.",
     roadsideCopy:
-      "If a tyre fails near the M11 or A120, stop only where safe, keep hazard lights on and give the precise junction and carriageway direction when calling.",
-    roads: ["A1250", "A120", "M11 Junction 8", "CM23"],
+      "If a tyre fails on the A120 bypass, A1250 or near M11 Junction 8, pull clear of live lanes, keep hazard lights on and share your exact junction and carriageway direction.",
+    roads: ["A1250", "A120 Bypass", "M11 Junction 8", "Raynham Rd", "CM23"],
     faqs: [
       {
-        q: "Do you offer mobile tyre fitting across CM23?",
-        a: "Yes. Bishop's Stortford and the surrounding CM23 district are covered at suitable homes, workplaces and safe roadside locations.",
+        q: "Do you cover Thorley Park, Bishop's Park and Hockerill in CM23?",
+        a: "Yes. All of Bishop's Stortford and surrounding CM23 areas are covered at suitable homes, workplaces and safe roadside spots.",
       },
       {
-        q: "Can you attend near M11 Junction 8?",
-        a: "Assistance is available around the junction where the vehicle is in a safe, accessible position. Share the exact carriageway and direction of travel.",
+        q: "Can you attend breakdowns near M11 Junction 8 or the A120 bypass?",
+        a: "Yes, where the vehicle is stopped in a safe, off-carriageway position. Share your carriageway direction and a live pin.",
       },
       {
-        q: "Can you fit a tyre in a workplace car park?",
-        a: "Yes, subject to site permission, safe working space and access for the service vehicle.",
+        q: "Can you fit tyres at Raynham Road or Dunmow Road commercial units?",
+        a: "Yes, subject to site permission, safe working clearance and access for our mobile fitting van.",
       },
       {
-        q: "How can I speed up the booking call?",
-        a: "Have your registration, tyre size, exact location and a description or photo of the damage ready before you call or message.",
+        q: "What should I have ready when booking in Bishop's Stortford?",
+        a: "Your vehicle registration, sidewall tyre size, CM23 postcode or pin, and a quick photo of the damage if safe to take one.",
       },
     ],
     nearby: ["mobile-tyre-fitting-stansted", "mobile-tyre-fitting-harlow"],
@@ -472,12 +472,12 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "Traffic around Stansted often includes airport drop-offs, long-stay car parks and the A120/M11 corridor. Share your exact location, whether that is a car park name, terminal area or residential road, along with the tyre size and registration, so the right equipment is prepared before dispatch.",
     homeCopy:
-      "Home fitting is available across Stansted Mountfitchet and nearby CM24 addresses where there is safe, level space to work around the vehicle.",
+      "Home fitting is available across Stansted Mountfitchet, Birchanger, Elsenham and nearby CM24 addresses where there is safe, level space around the vehicle.",
     workplaceCopy:
-      "For business parks or sites near the airport, share the company name, gate or car park references and any security clearance needed for access.",
+      "For airport-perimeter business parks, Thremhall Avenue offices or aviation-support sites, share the company name, car park reference and any security gate clearance.",
     roadsideCopy:
-      "If a tyre fails on the A120 or approaching the airport, move to the safest available position, keep hazard lights on and share a live map pin or car park reference.",
-    roads: ["A120", "M11 Junction 8", "B1383", "CM24"],
+      "If a tyre fails on the A120, M11 Junction 8A or Bassingbourn approaches to Stansted Airport, pull into a safe bay or car park and share a live map pin.",
+    roads: ["A120", "M11 Junction 8A", "Thremhall Ave", "B1383", "CM24"],
     faqs: [
       {
         q: "Do you cover Stansted Airport car parks and drop-off areas?",
@@ -565,35 +565,39 @@ export const LOCATIONS: Record<string, LocationPage> = {
     h1: "24/7 Mobile Tyre Fitting in Ware",
     intro:
       "A damaged tyre in Ware does not need a tow to a garage. Sam's Mobile Tyres attends homes, workplaces and safe roadside locations across SG12 with mobile fitting, replacement and puncture assessment.",
-    localHeading: "Mobile tyre help across Ware and the A10 corridor",
+    localHeading: "Mobile tyre help across Ware, Great Amwell and the A10 viaduct",
     localCopy:
-      "Ware sits along the A10 between Hertford and the M25 corridor. When you call, share the full postcode, vehicle registration and tyre size, and for calls near the A10 or A119 give the direction of travel and a live map pin.",
+      "Ware sits along the A10 viaduct between Hertford and the M25 corridor, serving local streets around Amwell End, Star Street, Chadwell and Great Amwell. When you call, share your SG12 postcode, vehicle registration and tyre size, and for calls near the A10 or A119 Hertford Road give your direction of travel and a live pin.",
     homeCopy:
-      "Arrange fitting on a driveway or suitable private parking area in Ware. Let us know if the vehicle is in restricted or permit parking before booking.",
+      "Arrange driveway or private-bay fitting across Ware, Great Amwell and Hertford Heath. Let us know if the vehicle is in a narrow town-centre street or permit-controlled bay.",
     workplaceCopy:
-      "A workplace visit can be arranged where the site permits mobile maintenance. Share site access, parking and a contact-person's details before dispatch.",
+      "We attend workplace car parks and commercial sites around Marsh Lane, Crane Mead and Park Road where site management permits mobile tyre maintenance.",
     roadsideCopy:
-      "For a flat tyre along the A10 or A119, stop somewhere safe and visible, keep hazard lights on and avoid continuing on a deflated tyre.",
-    roads: ["A10", "A119", "A1170", "SG12"],
+      "For a flat tyre on the A10 Ware bypass, A119 or A1170 London Road, pull into a safe lay-by or side turning and avoid driving on a deflated tyre.",
+    roads: ["A10 Ware Viaduct", "A119 Hertford Rd", "A1170 London Rd", "Marsh Lane", "SG12"],
     faqs: [
       {
-        q: "Which parts of Ware do you cover?",
-        a: "We cover the SG12 area and nearby routes, subject to safe vehicle access and current availability.",
+        q: "Do you cover Great Amwell, Chadwell and Hertford Heath as well as Ware town centre?",
+        a: "Yes. We cover all of SG12 including Ware town centre, Great Amwell, Chadwell and nearby routes, subject to safe vehicle access.",
       },
       {
-        q: "Can you help along the A10 near Ware?",
-        a: "Roadside assistance is available where the vehicle has reached a safe and accessible position. Provide the direction of travel and a precise map pin.",
+        q: "Can you attend Marsh Lane or Crane Mead commercial sites in Ware?",
+        a: "Yes, where the site permits mobile work and there is safe working room around the vehicle. Share any gatehouse instructions when booking.",
       },
       {
-        q: "Can you assess a puncture at my home in Ware?",
-        a: "Yes. The tyre must be inspected to decide whether the damage can be safely repaired or whether replacement is required.",
+        q: "Can you help along the A10 near the Ware viaduct?",
+        a: "Roadside assistance is available where the vehicle has reached a safe, off-carriageway position. Provide your direction of travel and a live map pin.",
       },
       {
-        q: "Can I arrange tyre fitting while I am at work?",
-        a: "Yes, if the workplace permits it and there is a suitable area around the vehicle. Send access instructions when booking.",
+        q: "Can a puncture be repaired on my driveway in Ware?",
+        a: "Yes. We inspect the tyre on-site under BS AU 159 standards to confirm whether a permanent repair is safe or replacement is needed.",
       },
     ],
-    nearby: ["mobile-tyre-fitting-waltham-cross", "mobile-tyre-fitting-cheshunt"],
+    nearby: [
+      "mobile-tyre-fitting-stevenage",
+      "mobile-tyre-fitting-cheshunt",
+      "mobile-tyre-fitting-hertfordshire",
+    ],
   },
   "mobile-tyre-fitting-stevenage": {
     slug: "mobile-tyre-fitting-stevenage",
@@ -605,32 +609,32 @@ export const LOCATIONS: Record<string, LocationPage> = {
     h1: "24/7 Mobile Tyre Fitting in Stevenage",
     intro:
       "Sam's Mobile Tyres provides 24/7 mobile tyre fitting and roadside tyre assistance across Stevenage. Drivers in SG1 and SG2 can request replacement tyres or puncture assessment at suitable home, workplace and roadside locations.",
-    localHeading: "SG1/SG2 coverage near the A1(M)",
+    localHeading: "SG1 and SG2 coverage across Stevenage and A1(M) Junctions 7 & 8",
     localCopy:
-      "Stevenage connects local streets with the A602, A1072 and the A1(M) at Junctions 7 and 8. For help on or near these routes, share the direction of travel, nearest junction and a map pin. For town and residential calls, a full postcode and clear parking instructions help avoid delays finding the vehicle.",
+      "Stevenage spans Old Town, Great Ashby, Chells, Broadwater and Symonds Green, linked by the A602, A1072 Gunnels Wood Road and A1(M) Junctions 7 and 8. For roadside calls near the motorway approaches, share your carriageway direction and a map pin; for residential calls, a full SG1 or SG2 postcode helps us reach you directly.",
     homeCopy:
-      "Book a mobile visit at home where there is a safe driveway or suitable parking space. Mention gates, permits or restricted access before the visit.",
+      "Book a mobile visit at home across Old Town, Great Ashby, Chells, Broadwater and Symonds Green where there is a safe driveway or bay. Mention gates or permit zones before booking.",
     workplaceCopy:
-      "For business parks and workplace locations around Stevenage, provide the site name, entrance details and a contact who can authorise access if required.",
+      "For business parks and tech/industrial sites along Gunnels Wood Road or Roaring Meg retail park in SG1, provide the site name and any barrier or security details.",
     roadsideCopy:
-      "If a tyre fails near the A1(M), stop only where safe and follow official motorway safety guidance, then give the precise junction and carriageway direction when calling.",
-    roads: ["A602", "A1072", "A1(M) Junction 7", "A1(M) Junction 8", "SG1"],
+      "If a tyre fails on the A1(M), A602 or A1072, pull clear of live lanes, follow motorway safety guidance and share your exact junction and carriageway direction.",
+    roads: ["A1(M) J7 & J8", "A602", "A1072 Gunnels Wood Rd", "SG1", "SG2"],
     faqs: [
       {
-        q: "Do you offer mobile tyre fitting across Stevenage?",
-        a: "Yes. SG1, SG2 and the surrounding district are covered at suitable homes, workplaces and safe roadside locations.",
+        q: "Do you cover Old Town, Great Ashby, Chells and Broadwater in Stevenage?",
+        a: "Yes. All of SG1 and SG2 — including Old Town, Great Ashby, Chells, Broadwater and Symonds Green — are covered at suitable homes and workplaces.",
       },
       {
-        q: "Can you attend near A1(M) Junction 7 or 8?",
-        a: "Assistance is available around the junctions where the vehicle is in a safe, accessible position. Share the exact carriageway and direction of travel.",
+        q: "Can you attend breakdowns near A1(M) Junction 7 or Junction 8?",
+        a: "Yes, where the vehicle is stopped in a safe, accessible position off live traffic. Share your carriageway direction and a live pin.",
       },
       {
-        q: "Can you fit a tyre in a workplace car park?",
-        a: "Yes, subject to site permission, safe working space and access for the service vehicle.",
+        q: "Can you fit tyres at Gunnels Wood Road business parks or Roaring Meg?",
+        a: "Yes, subject to site permission, safe working clearance and access for our mobile fitting van.",
       },
       {
-        q: "How can I speed up the booking call?",
-        a: "Have your registration, tyre size, exact location and a description or photo of the damage ready before you call or message.",
+        q: "What details should I send before a Stevenage callout?",
+        a: "Share your vehicle registration, sidewall tyre size, SG1/SG2 postcode or pin, and a photo of the damaged tyre if safe.",
       },
     ],
     nearby: ["mobile-tyre-fitting-ware", "mobile-tyre-fitting-st-albans"],
@@ -649,28 +653,28 @@ export const LOCATIONS: Record<string, LocationPage> = {
     localCopy:
       "From residential streets around Ilford town centre to connections with the A12, A118 and North Circular (A406), each call begins with your exact location and tyre details. Clear access information is especially useful around controlled parking zones and busy junctions.",
     homeCopy:
-      "Avoid a garage visit by booking at a suitable driveway or parking space in Ilford. The area must be firm, level and accessible for safe work.",
+      "Avoid a garage visit by booking at a suitable driveway or residential bay across Seven Kings, Goodmayes, Barkingside, Clayhall and Gants Hill.",
     workplaceCopy:
-      "Mobile fitting can be arranged at work where the landowner allows it. Provide parking-zone and entry details so the visit can be planned correctly.",
+      "Mobile fitting can be arranged at workplace car parks around Ilford town centre, Newbury Park and Redbridge where the landowner permits it. Share parking-zone and entry details.",
     roadsideCopy:
-      "If you are stopped near the A12, A118 or North Circular, use hazard lights, stay somewhere safe and share a live location pin rather than relying only on a road name.",
-    roads: ["A12", "A118", "A406", "IG1", "IG3"],
+      "If you are stopped near the A12 Eastern Avenue, A118 High Road, Redbridge Roundabout or North Circular (A406), use hazard lights and share a live location pin.",
+    roads: ["A12 Eastern Ave", "A118 High Rd", "A406 North Circular", "Redbridge Roundabout", "IG1-IG6"],
     faqs: [
       {
-        q: "Is mobile tyre fitting available throughout Ilford?",
-        a: "Yes. We cover IG1 to IG6 at suitable residential, workplace and roadside locations, subject to access and availability.",
+        q: "Do you cover Seven Kings, Goodmayes, Barkingside and Gants Hill?",
+        a: "Yes. We cover IG1 through IG6 including Ilford town centre, Seven Kings, Goodmayes, Barkingside, Clayhall and Gants Hill.",
       },
       {
-        q: "Can you help near the North Circular (A406)?",
-        a: "We can attend accessible locations near the A406 where the vehicle is safely stopped. A live map pin and direction of travel help us reach you.",
+        q: "Can you help near Redbridge Roundabout, the A12 or A406?",
+        a: "We attend accessible spots near the A12 Eastern Avenue, A118 and A406 where the vehicle is safely stopped. Share a live pin and direction of travel.",
       },
       {
-        q: "Can you repair every puncture?",
-        a: "No. Sidewall damage, larger injuries and unsafe tyre condition can require replacement. The tyre must be inspected before repair is confirmed.",
+        q: "Can a puncture be repaired in Ilford or will it need replacing?",
+        a: "Minor tread punctures within BS AU 159 limits can be repaired on-site; sidewall damage, bulges or run-flat failure require replacement after inspection.",
       },
       {
-        q: "What photos should I send on WhatsApp?",
-        a: "Send the full wheel, the visible damage, the tyre-size markings and the vehicle's location where it is safe to take those photos.",
+        q: "What details help speed up an IG1–IG6 booking?",
+        a: "Send your registration, sidewall tyre size, IG postcode or map pin, and a photo of the damaged tyre via WhatsApp if safe.",
       },
     ],
     nearby: ["mobile-tyre-fitting-chingford", "mobile-tyre-fitting-edmonton"],

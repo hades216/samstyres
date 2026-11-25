@@ -11,13 +11,29 @@ RewriteRule ^(sitemap\.xml|robots\.txt|ai-catalog\.json|humans\.txt|ads\.txt|app
 RewriteCond %{HTTP_HOST} ^samsmobiletyres\.co\.uk$ [NC]
 RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
 
-# Redirect plain http to https
+# Redirect plain http to https (guarded for reverse-proxy/CDN SSL termination)
 RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
 
-# 1b. 301 Redirects for retired services to preserve SEO rankings
+# 1a. Canonical URL normalization: strip /index.html, .html (except Google verification), and trailing slashes
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://www.samsmobiletyres.co.uk/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/google[a-f0-9]+\.html$ [NC]
+RewriteRule ^(.+)\.html$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ https://www.samsmobiletyres.co.uk/$1 [R=301,L]
+
+# 1b. 301 Redirects for retired/legacy URLs to preserve SEO rankings
 RewriteRule ^wheel-balancing/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
 RewriteRule ^car-battery-replacement/?$ https://www.samsmobiletyres.co.uk/services [R=301,L]
+RewriteRule ^about-us/?$ https://www.samsmobiletyres.co.uk/about [R=301,L]
+RewriteRule ^contact-us-mobile-tyre-technicians/?$ https://www.samsmobiletyres.co.uk/contact [R=301,L]
+RewriteRule ^reviews-mobile-tyre-service/?$ https://www.samsmobiletyres.co.uk/reviews [R=301,L]
+RewriteRule ^coverage-areas-mobile-tyre-fitting/?$ https://www.samsmobiletyres.co.uk/coverage-areas [R=301,L]
 
 # 1c. Security Headers
 <IfModule mod_headers.c>

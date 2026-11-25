@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { MapPin, MessageCircle, Phone, Wrench } from "lucide-react";
+import { CheckCircle2, Gauge, MapPin, MessageCircle, Phone, ShieldCheck, Truck, Wrench } from "lucide-react";
 import {
   EmergencyBand,
   Footer,
@@ -130,6 +130,123 @@ export function AboutPage() {
           </aside>
         </div>
       </section>
+      <section className="section-y bg-slate-50 border-y border-slate-100">
+        <div className="container-x">
+          <SectionHeader
+            eyebrow="Mobile Fitting Process"
+            title={
+              <>
+                How our mobile service <span className="text-brand italic">works on-site.</span>
+              </>
+            }
+            copy="Every callout follows a straightforward four-step process designed to get your vehicle safe and roadworthy without a recovery truck or waiting room."
+          />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                step: "01",
+                title: "Location & Tyre Check",
+                body: "You share your postcode or pin, vehicle registration, and tyre sidewall size (or a photo via WhatsApp) so we can verify stock and confirm whether a repair or replacement is required.",
+              },
+              {
+                step: "02",
+                title: "Direct Van Dispatch",
+                body: "A mobile tyre technician is dispatched from our Enfield operating base or nearest active unit with the matching tyre, new valves, and specialist tools on board.",
+              },
+              {
+                step: "03",
+                title: "On-Site Fitting & Balancing",
+                body: "We safely jack the vehicle, remove the wheel, strip and inspect the tyre, fit the new tyre or carry out a compliant repair, and digitally balance the wheel inside the van.",
+              },
+              {
+                step: "04",
+                title: "Torque, Pressure & Clean-Up",
+                body: "The wheel is refitted and tightened to manufacturer torque settings, tyre pressure is set to specification, and old casing waste is taken away for licensed disposal.",
+              },
+            ].map(({ step, title, body }) => (
+              <div key={step} className="card-premium p-6">
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand">
+                  Step {step}
+                </div>
+                <h3 className="mt-3 font-display text-lg font-bold text-ink">{title}</h3>
+                <p className="mt-2.5 text-sm leading-[1.75] text-muted-foreground">{body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-y">
+        <div className="container-x">
+          <SectionHeader
+            eyebrow="Van Equipment & Safety"
+            title={
+              <>
+                Workshop-grade vans, <span className="text-brand italic">BS AU 159 standards.</span>
+              </>
+            }
+            copy="Our mobile units carry the same core machinery as a static tyre bay, operated under UK tyre safety and repair regulations."
+          />
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <div className="card-premium p-7">
+              <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand">
+                <Truck className="h-5 w-5" />
+              </span>
+              <h3 className="mt-5 font-display text-xl font-bold text-ink">
+                Mobile Van Equipment
+              </h3>
+              <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">
+                Each service van is fitted with a pneumatic tyre-changing machine, a digital laser
+                wheel balancer, a high-output air compressor, and heavy-duty hydraulic lifting
+                equipment suitable for cars, SUVs, and light commercial vans. We also carry
+                specialist locking wheel nut removal kits and calibrated torque wrenches.
+              </p>
+            </div>
+
+            <div className="card-premium p-7">
+              <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand">
+                <ShieldCheck className="h-5 w-5" />
+              </span>
+              <h3 className="mt-5 font-display text-xl font-bold text-ink">
+                BS AU 159 Puncture Repairs
+              </h3>
+              <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">
+                All puncture assessments follow the British Standard BS AU 159. The tyre is always
+                removed from the rim for an internal structural inspection before any repair is
+                considered. Only punctures within the central tread area (the minor repair zone)
+                without secondary run-flat damage, sidewall bulges, or exposed cords are repaired
+                using a permanent internal combi plug-patch unit.
+              </p>
+            </div>
+
+            <div className="card-premium p-7">
+              <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand">
+                <Gauge className="h-5 w-5" />
+              </span>
+              <h3 className="mt-5 font-display text-xl font-bold text-ink">
+                Valves, TPMS &amp; Torque Checks
+              </h3>
+              <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">
+                Every replacement includes a fresh rubber or high-pressure valve where applicable,
+                and careful handling of Tyre Pressure Monitoring System (TPMS) sensors. Wheels are
+                precision-balanced to prevent motorway vibration, and wheel bolts or nuts are
+                torqued to the vehicle manufacturer&apos;s exact specification.
+              </p>
+              <ul className="mt-4 space-y-2 text-xs text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 shrink-0 text-brand" />
+                  <span>Internal rim-off inspection before any repair</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 shrink-0 text-brand" />
+                  <span>Digital wheel balancing &amp; calibrated torque</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <EmergencyBand />
       </main>
       <Footer />

@@ -430,6 +430,46 @@ export function ContactPage() {
         </div>
       </section>
 
+      {/* Contact FAQs */}
+      <section className="section-y">
+        <div className="container-x">
+          <SectionHeader
+            eyebrow="Booking & Dispatch FAQs"
+            title={
+              <>
+                Common questions <span className="text-brand italic">before you call.</span>
+              </>
+            }
+            copy="Quick answers on what details to have ready, payment options, 24/7 dispatch, and finding your tyre size."
+          />
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {[
+              {
+                q: "What details should I provide when calling or messaging?",
+                a: "Share your postcode or exact roadside location, your vehicle registration, and the tyre size from the sidewall (for example, 205/55 R16). If you are unsure or have locking wheel nuts, you can send a quick photo on WhatsApp so we can confirm availability before setting off.",
+              },
+              {
+                q: "What payment methods do you accept?",
+                a: "We accept card payments (chip & PIN and contactless), bank transfer, and cash on completion of the work. Itemised receipts can be emailed directly for personal records or business and fleet expense claims.",
+              },
+              {
+                q: "How does your 24/7 dispatch work?",
+                a: "Our phone line is staffed 24 hours a day, 7 days a week, including nights, weekends, and bank holidays. Stranded roadside emergencies are given priority dispatch, while routine home or workplace tyre replacements can be scheduled for a time that suits you.",
+              },
+              {
+                q: "How do I find my tyre size?",
+                a: "Check the raised characters along the outer sidewall of the affected tyre — it is formatted like 225/45 R17 94W (width, aspect ratio, rim diameter, load index, and speed rating). Always check the specific tyre being replaced, as some vehicles run different sizes on the front and rear axles.",
+              },
+            ].map(({ q, a }) => (
+              <div key={q} className="card-premium p-6 sm:p-7">
+                <h3 className="font-display text-lg font-bold text-ink">{q}</h3>
+                <p className="mt-3 text-sm leading-[1.8] text-muted-foreground">{a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <EmergencyBand />
       </main>
       <Footer />

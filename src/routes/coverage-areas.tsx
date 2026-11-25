@@ -32,7 +32,7 @@ export const Route = createFileRoute("/coverage-areas")({
           "24/7 mobile tyre fitting across London, Enfield, St Albans, Watford, Harlow, Epping, Stansted & M25. Rapid response mobile fitting at home or roadside.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/coverage-areas" },
+      { property: "og:url", content: "https://www.samsmobiletyres.co.uk/coverage-areas" },
     ],
     links: [{ rel: "canonical", href: "https://www.samsmobiletyres.co.uk/coverage-areas" }],
   }),

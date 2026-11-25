@@ -21,6 +21,6 @@ assert.ok(guideSlugs.length > 0, "expected at least one guide slug");
 assert.equal(new Set(guideSlugs).size, guideSlugs.length, "guide slugs must be unique");
 assert.match(sitemap, /ALL_GUIDE_SLUGS/);
 
-assert.equal(vercel.redirects.filter((redirect) => redirect.permanent).length, 4);
+assert.equal(vercel.redirects.filter((redirect) => redirect.permanent).length, 6);
 
 console.log("SEO route checks passed");

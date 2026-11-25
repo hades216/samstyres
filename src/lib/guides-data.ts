@@ -760,6 +760,60 @@ export const GUIDES: Record<string, GuideEntry> = {
           },
         ],
       },
+      {
+        type: "list",
+        heading: "Common UK speed rating letters",
+        copy: "The final letter in a size code such as 205/55 R16 91V indicates the tyre's maximum certified speed capability when correctly inflated.",
+        items: [
+          {
+            t: "T (up to 118 mph / 190 km/h)",
+            d: "Common on smaller city cars, compact hatchbacks and some winter tyres.",
+          },
+          {
+            t: "H (up to 130 mph / 210 km/h)",
+            d: "Widely fitted to family hatchbacks, saloons and mid-size crossovers.",
+          },
+          {
+            t: "V (up to 149 mph / 240 km/h)",
+            d: "Standard on higher-powered family cars, estates and executive saloons.",
+          },
+          {
+            t: "W (up to 168 mph / 270 km/h) & Y (up to 186 mph / 300 km/h)",
+            d: "Fitted to performance cars, large SUVs and many modern electric vehicles due to higher weight and torque.",
+          },
+        ],
+      },
+      {
+        type: "text",
+        heading: "Load index and Extra Load (XL) tyres",
+        paragraphs: [
+          "The two- or three-digit number before the speed rating (such as 91 or 94) is the load index. It maps to a maximum weight in kilograms that a single tyre can safely support at its maximum pressure — for example, 91 corresponds to 615 kg per tyre, while 94 corresponds to 670 kg.",
+          "Heavy estates, 4x4s, MPVs and electric vehicles often require Extra Load (XL) or Reinforced tyres. An XL tyre has a stronger internal carcass designed to handle higher inflation pressures and heavier axle weights. Fitting a standard-load tyre where XL is specified can cause rapid shoulder wear, overheating and MOT or insurance issues.",
+        ],
+      },
+      {
+        type: "steps",
+        heading: "How to check your tyre size before ordering",
+        steps: [
+          {
+            t: "Read the full code on the sidewall",
+            d: "Note the width, profile, rim diameter, load index and speed rating (e.g. 225/45 R17 94W) along with any XL or run-flat marking.",
+          },
+          {
+            t: "Check the front and rear axles separately",
+            d: "Many rear-wheel-drive and performance cars use staggered fitments, where the rear tyres are wider than the fronts.",
+          },
+          {
+            t: "Cross-check the vehicle placard",
+            d: "Confirm the manufacturer's recommended size and cold pressures on the sticker inside the driver's door shut or fuel filler flap.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        heading: "What the EU/UK tyre label tells you",
+        body: "When comparing replacement tyres, the EU/UK tyre label grades three key metrics: wet grip (A to E, directly affecting wet braking distance), fuel efficiency / rolling resistance (A to E), and external rolling noise in decibels (dB). Prioritising a high wet-grip grade (A or B) is especially worthwhile for UK rain and motorway driving.",
+      },
     ],
     faqs: [
       {
@@ -773,6 +827,18 @@ export const GUIDES: Record<string, GuideEntry> = {
       {
         q: "What tyre size does my car need?",
         a: "The correct size is on your current tyre's sidewall and usually also on a sticker inside the driver's door frame or in the vehicle handbook. Send us that size, or your registration, and we'll confirm before quoting.",
+      },
+      {
+        q: "What does XL mean on a tyre sidewall?",
+        a: "XL stands for Extra Load (sometimes marked Reinf or Reinforced). It means the tyre has a strengthened internal construction to carry heavier loads at higher pressures, which is common on SUVs, vans, estates and electric vehicles.",
+      },
+      {
+        q: "How old is too old for a car tyre in the UK?",
+        a: "There is no blanket age ban for passenger car tyres in the UK (unlike heavy commercial vehicles), but tyres over 6 years old should be inspected regularly for rubber cracking and perishing, and most manufacturers recommend replacing tyres by 10 years regardless of remaining tread.",
+      },
+      {
+        q: "Can front and rear tyres be different sizes?",
+        a: "Only if the vehicle was designed for a staggered setup by the manufacturer (common on BMW, Mercedes-Benz and sports models). On standard cars, fitting mismatched sizes on the same axle is unsafe and can trigger ABS or traction-control faults.",
       },
     ],
     related: [
@@ -991,6 +1057,58 @@ export const GUIDES: Record<string, GuideEntry> = {
           },
         ],
       },
+      {
+        type: "steps",
+        heading: "How digital wheel balancing works",
+        copy: "Modern mobile fitting vans carry the same computerized spin balancers used in static workshops.",
+        steps: [
+          {
+            t: "Clean and inspect the rim",
+            d: "Old weights, mud and brake dust are removed from the wheel barrel so the balancer reads true weight distribution.",
+          },
+          {
+            t: "Mount and spin on the digital balancer",
+            d: "The wheel and tyre assembly is spun at speed while sensors measure both static (vertical) and dynamic (side-to-side) imbalance to the gram.",
+          },
+          {
+            t: "Apply precision counterweights",
+            d: "Clip-on weights (for steel rims) or concealed adhesive weights (for alloy wheels) are attached at the exact opposite points indicated by the machine.",
+          },
+          {
+            t: "Verify with a confirmation spin",
+            d: "A final spin confirms zero imbalance on both inner and outer planes before the wheel is torqued back onto the hub.",
+          },
+        ],
+      },
+      {
+        type: "pair",
+        heading: "Balanced wheels vs driving out of balance",
+        left: {
+          label: "Properly balanced",
+          tone: "good",
+          items: [
+            "Smooth, vibration-free steering at motorway speeds",
+            "Even tread wear across the full tyre contact patch",
+            "Reduced stress on wheel bearings, ball joints and dampers",
+            "Consistent fuel economy with lower rolling resistance",
+          ],
+        },
+        right: {
+          label: "Left unbalanced",
+          tone: "bad",
+          items: [
+            "Noticeable judder through the steering wheel or seats",
+            "Premature scalloped or patchy tread wear",
+            "Accelerated wear on suspension bushes and shock absorbers",
+            "Reduced wet-road grip as the tyre hops over bumps",
+          ],
+        },
+      },
+      {
+        type: "callout",
+        heading: "When wheel balancing won't cure a vibration",
+        body: "If a vibration persists after all four wheels are balanced, the cause is usually mechanical rather than weight distribution. Common culprits include a buckled or flat-spotted alloy rim from a pothole impact, a shifted tyre belt (internal ply separation), worn suspension bushes or track rod ends, or warped brake discs that shudder under braking.",
+      },
     ],
     faqs: [
       {
@@ -1000,6 +1118,18 @@ export const GUIDES: Record<string, GuideEntry> = {
       {
         q: "Can mobile tyre fitters balance wheels on a driveway?",
         a: "Yes. Our mobile fitting vans are equipped with computerized electronic wheel balancers that provide the exact same calibration precision as fixed garage workshops.",
+      },
+      {
+        q: "Can hitting a pothole knock a wheel out of balance?",
+        a: "Yes. A sharp pothole or kerb impact can dislodge a stick-on balance weight, slightly deform the rim, or shift the tyre on the wheel, causing sudden vibration at motorway speeds.",
+      },
+      {
+        q: "Do all four wheels need balancing or just the front two?",
+        a: "All four wheels should be balanced when tyres are replaced. Unbalanced rear wheels may not shake the steering wheel, but they still cause cabin vibration, uneven rear tyre wear and extra strain on rear suspension components.",
+      },
+      {
+        q: "Is it safe to drive with an unbalanced wheel?",
+        a: "For short, low-speed journeys it is rarely an immediate emergency, but driving long-term on an unbalanced wheel wears out tyres quickly and stresses steering and suspension parts. If the vibration started suddenly after hitting a pothole, have the wheel and tyre inspected promptly for structural damage.",
       },
     ],
     related: [
@@ -1052,7 +1182,57 @@ export const GUIDES: Record<string, GuideEntry> = {
             t: "Swollen battery casing or sulfur smell",
             d: "Physical swelling or a rotten-egg scent indicates severe overheating and internal battery short-circuiting.",
           },
+          {
+            t: "Stop-start system disabled or battery warning light",
+            d: "On modern cars, the start-stop function automatically disables itself when battery state-of-charge drops below threshold, often weeks before a full non-start.",
+          },
         ],
+      },
+      {
+        type: "list",
+        heading: "UK car battery types: Standard, EFB and AGM",
+        copy: "Modern vehicles require the exact battery chemistry they were engineered for.",
+        items: [
+          {
+            t: "Standard Flooded Lead-Acid (SLI)",
+            d: "Used in older vehicles without stop-start technology. Designed for high cranking bursts rather than deep repeated discharge cycles.",
+          },
+          {
+            t: "EFB (Enhanced Flooded Battery)",
+            d: "Fitted to entry-level stop-start vehicles. Offers roughly double the cycle endurance of a standard flooded battery.",
+          },
+          {
+            t: "AGM (Absorbent Glass Mat)",
+            d: "Required for vehicles with regenerative braking, heavy electrical loads or advanced stop-start systems. Never downgrade an AGM car to a standard battery.",
+          },
+        ],
+      },
+      {
+        type: "steps",
+        heading: "How to extend your car battery's lifespan",
+        steps: [
+          {
+            t: "Take regular 20–30 minute drives",
+            d: "Short urban trips of 5–10 minutes drain more charge during starting than the alternator can put back, especially with lights and heaters on.",
+          },
+          {
+            t: "Switch off auxiliaries before parking",
+            d: "Turn off heated seats, rear demisters and infotainment before switching off the ignition so they don't draw load on the next cold start.",
+          },
+          {
+            t: "Keep terminals clean and secure",
+            d: "White or green corrosion around battery posts restricts current flow; a loose clamp can also cause intermittent charging faults.",
+          },
+          {
+            t: "Get a health test before winter",
+            d: "A quick conductance test checks Cold Cranking Amps (CCA) and state of health before freezing weather exposes a weak cell.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        heading: "Jump-start vs full battery replacement",
+        body: "A jump-start is the right fix if a healthy battery was drained by leaving interior lights on overnight. However, if the battery is over 4 years old, fails a load test, or goes flat repeatedly after normal driving, a replacement is needed. Note that many modern vehicles also require Battery Management System (BMS) registration via diagnostic tool when a new battery is fitted so the alternator charges it correctly.",
       },
     ],
     faqs: [
@@ -1063,6 +1243,18 @@ export const GUIDES: Record<string, GuideEntry> = {
       {
         q: "What is the difference between an AGM and standard car battery?",
         a: "AGM (Absorbent Glass Mat) batteries are designed for modern stop-start vehicles and handle frequent charge cycles. Standard flooded batteries are suitable for vehicles without stop-start systems.",
+      },
+      {
+        q: "How long do I need to drive to recharge a flat car battery?",
+        a: "After a jump-start, a steady drive of at least 30 to 45 minutes (ideally on A-roads or motorways rather than stop-start traffic) is usually needed to restore meaningful charge. Idling on the driveway charges very slowly.",
+      },
+      {
+        q: "Do short journeys ruin a car battery?",
+        a: "Repeated short journeys are one of the biggest causes of early battery failure. Starting the engine draws a heavy burst of current, and short trips with headlights, wipers and heaters running leave the battery in a chronic state of partial discharge.",
+      },
+      {
+        q: "What happens if you put a standard battery in a stop-start car?",
+        a: "A standard flooded battery will degrade rapidly under stop-start cycling — often failing within months — and can trigger dashboard warning lights or disable start-stop and regenerative charging.",
       },
     ],
     related: [

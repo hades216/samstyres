@@ -70,7 +70,7 @@ export const Route = createFileRoute("/$slug")({
       return {
         meta: [
           { title: "Service not found — Sam's Mobile Tyres" },
-          { name: "robots", content: "noindex" },
+          { name: "robots", content: "index, follow" },
         ],
       };
     }

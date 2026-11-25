@@ -3,6 +3,8 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     { "source": "/about-us", "destination": "/about", "permanent": true },
     {
@@ -15,7 +17,9 @@
       "source": "/coverage-areas-mobile-tyre-fitting",
       "destination": "/coverage-areas",
       "permanent": true
-    }
+    },
+    { "source": "/wheel-balancing", "destination": "/services", "permanent": true },
+    { "source": "/car-battery-replacement", "destination": "/services", "permanent": true }
   ],
   "headers": [
     {
