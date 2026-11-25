@@ -722,6 +722,13 @@ const IconRoadside = ({ className }: SvcIconProps) => (
 function Services() {
   const services = [
     {
+      slug: "mobile-tyre-fitting",
+      icon: IconMobileFit,
+      image: svcReplacement,
+      title: "Mobile Tyre Fitting",
+      desc: "Professional tyre fitting at your home, workplace or roadside across London — 26 premium brands, balanced and torqued on-site.",
+    },
+    {
       slug: "emergency-mobile-tyre-fitting",
       icon: IconEmergencyTyre,
       image: svcEmergency,
