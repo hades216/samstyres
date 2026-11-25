@@ -89,27 +89,24 @@ export function LocationPage({ location }: { location: LocationPageData }) {
       <section className="border-b border-slate-100 bg-white py-6">
         <div className="container-x flex flex-wrap items-center gap-3">
           <a
-            href={PHONE_HREF}
-            data-track="location_call"
-            data-location={location.slug}
-            className="btn-base btn-primary text-sm"
-          >
-            <Phone className="h-4 w-4" /> Call {PHONE}
-          </a>
-          <a
             href={WHATSAPP_HREF}
             data-track="location_whatsapp"
             data-location={location.slug}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-base btn-outline text-sm"
+            className="btn-base btn-primary text-sm"
           >
             <MessageCircle className="h-4 w-4" /> Send tyre details
           </a>
           <div className="flex items-center gap-4 text-xs sm:text-sm text-slate-700 font-medium sm:ml-auto">
-            <span className="inline-flex items-center gap-1.5 text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
-              <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> 4.9 Rating (Verified)
-            </span>
+            <a
+              href={GOOGLE_REVIEWS_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-amber-700 bg-amber-50 hover:bg-amber-100 transition-colors px-2.5 py-1 rounded-full border border-amber-200"
+            >
+              <Star className="h-4 w-4 fill-amber-500 text-amber-500" /> 5.0 Google Rating
+            </a>
             <span className="hidden md:inline-flex items-center gap-1.5 text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
               <Clock className="h-4 w-4 text-emerald-600" /> 30–60 Min Response
             </span>
