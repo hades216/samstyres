@@ -759,7 +759,7 @@ function Services() {
     {
       slug: "roadside-tyre-assistance",
       icon: IconRoadside,
-      image: svcRoadside,
+      image: "/svc/roadside-tyre-assistance.webp",
       title: "Roadside Assistance",
       desc: "Emergency mechanical support, wheel changes, and safety checks to resolve breakdowns on the spot.",
     },
