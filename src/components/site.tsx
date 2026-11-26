@@ -597,7 +597,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="font-semibold text-white/90 tracking-wide hover:text-white transition-colors"
               >
-                Magna Te Creative
+                magnatecreative.com
               </a>
             </span>
           </div>
