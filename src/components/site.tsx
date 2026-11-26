@@ -591,7 +591,14 @@ export function Footer() {
           <div className="flex items-center gap-6 text-sm">
             <span>
               Powered by{" "}
-              <span className="font-semibold text-white/90 tracking-wide">Grow Your Business</span>
+              <a
+                href="https://www.magnatecreative.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-white/90 tracking-wide hover:text-white transition-colors"
+              >
+                Magna Te Creative
+              </a>
             </span>
           </div>
         </div>
